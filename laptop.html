@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Điện Thoại - ĐBDK2T Điện Tử</title>
+    <title>Laptop - ĐBDK2T Điện Tử</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/phone.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
   </head>
   <body>
     <!-- Họa tiết trang trí -->
@@ -24,10 +24,10 @@
           <div class="header-content">
             <a href="index.html" class="logo">
               <i class="fas fa-microchip"></i>
-              ĐBDK2T ĐIỆN TỬ
+              <span class="logo-text">ĐBDK2T ĐIỆN TỬ</span>
             </a>
 
-            <nav>
+            <nav class="nav-container">
               <ul class="nav-menu">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link"
@@ -35,15 +35,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="dienthoai.html" class="nav-link active"
-                    >Điện Thoại</a
-                  >
+                  <a href="dienthoai.html" class="nav-link">Điện Thoại</a>
                 </li>
                 <li class="nav-item">
-                  <a href="products.html" class="nav-link">Laptop</a>
+                  <a href="laptop.html" class="nav-link active">Laptop</a>
                 </li>
                 <li class="nav-item">
-                  <a href="products.html" class="nav-link">Máy Tính</a>
+                  <a href="pc.html" class="nav-link">Máy Tính</a>
                 </li>
                 <li class="nav-item">
                   <a href="products.html" class="nav-link">Thiết Bị </a>
@@ -87,7 +85,7 @@
               <input
                 type="text"
                 class="search-input"
-                placeholder="Tìm kiếm điện thoại, từ khóa..."
+                placeholder="Tìm kiếm laptop, từ khóa..."
               />
             </div>
             <button class="search-btn">
@@ -99,46 +97,46 @@
     </header>
 
     <!-- Main Content -->
-    <main class="phone-page">
+    <main class="laptop-page">
       <div class="container">
         <!-- Page Header -->
         <div class="page-header">
-          <h1>Điện Thoại Thông Minh</h1>
-          <p>Khám phá những mẫu điện thoại mới nhất với công nghệ tiên tiến</p>
+          <h1>Laptop & Máy Tính Xách Tay</h1>
+          <p>Khám phá những mẫu laptop mới nhất với hiệu năng vượt trội</p>
         </div>
 
-        <!-- Phone Slider -->
-        <section class="phone-slider">
+        <!-- Laptop Slider -->
+        <section class="laptop-slider">
           <div class="slider-container">
             <div class="slider-track">
               <div class="slider-item">
                 <img
-                  src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="iPhone 14 Pro Max"
+                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="MacBook Pro"
                 />
               </div>
               <div class="slider-item">
                 <img
-                  src="https://images.unsplash.com/photo-1632661674599-451bad7c2e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="iPhone 13"
+                  src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Dell XPS"
                 />
               </div>
               <div class="slider-item">
                 <img
-                  src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="iPhone 12"
+                  src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="ASUS ROG"
                 />
               </div>
               <div class="slider-item">
                 <img
-                  src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Samsung Galaxy S23 Ultra"
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="HP Spectre"
                 />
               </div>
               <div class="slider-item">
                 <img
-                  src="https://images.unsplash.com/photo-1662948992111-7894616a0a5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Samsung Galaxy Z Fold4"
+                  src="https://images.unsplash.com/photo-1587614382346-4ec0e7943568?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Lenovo ThinkPad"
                 />
               </div>
             </div>
@@ -151,25 +149,27 @@
           <div class="filter-buttons">
             <button class="filter-btn active" data-brand="all">Tất Cả</button>
             <button class="filter-btn" data-brand="apple">Apple</button>
-            <button class="filter-btn" data-brand="samsung">Samsung</button>
-            <button class="filter-btn" data-brand="xiaomi">Xiaomi</button>
+            <button class="filter-btn" data-brand="dell">Dell</button>
+            <button class="filter-btn" data-brand="asus">ASUS</button>
+            <button class="filter-btn" data-brand="hp">HP</button>
+            <button class="filter-btn" data-brand="lenovo">Lenovo</button>
           </div>
         </section>
 
-        <!-- Phone Products -->
-        <section class="phone-products">
+        <!-- Laptop Products -->
+        <section class="laptop-products">
           <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
 
           <!-- Apple Products -->
           <div class="brand-section" id="apple">
             <h3 class="brand-title">Apple</h3>
             <div class="product-grid">
-              <!-- iPhone 14 Pro Max -->
+              <!-- MacBook Pro 16" -->
               <div class="product-card" data-brand="apple">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="iPhone 14 Pro Max"
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="MacBook Pro 16"
                   />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
@@ -177,21 +177,21 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">iPhone 14 Pro Max</h3>
+                  <h3 class="product-name">MacBook Pro 16" M2 Max</h3>
                   <div class="product-price">
-                    <span class="current-price">28.990.000₫</span>
-                    <span class="original-price">32.990.000₫</span>
+                    <span class="current-price">68.990.000₫</span>
+                    <span class="original-price">74.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="1">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- iPhone 13 -->
+              <!-- MacBook Air M2 -->
               <div class="product-card" data-brand="apple">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1632661674599-451bad7c2e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="iPhone 13"
+                    src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="MacBook Air M2"
                   />
                   <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
@@ -199,31 +199,31 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">iPhone 13</h3>
+                  <h3 class="product-name">MacBook Air M2 13"</h3>
                   <div class="product-price">
-                    <span class="current-price">18.990.000₫</span>
-                    <span class="original-price">21.990.000₫</span>
+                    <span class="current-price">32.990.000₫</span>
+                    <span class="original-price">35.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="2">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- iPhone 12 -->
+              <!-- MacBook Pro 14" -->
               <div class="product-card" data-brand="apple">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="iPhone 12"
+                    src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="MacBook Pro 14"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">iPhone 12</h3>
+                  <h3 class="product-name">MacBook Pro 14" M2 Pro</h3>
                   <div class="product-price">
-                    <span class="current-price">15.990.000₫</span>
-                    <span class="original-price">18.990.000₫</span>
+                    <span class="current-price">52.990.000₫</span>
+                    <span class="original-price">56.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="3">Xem Chi Tiết</button>
                 </div>
@@ -231,16 +231,16 @@
             </div>
           </div>
 
-          <!-- Samsung Products -->
-          <div class="brand-section" id="samsung">
-            <h3 class="brand-title">Samsung</h3>
+          <!-- Dell Products -->
+          <div class="brand-section" id="dell">
+            <h3 class="brand-title">Dell</h3>
             <div class="product-grid">
-              <!-- Samsung Galaxy S23 Ultra -->
-              <div class="product-card" data-brand="samsung">
+              <!-- Dell XPS 13 -->
+              <div class="product-card" data-brand="dell">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Samsung Galaxy S23 Ultra"
+                    src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Dell XPS 13"
                   />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
@@ -248,53 +248,53 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Samsung Galaxy S23 Ultra</h3>
+                  <h3 class="product-name">Dell XPS 13 Plus</h3>
                   <div class="product-price">
-                    <span class="current-price">24.990.000₫</span>
-                    <span class="original-price">27.990.000₫</span>
+                    <span class="current-price">42.990.000₫</span>
+                    <span class="original-price">46.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="4">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Samsung Galaxy Z Fold4 -->
-              <div class="product-card" data-brand="samsung">
+              <!-- Dell Alienware -->
+              <div class="product-card" data-brand="dell">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1662948992111-7894616a0a5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Samsung Galaxy Z Fold4"
+                    src="https://images.unsplash.com/photo-1587614382346-4ec0e7943568?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Dell Alienware"
                   />
-                  <div class="product-badge">Độc quyền</div>
+                  <div class="product-badge">Gaming</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Samsung Galaxy Z Fold4</h3>
+                  <h3 class="product-name">Dell Alienware m15 R7</h3>
                   <div class="product-price">
-                    <span class="current-price">35.990.000₫</span>
-                    <span class="original-price">39.990.000₫</span>
+                    <span class="current-price">55.990.000₫</span>
+                    <span class="original-price">59.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="5">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Samsung Galaxy A54 -->
-              <div class="product-card" data-brand="samsung">
+              <!-- Dell Inspiron -->
+              <div class="product-card" data-brand="dell">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Samsung Galaxy A54"
+                    src="https://images.unsplash.com/photo-1587614382346-4ec0e7943568?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Dell Inspiron"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Samsung Galaxy A54</h3>
+                  <h3 class="product-name">Dell Inspiron 15</h3>
                   <div class="product-price">
-                    <span class="current-price">8.990.000₫</span>
-                    <span class="original-price">10.990.000₫</span>
+                    <span class="current-price">18.990.000₫</span>
+                    <span class="original-price">21.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="6">Xem Chi Tiết</button>
                 </div>
@@ -302,72 +302,214 @@
             </div>
           </div>
 
-          <!-- Xiaomi Products -->
-          <div class="brand-section" id="xiaomi">
-            <h3 class="brand-title">Xiaomi</h3>
+          <!-- ASUS Products -->
+          <div class="brand-section" id="asus">
+            <h3 class="brand-title">ASUS</h3>
             <div class="product-grid">
-              <!-- Xiaomi 13 Pro -->
-              <div class="product-card" data-brand="xiaomi">
+              <!-- ASUS ROG Zephyrus -->
+              <div class="product-card" data-brand="asus">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Xiaomi 13 Pro"
+                    src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="ASUS ROG Zephyrus"
                   />
-                  <div class="product-badge">Mới</div>
+                  <div class="product-badge">Gaming</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Xiaomi 13 Pro</h3>
+                  <h3 class="product-name">ASUS ROG Zephyrus G14</h3>
                   <div class="product-price">
-                    <span class="current-price">18.990.000₫</span>
-                    <span class="original-price">21.990.000₫</span>
+                    <span class="current-price">48.990.000₫</span>
+                    <span class="original-price">52.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="7">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Xiaomi Redmi Note 12 -->
-              <div class="product-card" data-brand="xiaomi">
+              <!-- ASUS ZenBook -->
+              <div class="product-card" data-brand="asus">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1598327105854-c8674faddf74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Xiaomi Redmi Note 12"
+                    src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="ASUS ZenBook"
                   />
-                  <div class="product-badge">Bán chạy</div>
+                  <div class="product-badge">Mỏng nhẹ</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Xiaomi Redmi Note 12</h3>
+                  <h3 class="product-name">ASUS ZenBook 14X</h3>
                   <div class="product-price">
-                    <span class="current-price">6.490.000₫</span>
-                    <span class="original-price">7.490.000₫</span>
+                    <span class="current-price">32.990.000₫</span>
+                    <span class="original-price">35.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="8">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Xiaomi Poco X5 -->
-              <div class="product-card" data-brand="xiaomi">
+              <!-- ASUS TUF Gaming -->
+              <div class="product-card" data-brand="asus">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Xiaomi Poco X5"
+                    src="https://images.unsplash.com/photo-1587614382346-4ec0e7943568?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="ASUS TUF Gaming"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Xiaomi Poco X5</h3>
+                  <h3 class="product-name">ASUS TUF Gaming F15</h3>
                   <div class="product-price">
-                    <span class="current-price">5.990.000₫</span>
-                    <span class="original-price">6.990.000₫</span>
+                    <span class="current-price">26.990.000₫</span>
+                    <span class="original-price">29.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="9">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HP Products -->
+          <div class="brand-section" id="hp">
+            <h3 class="brand-title">HP</h3>
+            <div class="product-grid">
+              <!-- HP Spectre x360 -->
+              <div class="product-card" data-brand="hp">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="HP Spectre x360"
+                  />
+                  <div class="product-badge">2-in-1</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">HP Spectre x360 14</h3>
+                  <div class="product-price">
+                    <span class="current-price">38.990.000₫</span>
+                    <span class="original-price">42.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- HP Omen -->
+              <div class="product-card" data-brand="hp">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="HP Omen"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">HP Omen 16</h3>
+                  <div class="product-price">
+                    <span class="current-price">45.990.000₫</span>
+                    <span class="original-price">49.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- HP Pavilion -->
+              <div class="product-card" data-brand="hp">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="HP Pavilion"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">HP Pavilion 15</h3>
+                  <div class="product-price">
+                    <span class="current-price">21.990.000₫</span>
+                    <span class="original-price">24.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="12">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lenovo Products -->
+          <div class="brand-section" id="lenovo">
+            <h3 class="brand-title">Lenovo</h3>
+            <div class="product-grid">
+              <!-- Lenovo ThinkPad X1 -->
+              <div class="product-card" data-brand="lenovo">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Lenovo ThinkPad X1"
+                  />
+                  <div class="product-badge">Doanh nhân</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Lenovo ThinkPad X1 Carbon</h3>
+                  <div class="product-price">
+                    <span class="current-price">46.990.000₫</span>
+                    <span class="original-price">49.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="13">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Lenovo Legion -->
+              <div class="product-card" data-brand="lenovo">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1587614382346-4ec0e7943568?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Lenovo Legion"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Lenovo Legion 5 Pro</h3>
+                  <div class="product-price">
+                    <span class="current-price">39.990.000₫</span>
+                    <span class="original-price">43.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="14">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Lenovo Yoga -->
+              <div class="product-card" data-brand="lenovo">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Lenovo Yoga"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Lenovo Yoga 9i</h3>
+                  <div class="product-price">
+                    <span class="current-price">35.990.000₫</span>
+                    <span class="original-price">38.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="15">Xem Chi Tiết</button>
                 </div>
               </div>
             </div>
@@ -441,8 +583,8 @@
             <ul class="footer-links">
               <li><a href="index.html">Trang Chủ</a></li>
               <li><a href="dienthoai.html">Điện Thoại</a></li>
-              <li><a href="products.html">Laptop</a></li>
-              <li><a href="products.html">Máy Tính Bảng</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="pc.html">Máy Tính Bảng</a></li>
               <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
           </div>
@@ -487,6 +629,6 @@
       </div>
     </footer>
 
-    <script src="js/phone.js"></script>
+    <script src="js/laptop.js"></script>
   </body>
 </html>
