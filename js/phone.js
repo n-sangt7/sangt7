@@ -1,4 +1,3 @@
-// Dữ liệu sản phẩm
 const products = {
   1: {
     id: 1,

@@ -242,7 +242,6 @@ const laptopProducts = {
   },
 };
 
-// DOM Elements
 const modal = document.getElementById("productModal");
 const modalClose = document.getElementById("modalClose");
 const modalImage = document.getElementById("modalImage");
