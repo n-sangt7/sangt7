@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời Trang - ĐBDK2T Điện Tử</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #8b4513;
+        --secondary: #a0522d;
+        --accent: #cd853f;
+        --light: #f5deb3;
+        --dark: #654321;
+        --success: #8fbc8f;
+        --warning: #daa520;
+        --gray: #a9a9a9;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+        --gradient: linear-gradient(135deg, #8b4513, #a0522d);
+        --nav-gradient: linear-gradient(135deg, #654321, #8b4513);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Noto Serif", "Times New Roman", serif;
+      }
+
+      body {
+        background-color: #faebd7;
+        color: #333;
+        line-height: 1.6;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      .decoration-top-left,
+      .decoration-top-right,
+      .decoration-bottom-left,
+      .decoration-bottom-right {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .decoration-top-left {
+        top: 0;
+        left: 0;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z" fill="none" stroke="%238B4513" stroke-width="2"/><path d="M30,30 C40,20 60,20 70,30 M30,70 C40,80 60,80 70,70" fill="none" stroke="%238B4513" stroke-width="2"/></svg>');
+      }
+
+      .decoration-top-right {
+        top: 0;
+        right: 0;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z" fill="none" stroke="%238B4513" stroke-width="2"/><path d="M30,30 C40,20 60,20 70,30 M30,70 C40,80 60,80 70,70" fill="none" stroke="%238B4513" stroke-width="2"/></svg>');
+        transform: scaleX(-1);
+      }
+
+      .decoration-bottom-left {
+        bottom: 0;
+        left: 0;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z" fill="none" stroke="%238B4513" stroke-width="2"/><path d="M30,30 C40,20 60,20 70,30 M30,70 C40,80 60,80 70,70" fill="none" stroke="%238B4513" stroke-width="2"/></svg>');
+        transform: scaleY(-1);
+      }
+
+      .decoration-bottom-right {
+        bottom: 0;
+        right: 0;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z" fill="none" stroke="%238B4513" stroke-width="2"/><path d="M30,30 C40,20 60,20 70,30 M30,70 C40,80 60,80 70,70" fill="none" stroke="%238B4513" stroke-width="2"/></svg>');
+        transform: scale(-1);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: var(--transition);
+        box-shadow: 0 4px 6px rgba(139, 69, 19, 0.3);
+      }
+
+      .btn:hover {
+        background-color: #8b4513;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(139, 69, 19, 0.4);
+      }
+
+      .btn-accent {
+        background-color: var(--accent);
+        box-shadow: 0 4px 6px rgba(205, 133, 63, 0.3);
+      }
+
+      .btn-accent:hover {
+        background-color: #a0522d;
+        box-shadow: 0 6px 8px rgba(205, 133, 63, 0.4);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 32px;
+        color: var(--dark);
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--gradient);
+        border-radius: 2px;
+      }
+
+      header {
+        background: var(--nav-gradient);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .main-header {
+        padding: 10px 0;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+        padding: 5px 12px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+      }
+
+      .logo:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .logo i {
+        color: var(--accent);
+        margin-right: 8px;
+        transition: var(--transition);
+        font-size: 20px;
+      }
+
+      .logo:hover i {
+        transform: rotate(-10deg);
+      }
+
+      /* Navigation */
+      nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 6px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .nav-item {
+        position: relative;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        color: white;
+        font-weight: 500;
+        transition: var(--transition);
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        font-size: 14px;
+        text-align: center;
+        white-space: nowrap;
+        height: 100%;
+      }
+
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .nav-link:hover::before {
+        left: 100%;
+      }
+
+      .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+      }
+
+      .nav-link i {
+        margin-right: 6px;
+        font-size: 14px;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .header-action {
+        position: relative;
+        cursor: pointer;
+        transition: var(--transition);
+        padding: 6px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+      }
+
+      .header-action:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+      }
+
+      .header-action i {
+        font-size: 18px;
+        color: white;
+      }
+
+      .cart-count {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--accent);
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      /* Auth Links */
+      .auth-links {
+        display: flex;
+        gap: 8px;
+      }
+
+      .auth-links a {
+        color: white;
+        font-weight: 500;
+        transition: var(--transition);
+        padding: 6px 12px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        font-size: 14px;
+      }
+
+      .auth-links a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* Search Section */
+      .search-section {
+        background-color: var(--light);
+        padding: 15px 0;
+        border-top: 1px solid rgba(139, 69, 19, 0.2);
+        border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+      }
+
+      .search-container {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .search-box {
+        position: relative;
+        flex: 1;
+        max-width: 600px;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 12px 20px 12px 45px;
+        border: 2px solid var(--accent);
+        border-radius: 30px;
+        font-size: 16px;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+      }
+
+      .search-input:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 6px 15px rgba(139, 69, 19, 0.2);
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--gray);
+        font-size: 18px;
+      }
+
+      .search-btn {
+        padding: 12px 24px;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: var(--transition);
+        box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .search-btn:hover {
+        background-color: var(--dark);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(139, 69, 19, 0.4);
+      }
+
+      .products-page {
+        padding: 40px 0;
+      }
+
+      .page-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .page-header h1 {
+        font-size: 36px;
+        color: var(--dark);
+        margin-bottom: 15px;
+      }
+
+      .page-header p {
+        font-size: 18px;
+        color: var(--gray);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Gallery Section - ĐÃ SỬA ĐỔI */
+      .gallery-section {
+        margin-bottom: 50px;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .main-image {
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        position: relative;
+      }
+
+      .main-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .image-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+        color: white;
+        padding: 20px;
+      }
+
+      .image-info h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .image-info p {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      .image-info .btn {
+        background-color: var(--accent);
+      }
+
+      .thumbnails {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .thumbnail {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: var(--transition);
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .thumbnail:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .thumbnail.active {
+        border: 3px solid var(--accent);
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .brand-filter {
+        margin-bottom: 40px;
+      }
+
+      .filter-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .filter-btn {
+        padding: 10px 20px;
+        background-color: white;
+        border: 2px solid var(--accent);
+        border-radius: 30px;
+        color: var(--dark);
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .filter-btn:hover {
+        background-color: var(--light);
+        transform: translateY(-3px);
+      }
+
+      .filter-btn.active {
+        background-color: var(--primary);
+        color: white;
+        border-color: var(--primary);
+      }
+
+      .fashion-products {
+        margin-bottom: 60px;
+      }
+
+      .brand-section {
+        margin-bottom: 60px;
+      }
+
+      .brand-title {
+        font-size: 28px;
+        color: var(--dark);
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--accent);
+        position: relative;
+      }
+
+      .brand-title::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background: var(--gradient);
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .product-card {
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+        position: relative;
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .product-image {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+      }
+
+      .product-card:hover .product-image img {
+        transform: scale(1.05);
+      }
+
+      .product-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: var(--accent);
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .btn-wishlist {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--transition);
+        backdrop-filter: blur(5px);
+      }
+
+      .btn-wishlist:hover {
+        background-color: white;
+        transform: scale(1.1);
+      }
+
+      .btn-wishlist i {
+        color: var(--dark);
+        font-size: 16px;
+      }
+
+      .product-info {
+        padding: 20px;
+      }
+
+      .product-name {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--dark);
+      }
+
+      .product-price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .current-price {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .original-price {
+        font-size: 16px;
+        color: var(--gray);
+        text-decoration: line-through;
+      }
+
+      .btn-details {
+        width: 100%;
+        padding: 12px;
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+        box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
+      }
+
+      .btn-details:hover {
+        background-color: var(--primary);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(139, 69, 19, 0.4);
+      }
+
+      /* Modal */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        padding: 20px;
+      }
+
+      .modal-content {
+        background-color: white;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 900px;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--transition);
+        z-index: 10;
+      }
+
+      .modal-close:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        transform: rotate(90deg);
+      }
+
+      .modal-close i {
+        color: var(--dark);
+        font-size: 18px;
+      }
+
+      .modal-body {
+        padding: 30px;
+      }
+
+      .modal-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .modal-image {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .modal-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .modal-info h2 {
+        font-size: 28px;
+        color: var(--dark);
+        margin-bottom: 15px;
+      }
+
+      .modal-price {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .modal-current-price {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .modal-original-price {
+        font-size: 18px;
+        color: var(--gray);
+        text-decoration: line-through;
+      }
+
+      .modal-specs {
+        margin-bottom: 25px;
+      }
+
+      .modal-specs h3 {
+        font-size: 20px;
+        color: var(--dark);
+        margin-bottom: 15px;
+      }
+
+      .modal-specs ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .modal-specs li {
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      .modal-actions {
+        display: flex;
+        gap: 15px;
+      }
+
+      .modal-actions .btn {
+        flex: 1;
+        text-align: center;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--nav-gradient);
+        color: white;
+        padding: 50px 0 20px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .footer-column h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .footer-column h3::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: var(--accent);
+      }
+
+      .footer-column p {
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: var(--transition);
+      }
+
+      .social-link:hover {
+        background-color: var(--accent);
+        transform: translateY(-3px);
+      }
+
+      .footer-links li {
+        margin-bottom: 12px;
+      }
+
+      .footer-links a {
+        transition: var(--transition);
+        position: relative;
+        padding-left: 0;
+      }
+
+      .footer-links a::before {
+        content: "»";
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: var(--transition);
+      }
+
+      .footer-links a:hover {
+        color: var(--accent);
+        padding-left: 15px;
+      }
+
+      .footer-links a:hover::before {
+        opacity: 1;
+      }
+
+      .contact-info-footer li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+
+      .contact-info-footer i {
+        margin-right: 10px;
+        color: var(--accent);
+        width: 20px;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Responsive */
+      @media (max-width: 992px) {
+        .footer-content {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .modal-product {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-menu {
+          flex-wrap: wrap;
+        }
+
+        .nav-item {
+          flex: 1 0 33%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        nav {
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        .search-container {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .search-box {
+          max-width: 100%;
+        }
+
+        .product-grid {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+        }
+
+        .filter-buttons {
+          gap: 10px;
+        }
+
+        .filter-btn {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+
+        .main-image img {
+          height: 400px;
+        }
+
+        .thumbnail {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .nav-menu {
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .nav-item {
+          flex: 1;
+        }
+
+        .modal-body {
+          padding: 20px;
+        }
+
+        .modal-actions {
+          flex-direction: column;
+        }
+
+        .section-title {
+          font-size: 28px;
+        }
+
+        .brand-title {
+          font-size: 24px;
+        }
+
+        .main-image img {
+          height: 300px;
+        }
+
+        .thumbnail {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="main-header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo">
+              <i class="fas fa-microchip"></i>
+              ĐBDK2T ĐIỆN TỬ
+            </a>
+
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link"
+                    ><i class="fas fa-home"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="dienthoai.html" class="nav-link">Điện Thoại</a>
+                </li>
+                <li class="nav-item">
+                  <a href="laptop.html" class="nav-link">Laptop</a>
+                </li>
+                <li class="nav-item">
+                  <a href="products.html" class="nav-link active">Thời Trang</a>
+                </li>
+                <li class="nav-item">
+                  <a href="products.html" class="nav-link">Lego</a>
+                </li>
+                <li class="nav-item">
+                  <a href="products.html" class="nav-link">Hàng Nóng</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Liên hệ</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-actions">
+              <div class="auth-links">
+                <a href="login.html" id="login-link"
+                  ><i class="fas fa-user"></i> Đăng nhập</a
+                >
+                <a href="register.html" id="register-link"
+                  ><i class="fas fa-user-plus"></i> Đăng ký</a
+                >
+                <a href="#" id="logout-link" style="display: none"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </div>
+              <div class="header-action">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="header-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm quần áo, giày dép, từ khóa..."
+              />
+            </div>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="products-page">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1>Thời Trang & Phụ Kiện</h1>
+          <p>
+            Khám phá những mẫu thời trang mới nhất từ các thương hiệu nổi tiếng
+          </p>
+        </div>
+
+        <!-- Gallery Section - ĐÃ SỬA ĐỔI -->
+        <section class="gallery-section">
+          <h2 class="section-title">Bộ Sưu Tập Nổi Bật</h2>
+          <div class="gallery-container">
+            <div class="main-image">
+              <img
+                id="mainImage"
+                src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Balenciaga Hoodie"
+              />
+              <div class="image-info">
+                <h3 id="mainTitle">Balenciaga Logo Hoodie</h3>
+                <p id="mainDescription">
+                  Áo hoodie cao cấp với thiết kế oversize, chất liệu cotton mềm
+                  mại, phù hợp cho mọi dịp.
+                </p>
+                <button class="btn">Xem Chi Tiết</button>
+              </div>
+            </div>
+            <div class="thumbnails">
+              <div
+                class="thumbnail active"
+                data-image="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                data-title="Balenciaga Logo Hoodie"
+                data-description="Áo hoodie cao cấp với thiết kế oversize, chất liệu cotton mềm mại, phù hợp cho mọi dịp."
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Balenciaga Hoodie"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                data-image="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                data-title="Gucci GG T-Shirt"
+                data-description="Áo thun cao cấp với logo GG đặc trưng, chất liệu cotton 100%, kiểu dáng regular fit."
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Gucci T-Shirt"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                data-image="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                data-title="Puma Sport Jacket"
+                data-description="Áo khoác thể thao chống nước, thiết kế năng động, phù hợp cho các hoạt động ngoài trời."
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Puma Jacket"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                data-image="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                data-title="Handes Evening Dress"
+                data-description="Váy dạ hội sang trọng, chất liệu lụa cao cấp, thiết kế tôn dáng, hoàn hảo cho các sự kiện quan trọng."
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Handes Dress"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                data-title="Chanel Classic Flap Bag"
+                data-description="Túi xách cổ điển Chanel, chất liệu da cừu cao cấp, thiết kế timeless, biểu tượng của sự sang trọng."
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Chanel Bag"
+                />
+              </div>
+              <div
+                class="thumbnail"
+                data-image="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                data-title="Nike Air Jordan 1"
+                data-description="Giày sneaker cổ cao, thiết kế cổ điển với phối màu đỏ/đen/trắng, biểu tượng của văn hóa streetwear."
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Nike Air Jordan"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Brand Filter -->
+        <section class="brand-filter">
+          <h2 class="section-title">Lọc Theo Thương Hiệu</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-brand="all">Tất Cả</button>
+            <button class="filter-btn" data-brand="balenciaga">
+              Balenciaga
+            </button>
+            <button class="filter-btn" data-brand="gucci">Gucci</button>
+            <button class="filter-btn" data-brand="puma">Puma</button>
+            <button class="filter-btn" data-brand="handes">Handes</button>
+            <button class="filter-btn" data-brand="chanel">Chanel</button>
+            <button class="filter-btn" data-brand="nike">Nike</button>
+            <button class="filter-btn" data-brand="adidas">Adidas</button>
+          </div>
+        </section>
+
+        <!-- Fashion Products -->
+        <section class="fashion-products">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+
+          <!-- Balenciaga Products -->
+          <div class="brand-section" id="balenciaga">
+            <h3 class="brand-title">Balenciaga</h3>
+            <div class="product-grid">
+              <!-- Balenciaga Hoodie -->
+              <div class="product-card" data-brand="balenciaga">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Balenciaga Hoodie"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Balenciaga Logo Hoodie</h3>
+                  <div class="product-price">
+                    <span class="current-price">12.990.000₫</span>
+                    <span class="original-price">15.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="1">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gucci Products -->
+          <div class="brand-section" id="gucci">
+            <h3 class="brand-title">Gucci</h3>
+            <div class="product-grid">
+              <!-- Gucci T-Shirt -->
+              <div class="product-card" data-brand="gucci">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Gucci T-Shirt"
+                  />
+                  <div class="product-badge">Giảm giá</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Gucci GG T-Shirt</h3>
+                  <div class="product-price">
+                    <span class="current-price">8.990.000₫</span>
+                    <span class="original-price">10.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="2">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Puma Products -->
+          <div class="brand-section" id="puma">
+            <h3 class="brand-title">Puma</h3>
+            <div class="product-grid">
+              <!-- Puma Jacket -->
+              <div class="product-card" data-brand="puma">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Puma Jacket"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Puma Sport Jacket</h3>
+                  <div class="product-price">
+                    <span class="current-price">2.990.000₫</span>
+                    <span class="original-price">3.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="3">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Handes Products -->
+          <div class="brand-section" id="handes">
+            <h3 class="brand-title">Handes</h3>
+            <div class="product-grid">
+              <!-- Handes Dress -->
+              <div class="product-card" data-brand="handes">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Handes Dress"
+                  />
+                  <div class="product-badge">Bán chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Handes Evening Dress</h3>
+                  <div class="product-price">
+                    <span class="current-price">5.990.000₫</span>
+                    <span class="original-price">7.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="4">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chanel Products -->
+          <div class="brand-section" id="chanel">
+            <h3 class="brand-title">Chanel</h3>
+            <div class="product-grid">
+              <!-- Chanel Bag -->
+              <div class="product-card" data-brand="chanel">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Chanel Bag"
+                  />
+                  <div class="product-badge">Limited</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Chanel Classic Flap Bag</h3>
+                  <div class="product-price">
+                    <span class="current-price">45.990.000₫</span>
+                    <span class="original-price">52.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="5">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nike Products -->
+          <div class="brand-section" id="nike">
+            <h3 class="brand-title">Nike</h3>
+            <div class="product-grid">
+              <!-- Nike Air Jordan -->
+              <div class="product-card" data-brand="nike">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Nike Air Jordan"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Nike Air Jordan 1</h3>
+                  <div class="product-price">
+                    <span class="current-price">5.990.000₫</span>
+                    <span class="original-price">6.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="6">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adidas Products -->
+          <div class="brand-section" id="adidas">
+            <h3 class="brand-title">Adidas</h3>
+            <div class="product-grid">
+              <!-- Adidas Ultraboost -->
+              <div class="product-card" data-brand="adidas">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Adidas Ultraboost"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Adidas Ultraboost 22</h3>
+                  <div class="product-price">
+                    <span class="current-price">4.990.000₫</span>
+                    <span class="original-price">5.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal Chi Tiết Sản Phẩm -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-product">
+            <div class="modal-image">
+              <img id="modalImage" src="" alt="Product Image" />
+            </div>
+            <div class="modal-info">
+              <h2 id="modalTitle"></h2>
+              <div class="modal-price">
+                <span class="modal-current-price" id="modalCurrentPrice"></span>
+                <span
+                  class="modal-original-price"
+                  id="modalOriginalPrice"
+                ></span>
+              </div>
+              <div class="modal-specs">
+                <h3>Thông tin sản phẩm</h3>
+                <ul id="modalSpecs"></ul>
+              </div>
+              <div class="modal-actions">
+                <button class="btn btn-buy">
+                  <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </button>
+                <button class="btn btn-buy btn-accent">
+                  <i class="fas fa-bolt"></i> Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm thời trang chất
+              lượng cao với giá cả hợp lý.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Kết Nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="dienthoai.html">Điện Thoại</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="products.html">Thời Trang</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Chính Sách</h3>
+            <ul class="footer-links">
+              <li><a href="#">Chính Sách Bảo Mật</a></li>
+              <li><a href="#">Điều Khoản Sử Dụng</a></li>
+              <li><a href="#">Chính Sách Bảo Hành</a></li>
+              <li><a href="#">Chính Sách Đổi Trả</a></li>
+              <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Hệ</h3>
+            <ul class="contact-info-footer">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Đường ABC, Quận 1, TP.HCM</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+84 123 456 789</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@dbdk2t.com</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Thứ 2 - Chủ Nhật: 8:00 - 22:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 ĐBDK2T Điện Tử. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Dữ liệu sản phẩm
+      const products = [
+        {
+          id: 1,
+          name: "Balenciaga Logo Hoodie",
+          brand: "balenciaga",
+          currentPrice: "12.990.000₫",
+          originalPrice: "15.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Cotton cao cấp",
+            "Kiểu dáng: Oversize",
+            "Màu sắc: Đen",
+            "Kích thước: S, M, L, XL",
+            "Xuất xứ: Pháp",
+            "Bảo hành: 12 tháng",
+          ],
+        },
+        {
+          id: 2,
+          name: "Gucci GG T-Shirt",
+          brand: "gucci",
+          currentPrice: "8.990.000₫",
+          originalPrice: "10.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Cotton 100%",
+            "Kiểu dáng: Regular fit",
+            "Màu sắc: Trắng",
+            "Kích thước: S, M, L, XL",
+            "Xuất xứ: Ý",
+            "Bảo hành: 6 tháng",
+          ],
+        },
+        {
+          id: 3,
+          name: "Puma Sport Jacket",
+          brand: "puma",
+          currentPrice: "2.990.000₫",
+          originalPrice: "3.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Polyester chống nước",
+            "Kiểu dáng: Thể thao",
+            "Màu sắc: Xanh Navy",
+            "Kích thước: S, M, L, XL",
+            "Xuất xứ: Đức",
+            "Bảo hành: 12 tháng",
+          ],
+        },
+        {
+          id: 4,
+          name: "Handes Evening Dress",
+          brand: "handes",
+          currentPrice: "5.990.000₫",
+          originalPrice: "7.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Lụa cao cấp",
+            "Kiểu dáng: Dạ hội",
+            "Màu sắc: Đỏ rượu",
+            "Kích thước: S, M, L",
+            "Xuất xứ: Việt Nam",
+            "Bảo hành: 6 tháng",
+          ],
+        },
+        {
+          id: 5,
+          name: "Chanel Classic Flap Bag",
+          brand: "chanel",
+          currentPrice: "45.990.000₫",
+          originalPrice: "52.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Da cừu cao cấp",
+            "Kiểu dáng: Túi xách cổ điển",
+            "Màu sắc: Đen",
+            "Kích thước: 25cm",
+            "Xuất xứ: Pháp",
+            "Bảo hành: 24 tháng",
+          ],
+        },
+        {
+          id: 6,
+          name: "Nike Air Jordan 1",
+          brand: "nike",
+          currentPrice: "5.990.000₫",
+          originalPrice: "6.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Da tổng hợp cao cấp",
+            "Kiểu dáng: Sneaker cổ cao",
+            "Màu sắc: Đỏ/Đen/Trắng",
+            "Kích thước: 36-45",
+            "Xuất xứ: Mỹ",
+            "Bảo hành: 12 tháng",
+          ],
+        },
+        {
+          id: 7,
+          name: "Adidas Ultraboost 22",
+          brand: "adidas",
+          currentPrice: "4.990.000₫",
+          originalPrice: "5.990.000₫",
+          image:
+            "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          specs: [
+            "Chất liệu: Primeknit",
+            "Kiểu dáng: Giày chạy bộ",
+            "Màu sắc: Trắng/Đen",
+            "Kích thước: 36-45",
+            "Xuất xứ: Đức",
+            "Bảo hành: 12 tháng",
+          ],
+        },
+      ];
+
+      // DOM Elements
+      const modalOverlay = document.getElementById("productModal");
+      const modalClose = document.getElementById("modalClose");
+      const modalImage = document.getElementById("modalImage");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalCurrentPrice = document.getElementById("modalCurrentPrice");
+      const modalOriginalPrice = document.getElementById("modalOriginalPrice");
+      const modalSpecs = document.getElementById("modalSpecs");
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const productCards = document.querySelectorAll(".product-card");
+      const brandSections = document.querySelectorAll(".brand-section");
+      const searchInput = document.querySelector(".search-input");
+      const searchBtn = document.querySelector(".search-btn");
+      const wishlistButtons = document.querySelectorAll(".btn-wishlist");
+      const cartCount = document.querySelector(".cart-count");
+      const loginLink = document.getElementById("login-link");
+      const registerLink = document.getElementById("register-link");
+      const logoutLink = document.getElementById("logout-link");
+
+      // Gallery Elements
+      const mainImage = document.getElementById("mainImage");
+      const mainTitle = document.getElementById("mainTitle");
+      const mainDescription = document.getElementById("mainDescription");
+      const thumbnails = document.querySelectorAll(".thumbnail");
+
+      // Gallery Functions
+      function updateMainImage(imageSrc, title, description) {
+        mainImage.src = imageSrc;
+        mainTitle.textContent = title;
+        mainDescription.textContent = description;
+
+        // Update active state
+        thumbnails.forEach((thumb) => {
+          thumb.classList.remove("active");
+        });
+
+        event.currentTarget.classList.add("active");
+      }
+
+      // Modal Functions
+      function openModal(productId) {
+        const product = products.find((p) => p.id === productId);
+        if (!product) return;
+
+        modalImage.src = product.image;
+        modalImage.alt = product.name;
+        modalTitle.textContent = product.name;
+        modalCurrentPrice.textContent = product.currentPrice;
+        modalOriginalPrice.textContent = product.originalPrice;
+
+        modalSpecs.innerHTML = "";
+        product.specs.forEach((spec) => {
+          const li = document.createElement("li");
+          li.textContent = spec;
+          modalSpecs.appendChild(li);
+        });
+
+        modalOverlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modalOverlay.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Filter Products by Brand
+      function filterProducts(brand) {
+        if (brand === "all") {
+          productCards.forEach((card) => {
+            card.style.display = "block";
+          });
+          brandSections.forEach((section) => {
+            section.style.display = "block";
+          });
+        } else {
+          productCards.forEach((card) => {
+            if (card.dataset.brand === brand) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+
+          brandSections.forEach((section) => {
+            if (section.id === brand) {
+              section.style.display = "block";
+            } else {
+              section.style.display = "none";
+            }
+          });
+        }
+      }
+
+      // Search Products
+      function searchProducts() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        if (searchTerm === "") {
+          productCards.forEach((card) => {
+            card.style.display = "block";
+          });
+          brandSections.forEach((section) => {
+            section.style.display = "block";
+          });
+          return;
+        }
+
+        let foundAny = false;
+
+        productCards.forEach((card) => {
+          const productName = card
+            .querySelector(".product-name")
+            .textContent.toLowerCase();
+          const brand = card.dataset.brand;
+
+          if (productName.includes(searchTerm) || brand.includes(searchTerm)) {
+            card.style.display = "block";
+            foundAny = true;
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        // Hiển thị/ẩn các section thương hiệu dựa trên kết quả tìm kiếm
+        brandSections.forEach((section) => {
+          const hasVisibleProducts = Array.from(
+            section.querySelectorAll(".product-card")
+          ).some((card) => card.style.display !== "none");
+
+          section.style.display = hasVisibleProducts ? "block" : "none";
+        });
+
+        // Reset filter buttons
+        filterButtons.forEach((btn) => {
+          if (btn.dataset.brand !== "all") {
+            btn.classList.remove("active");
+          }
+        });
+        document
+          .querySelector('.filter-btn[data-brand="all"]')
+          .classList.add("active");
+      }
+
+      // Toggle Wishlist
+      function toggleWishlist(button) {
+        const icon = button.querySelector("i");
+        if (icon.classList.contains("far")) {
+          icon.classList.remove("far");
+          icon.classList.add("fas");
+          icon.style.color = "#e74c3c";
+
+          // Hiệu ứng heart
+          button.style.transform = "scale(1.2)";
+          setTimeout(() => {
+            button.style.transform = "scale(1)";
+          }, 300);
+        } else {
+          icon.classList.remove("fas");
+          icon.classList.add("far");
+          icon.style.color = "";
+        }
+      }
+
+      // Add to Cart
+      function addToCart() {
+        let count = parseInt(cartCount.textContent);
+        count++;
+        cartCount.textContent = count;
+
+        // Hiệu ứng giỏ hàng
+        cartCount.style.transform = "scale(1.5)";
+        setTimeout(() => {
+          cartCount.style.transform = "scale(1)";
+        }, 300);
+
+        // Thông báo
+        showNotification("Đã thêm sản phẩm vào giỏ hàng!");
+      }
+
+      // Show Notification
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.className = "notification";
+        notification.textContent = message;
+        notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background-color: var(--success);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 3000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.style.transform = "translateX(0)";
+        }, 100);
+
+        setTimeout(() => {
+          notification.style.transform = "translateX(100%)";
+          setTimeout(() => {
+            document.body.removeChild(notification);
+          }, 300);
+        }, 3000);
+      }
+
+      // Simulate Login/Logout
+      function simulateLogin() {
+        loginLink.style.display = "none";
+        registerLink.style.display = "none";
+        logoutLink.style.display = "block";
+        showNotification("Đăng nhập thành công!");
+      }
+
+      function simulateLogout() {
+        loginLink.style.display = "block";
+        registerLink.style.display = "block";
+        logoutLink.style.display = "none";
+        showNotification("Đã đăng xuất!");
+      }
+
+      // Event Listeners
+      document.addEventListener("DOMContentLoaded", function () {
+        // Gallery events
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            const imageSrc = this.dataset.image;
+            const title = this.dataset.title;
+            const description = this.dataset.description;
+            updateMainImage(imageSrc, title, description);
+          });
+        });
+
+        // Modal events
+        document.querySelectorAll(".btn-details").forEach((button) => {
+          button.addEventListener("click", function () {
+            const productId = parseInt(this.dataset.id);
+            openModal(productId);
+          });
+        });
+
+        modalClose.addEventListener("click", closeModal);
+        modalOverlay.addEventListener("click", function (e) {
+          if (e.target === modalOverlay) {
+            closeModal();
+          }
+        });
+
+        // Filter events
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+            filterProducts(this.dataset.brand);
+          });
+        });
+
+        // Search events
+        searchBtn.addEventListener("click", searchProducts);
+        searchInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            searchProducts();
+          }
+        });
+
+        // Wishlist events
+        wishlistButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            toggleWishlist(this);
+          });
+        });
+
+        // Cart events
+        document.querySelectorAll(".btn-buy").forEach((button) => {
+          button.addEventListener("click", addToCart);
+        });
+
+        // Auth events
+        loginLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          simulateLogin();
+        });
+
+        registerLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          simulateLogin();
+        });
+
+        logoutLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          simulateLogout();
+        });
+      });
+    </script>
+  </body>
+</html>
