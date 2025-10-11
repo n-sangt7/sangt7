@@ -1,4 +1,14 @@
-// Product data
+// DOM Elements
+const filterButtons = document.querySelectorAll(".filter-btn");
+const brandSections = document.querySelectorAll(".brand-section");
+const productCards = document.querySelectorAll(".product-card");
+const detailButtons = document.querySelectorAll(".btn-details");
+const modalOverlay = document.getElementById("productModal");
+const modalClose = document.getElementById("modalClose");
+const addToCartButtons = document.querySelectorAll(".btn-add-cart");
+const wishlistButtons = document.querySelectorAll(".btn-wishlist");
+
+// Product Data
 const products = {
   1: {
     title: "Balenciaga Logo Hoodie",
@@ -9,10 +19,10 @@ const products = {
     specs: [
       "Chất liệu: Cotton cao cấp 100%",
       "Kiểu dáng: Oversize",
-      "Màu sắc: Đen",
-      "Kích thước: S, M, L, XL",
+      "Màu sắc: Đen/Logo trắng",
       "Xuất xứ: Pháp",
       "Bảo hành: 12 tháng",
+      "Phù hợp: Mọi lứa tuổi",
     ],
   },
   2: {
@@ -22,12 +32,12 @@ const products = {
     currentPrice: "8.990.000₫",
     originalPrice: "10.990.000₫",
     specs: [
-      "Chất liệu: Cotton 100%",
+      "Chất liệu: Cotton Pima cao cấp",
       "Kiểu dáng: Regular fit",
-      "Màu sắc: Trắng",
-      "Kích thước: S, M, L, XL",
+      "Màu sắc: Trắng/Logo đỏ xanh",
       "Xuất xứ: Italy",
       "Bảo hành: 6 tháng",
+      "Phù hợp: Nam, Nữ",
     ],
   },
   3: {
@@ -39,10 +49,10 @@ const products = {
     specs: [
       "Chất liệu: Polyester chống nước",
       "Kiểu dáng: Thể thao",
-      "Màu sắc: Xanh navy",
-      "Kích thước: S, M, L, XL",
+      "Màu sắc: Đen/Logo trắng",
       "Xuất xứ: Đức",
       "Bảo hành: 12 tháng",
+      "Tính năng: Chống nước, thoáng khí",
     ],
   },
   4: {
@@ -53,11 +63,11 @@ const products = {
     originalPrice: "7.990.000₫",
     specs: [
       "Chất liệu: Lụa cao cấp",
-      "Kiểu dáng: Dạ hội",
-      "Màu sắc: Đỏ",
-      "Kích thước: S, M, L",
+      "Kiểu dáng: Váy dạ hội",
+      "Màu sắc: Đỏ rượu vang",
       "Xuất xứ: Pháp",
-      "Bảo hành: 6 tháng",
+      "Bảo hành: Vĩnh viễn",
+      "Phù hợp: Dự tiệc, sự kiện",
     ],
   },
   5: {
@@ -68,11 +78,11 @@ const products = {
     originalPrice: "52.990.000₫",
     specs: [
       "Chất liệu: Da cừu cao cấp",
-      "Kích thước: 25.5 x 15 x 7.5 cm",
+      "Kích thước: 25.5 x 15 x 6.5 cm",
       "Màu sắc: Đen",
-      "Chất liệu khoá: Vàng",
       "Xuất xứ: Pháp",
-      "Bảo hành: 24 tháng",
+      "Bảo hành: Trọn đời",
+      "Phụ kiện: Hộp, túi bụi, chứng từ",
     ],
   },
   6: {
@@ -82,12 +92,12 @@ const products = {
     currentPrice: "5.990.000₫",
     originalPrice: "6.990.000₫",
     specs: [
-      "Chất liệu: Da cao cấp",
+      "Chất liệu: Da tổng hợp cao cấp",
       "Kiểu dáng: Cổ cao",
-      "Màu sắc: Đỏ/Đen/Trắng",
-      "Kích cỡ: 38-45",
+      "Màu sắc: Đen/Trắng/Đỏ",
       "Xuất xứ: Việt Nam",
-      "Bảo hành: 12 tháng",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Thể thao, thời trang",
     ],
   },
   7: {
@@ -97,284 +107,392 @@ const products = {
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
-      "Chất liệu: Primeknit",
+      "Chất liệu: Primeknit+",
       "Công nghệ: Boost™",
       "Màu sắc: Trắng/Đen",
-      "Kích cỡ: 38-45",
       "Xuất xứ: Indonesia",
-      "Bảo hành: 12 tháng",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
     ],
   },
 };
 
-// DOM Elements
-const modal = document.getElementById("productModal");
-const modalClose = document.getElementById("modalClose");
-const modalImage = document.getElementById("modalImage");
-const modalTitle = document.getElementById("modalTitle");
-const modalCurrentPrice = document.getElementById("modalCurrentPrice");
-const modalOriginalPrice = document.getElementById("modalOriginalPrice");
-const modalSpecs = document.getElementById("modalSpecs");
+// Initialize Fashion Page
+function initFashionPage() {
+  console.log("Khởi tạo trang Thời Trang...");
 
-// Thumbnail Gallery
-const thumbnails = document.querySelectorAll(".thumbnail");
-const mainImage = document.getElementById("mainImage");
-const mainTitle = document.getElementById("mainTitle");
-const mainDescription = document.getElementById("mainDescription");
+  // Initialize filter functionality
+  initFilter();
 
-// Filter buttons
-const filterButtons = document.querySelectorAll(".filter-btn");
-const brandSections = document.querySelectorAll(".brand-section");
+  // Initialize product modals
+  initProductModals();
 
-// Initialize
-document.addEventListener("DOMContentLoaded", function () {
-  // Thumbnail click event
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener("click", function () {
-      const image = this.getAttribute("data-image");
-      const title = this.getAttribute("data-title");
-      const description = this.getAttribute("data-description");
+  // Initialize cart functionality
+  initCart();
 
-      // Update main image and info
-      mainImage.src = image;
-      mainTitle.textContent = title;
-      mainDescription.textContent = description;
+  // Initialize wishlist functionality
+  initWishlist();
 
-      // Update active state
-      thumbnails.forEach((t) => t.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
+  console.log("Trang Thời Trang đã sẵn sàng!");
+}
 
-  // Product detail buttons
-  const detailButtons = document.querySelectorAll(".btn-details");
-  detailButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const productId = this.getAttribute("data-id");
-      openProductModal(productId);
-    });
-  });
-
-  // Modal close events
-  modalClose.addEventListener("click", closeModal);
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
-
-  // Filter functionality
+// Filter Products by Brand
+function initFilter() {
   filterButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      const brand = this.getAttribute("data-brand");
+      const brand = this.dataset.brand;
 
       // Update active button
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       this.classList.add("active");
 
       // Filter products
-      filterProducts(brand);
-    });
-  });
+      if (brand === "all") {
+        // Show all brands
+        brandSections.forEach((section) => {
+          section.style.display = "block";
+          setTimeout(() => {
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+          }, 50);
+        });
 
-  // Wishlist functionality
-  const wishlistButtons = document.querySelectorAll(".btn-wishlist");
-  wishlistButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const icon = this.querySelector("i");
-      if (icon.classList.contains("far")) {
-        icon.classList.remove("far");
-        icon.classList.add("fas");
-        icon.style.color = "#e74c3c";
+        // Show all product cards
+        productCards.forEach((card) => {
+          card.style.display = "block";
+          setTimeout(() => {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+          }, 100);
+        });
       } else {
-        icon.classList.remove("fas");
-        icon.classList.add("far");
-        icon.style.color = "";
+        // Hide all brands first
+        brandSections.forEach((section) => {
+          section.style.opacity = "0";
+          section.style.transform = "translateY(20px)";
+          setTimeout(() => {
+            section.style.display = "none";
+          }, 300);
+        });
+
+        // Show selected brand
+        const selectedSection = document.getElementById(brand);
+        if (selectedSection) {
+          setTimeout(() => {
+            selectedSection.style.display = "block";
+            setTimeout(() => {
+              selectedSection.style.opacity = "1";
+              selectedSection.style.transform = "translateY(0)";
+            }, 50);
+          }, 300);
+        }
+
+        // Hide all product cards first
+        productCards.forEach((card) => {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(20px)";
+          setTimeout(() => {
+            card.style.display = "none";
+          }, 300);
+        });
+
+        // Show cards from selected brand
+        const selectedCards = document.querySelectorAll(
+          `[data-brand="${brand}"]`
+        );
+        setTimeout(() => {
+          selectedCards.forEach((card, index) => {
+            card.style.display = "block";
+            setTimeout(() => {
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            }, index * 100);
+          });
+        }, 300);
       }
     });
   });
-});
-
-// Open product modal
-function openProductModal(productId) {
-  const product = products[productId];
-  if (product) {
-    modalImage.src = product.image;
-    modalTitle.textContent = product.title;
-    modalCurrentPrice.textContent = product.currentPrice;
-    modalOriginalPrice.textContent = product.originalPrice;
-
-    // Clear and populate specs
-    modalSpecs.innerHTML = "";
-    product.specs.forEach((spec) => {
-      const li = document.createElement("li");
-      li.textContent = spec;
-      modalSpecs.appendChild(li);
-    });
-
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden";
-  }
 }
 
-// Close modal
-function closeModal() {
-  modal.classList.remove("active");
+// Product Modal Functionality
+function initProductModals() {
+  // Open modal when detail button is clicked
+  detailButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const productId = this.dataset.id;
+      openProductModal(productId);
+    });
+  });
+
+  // Close modal when close button is clicked
+  modalClose.addEventListener("click", closeProductModal);
+
+  // Close modal when clicking outside
+  modalOverlay.addEventListener("click", function (e) {
+    if (e.target === modalOverlay) {
+      closeProductModal();
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modalOverlay.classList.contains("active")) {
+      closeProductModal();
+    }
+  });
+}
+
+function openProductModal(productId) {
+  const product = products[productId];
+  if (!product) return;
+
+  // Update modal content
+  document.getElementById("modalImage").src = product.image;
+  document.getElementById("modalImage").alt = product.title;
+  document.getElementById("modalTitle").textContent = product.title;
+  document.getElementById("modalCurrentPrice").textContent =
+    product.currentPrice;
+  document.getElementById("modalOriginalPrice").textContent =
+    product.originalPrice;
+
+  // Update specifications
+  const specsList = document.getElementById("modalSpecs");
+  specsList.innerHTML = "";
+  product.specs.forEach((spec) => {
+    const li = document.createElement("li");
+    li.textContent = spec;
+    specsList.appendChild(li);
+  });
+
+  // Update add to cart button
+  const addToCartBtn = document.querySelector(".modal-actions .btn-buy");
+  addToCartBtn.dataset.id = productId;
+
+  // Show modal
+  modalOverlay.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeProductModal() {
+  modalOverlay.classList.remove("active");
   document.body.style.overflow = "auto";
 }
 
-// Filter products by brand
-function filterProducts(brand) {
-  brandSections.forEach((section) => {
-    if (brand === "all" || section.id === brand) {
-      section.style.display = "block";
-    } else {
-      section.style.display = "none";
-    }
+// Cart Functionality
+function initCart() {
+  let cartCount = 0;
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Get product info from the card
+      const productCard = this.closest(".product-card");
+      const productName =
+        productCard.querySelector(".product-name").textContent;
+      const productPrice =
+        productCard.querySelector(".current-price").textContent;
+
+      // Add to cart
+      cartCount++;
+      updateCartCount(cartCount);
+
+      // Show notification
+      showNotification(`Đã thêm "${productName}" vào giỏ hàng!`);
+
+      // Add animation
+      this.innerHTML = '<i class="fas fa-check"></i> Đã thêm';
+      this.style.backgroundColor = "#28a745";
+
+      setTimeout(() => {
+        this.innerHTML = '<i class="fas fa-shopping-cart"></i> Thêm vào giỏ';
+        this.style.backgroundColor = "";
+      }, 2000);
+    });
+  });
+
+  // Modal add to cart button
+  document
+    .querySelector(".modal-actions .btn-buy")
+    .addEventListener("click", function () {
+      const productId = this.dataset.id;
+      const product = products[productId];
+
+      if (product) {
+        cartCount++;
+        updateCartCount(cartCount);
+        showNotification(`Đã thêm "${product.title}" vào giỏ hàng!`);
+        closeProductModal();
+      }
+    });
+}
+
+function updateCartCount(count) {
+  const cartCountElements = document.querySelectorAll(".cart-count");
+  cartCountElements.forEach((element) => {
+    element.textContent = count;
   });
 }
 
-// Search functionality
-const searchInput = document.querySelector(".search-input");
-const searchBtn = document.querySelector(".search-btn");
+// Wishlist Functionality
+function initWishlist() {
+  wishlistButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const icon = this.querySelector("i");
 
-searchBtn.addEventListener("click", performSearch);
-searchInput.addEventListener("keypress", function (e) {
-  if (e.key === "Enter") {
-    performSearch();
-  }
-});
+      if (icon.classList.contains("far")) {
+        // Add to wishlist
+        icon.classList.remove("far");
+        icon.classList.add("fas");
+        this.style.color = "#e74c3c";
 
-function performSearch() {
-  const searchTerm = searchInput.value.toLowerCase().trim();
-  if (searchTerm) {
-    alert(`Tìm kiếm: ${searchTerm}`);
-    // Implement actual search logic here
-  }
+        // Get product info
+        const productCard = this.closest(".product-card");
+        const productName =
+          productCard.querySelector(".product-name").textContent;
+
+        showNotification(`Đã thêm "${productName}" vào yêu thích!`);
+      } else {
+        // Remove from wishlist
+        icon.classList.remove("fas");
+        icon.classList.add("far");
+        this.style.color = "";
+
+        showNotification("Đã xóa khỏi danh sách yêu thích!");
+      }
+    });
+  });
 }
 
-// Cart functionality
-let cartCount = 0;
-const cartButtons = document.querySelectorAll(".btn-buy");
-const cartCountElement = document.querySelector(".cart-count");
+// Notification System
+function showNotification(message) {
+  // Create notification element
+  const notification = document.createElement("div");
+  notification.className = "notification";
+  notification.innerHTML = `
+    <div class="notification-content">
+      <i class="fas fa-check-circle"></i>
+      <span>${message}</span>
+    </div>
+  `;
 
-cartButtons.forEach((button) => {
-  button.addEventListener("click", function () {
-    cartCount++;
-    cartCountElement.textContent = cartCount;
+  // Add styles
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    border-left: 4px solid #2ecc71;
+    max-width: 350px;
+  `;
 
-    // Add animation
-    cartCountElement.style.transform = "scale(1.3)";
+  document.body.appendChild(notification);
+
+  // Animate in
+  setTimeout(() => {
+    notification.style.transform = "translateX(0)";
+  }, 100);
+
+  // Remove after 3 seconds
+  setTimeout(() => {
+    notification.style.transform = "translateX(400px)";
     setTimeout(() => {
-      cartCountElement.style.transform = "scale(1)";
+      if (notification.parentNode) {
+        notification.parentNode.removeChild(notification);
+      }
     }, 300);
-
-    alert("Sản phẩm đã được thêm vào giỏ hàng!");
-  });
-});
-
-// User authentication state
-const loginLink = document.getElementById("login-link");
-const registerLink = document.getElementById("register-link");
-const logoutLink = document.getElementById("logout-link");
-
-// Check if user is logged in (simulated)
-function checkAuthState() {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
-  if (isLoggedIn) {
-    loginLink.style.display = "none";
-    registerLink.style.display = "none";
-    logoutLink.style.display = "block";
-  } else {
-    loginLink.style.display = "block";
-    registerLink.style.display = "block";
-    logoutLink.style.display = "none";
-  }
+  }, 3000);
 }
 
-// Logout functionality
-logoutLink.addEventListener("click", function (e) {
-  e.preventDefault();
-  localStorage.removeItem("isLoggedIn");
-  checkAuthState();
-  alert("Đã đăng xuất thành công!");
-});
+// Search Functionality
+function initSearch() {
+  const searchInput = document.querySelector(".search-input");
+  const searchBtn = document.querySelector(".search-btn");
 
-// Initialize auth state
-checkAuthState();
+  function performSearch() {
+    const searchTerm = searchInput.value.trim().toLowerCase();
 
-// Add smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+    if (searchTerm === "") {
+      // Show all products if search is empty
+      productCards.forEach((card) => {
+        card.style.display = "block";
+        card.style.opacity = "1";
       });
+      return;
+    }
+
+    // Filter products based on search term
+    let foundResults = false;
+
+    productCards.forEach((card) => {
+      const productName = card
+        .querySelector(".product-name")
+        .textContent.toLowerCase();
+      const productBrand = card.dataset.brand;
+
+      if (
+        productName.includes(searchTerm) ||
+        productBrand.includes(searchTerm)
+      ) {
+        card.style.display = "block";
+        card.style.opacity = "1";
+        foundResults = true;
+      } else {
+        card.style.display = "none";
+        card.style.opacity = "0";
+      }
+    });
+
+    // Show message if no results found
+    if (!foundResults) {
+      showNotification("Không tìm thấy sản phẩm phù hợp!");
+    }
+  }
+
+  searchBtn.addEventListener("click", performSearch);
+  searchInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      performSearch();
     }
   });
+}
+
+// Initialize when DOM is loaded
+document.addEventListener("DOMContentLoaded", function () {
+  initFashionPage();
+  initSearch();
+
+  // Add some interactive animations
+  addScrollAnimations();
 });
 
-// Add loading animation for images
-const images = document.querySelectorAll("img");
-images.forEach((img) => {
-  img.addEventListener("load", function () {
-    this.style.opacity = "1";
-  });
-  img.style.opacity = "0";
-  img.style.transition = "opacity 0.3s ease";
-});
+// Scroll Animations
+function addScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
 
-// Add scroll to top functionality
-const scrollToTop = document.createElement("button");
-scrollToTop.innerHTML = '<i class="fas fa-chevron-up"></i>';
-scrollToTop.className = "scroll-to-top";
-scrollToTop.style.cssText = `
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background: var(--gradient);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-  z-index: 1000;
-`;
-document.body.appendChild(scrollToTop);
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  }, observerOptions);
 
-scrollToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 300) {
-    scrollToTop.style.display = "flex";
-  } else {
-    scrollToTop.style.display = "none";
-  }
-});
-
-// Add hover effects for product cards
-const productCards = document.querySelectorAll(".product-card");
-productCards.forEach((card) => {
-  card.addEventListener("mouseenter", function () {
-    this.style.transform = "translateY(-8px)";
-  });
-
-  card.addEventListener("mouseleave", function () {
-    this.style.transform = "translateY(0)";
-  });
-});
+  // Observe product cards and sections
+  document
+    .querySelectorAll(".product-card, .brand-section, .square-gallery-item")
+    .forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(30px)";
+      el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+      observer.observe(el);
+    });
+}
