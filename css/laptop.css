@@ -793,23 +793,31 @@ footer {
 
 .social-links {
   display: flex;
-  gap: 15px;
+  flex-direction: column; /* các dòng xếp dọc */
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .social-link {
-  display: flex;
+  display: flex; /* icon + chữ nằm ngang */
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: var(--transition);
+  gap: 10px; /* khoảng cách giữa icon và chữ */
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.social-link i {
+  font-size: 20px;
 }
 
 .social-link:hover {
-  background-color: var(--accent);
-  transform: translateY(-5px);
+  background: var(--accent);
+  transform: translateY(-3px);
 }
 
 .footer-links li {
