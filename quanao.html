@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Điện Thoại - ĐBDK2T Điện Tử</title>
+    <title>Thời Trang - ĐBDK2T Điện Tử</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/phone.css" />
+    <link rel="stylesheet" href="css/quanao.css" />
   </head>
   <body>
     <!-- Họa tiết trang trí -->
@@ -35,15 +35,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="dienthoai.html" class="nav-link active"
-                    >Điện Thoại</a
-                  >
+                  <a href="dienthoai.html" class="nav-link">Điện Thoại</a>
                 </li>
                 <li class="nav-item">
                   <a href="laptop.html" class="nav-link">Laptop</a>
                 </li>
                 <li class="nav-item">
-                  <a href="quanao.html" class="nav-link">Quần áo</a>
+                  <a href="products.html" class="nav-link active">Thời Trang</a>
                 </li>
                 <li class="nav-item">
                   <a href="products.html" class="nav-link">Lego</a>
@@ -90,7 +88,7 @@
               <input
                 type="text"
                 class="search-input"
-                placeholder="Tìm kiếm điện thoại, từ khóa..."
+                placeholder="Tìm kiếm quần áo, giày dép, từ khóa..."
               />
             </div>
             <button class="search-btn">
@@ -102,32 +100,49 @@
     </header>
 
     <!-- Main Content -->
-    <main class="phone-page">
+    <main class="products-page">
       <div class="container">
         <!-- Page Header -->
         <div class="page-header">
-          <h1>Điện Thoại Thông Minh</h1>
-          <p>Khám phá những mẫu điện thoại mới nhất với công nghệ tiên tiến</p>
+          <h1>Thời Trang & Phụ Kiện</h1>
+          <p>
+            Khám phá những mẫu thời trang mới nhất từ các thương hiệu nổi tiếng
+          </p>
         </div>
 
-        <!-- Phone Slider -->
-        <section class="phone-slider">
+        <!-- Fashion Slider -->
+        <section class="fashion-slider">
           <div class="slider-container">
             <div class="slider-track">
               <div class="slider-item">
-                <img src="./img/ip14-promax.png" alt="iPhone 14 Pro Max" />
+                <img
+                  src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Balenciaga"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/iphone13.png" alt="iPhone 13" />
+                <img
+                  src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Gucci"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/ip12.webp" alt="iPhone 12" />
+                <img
+                  src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Puma"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/s25ultra.webp" alt="Samsung Galaxy S25 Ultra" />
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Chanel"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/xiaomi.jpg" alt="Xiaomi 14T" />
+                <img
+                  src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Nike"
+                />
               </div>
             </div>
           </div>
@@ -135,29 +150,35 @@
 
         <!-- Brand Filter -->
         <section class="brand-filter">
-          <h2 class="section-title">Lọc Theo Hãng</h2>
+          <h2 class="section-title">Lọc Theo Thương Hiệu</h2>
           <div class="filter-buttons">
             <button class="filter-btn active" data-brand="all">Tất Cả</button>
-            <button class="filter-btn" data-brand="apple">Apple</button>
-            <button class="filter-btn" data-brand="samsung">Samsung</button>
-            <button class="filter-btn" data-brand="xiaomi">Xiaomi</button>
+            <button class="filter-btn" data-brand="balenciaga">
+              Balenciaga
+            </button>
+            <button class="filter-btn" data-brand="gucci">Gucci</button>
+            <button class="filter-btn" data-brand="puma">Puma</button>
+            <button class="filter-btn" data-brand="handes">Handes</button>
+            <button class="filter-btn" data-brand="chanel">Chanel</button>
+            <button class="filter-btn" data-brand="nike">Nike</button>
+            <button class="filter-btn" data-brand="adidas">Adidas</button>
           </div>
         </section>
 
-        <!-- Phone Products -->
-        <section class="phone-products">
+        <!-- Fashion Products -->
+        <section class="fashion-products">
           <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
 
-          <!-- Apple Products -->
-          <div class="brand-section" id="apple">
-            <h3 class="brand-title">Apple</h3>
+          <!-- Balenciaga Products -->
+          <div class="brand-section" id="balenciaga">
+            <h3 class="brand-title">Balenciaga</h3>
             <div class="product-grid">
-              <!-- iPhone 14 Pro Max -->
-              <div class="product-card" data-brand="apple">
+              <!-- Balenciaga Hoodie -->
+              <div class="product-card" data-brand="balenciaga">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="iPhone 14 Pro Max"
+                    src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Balenciaga Hoodie"
                   />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
@@ -165,21 +186,27 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">iPhone 14 Pro Max</h3>
+                  <h3 class="product-name">Balenciaga Logo Hoodie</h3>
                   <div class="product-price">
-                    <span class="current-price">28.990.000₫</span>
-                    <span class="original-price">32.990.000₫</span>
+                    <span class="current-price">12.990.000₫</span>
+                    <span class="original-price">15.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="1">Xem Chi Tiết</button>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <!-- iPhone 13 -->
-              <div class="product-card" data-brand="apple">
+          <!-- Gucci Products -->
+          <div class="brand-section" id="gucci">
+            <h3 class="brand-title">Gucci</h3>
+            <div class="product-grid">
+              <!-- Gucci T-Shirt -->
+              <div class="product-card" data-brand="gucci">
                 <div class="product-image">
                   <img
-                    src="https://media.wired.com/photos/6149204955f7b3aea723343d/master/pass/Gear-Review-Apple_iPhone-13-Pro_Colors_09142021.jpg"
-                    alt="iPhone 13 pro max"
+                    src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Gucci T-Shirt"
                   />
                   <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
@@ -187,31 +214,37 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">iPhone 13 Pro Max</h3>
+                  <h3 class="product-name">Gucci GG T-Shirt</h3>
                   <div class="product-price">
-                    <span class="current-price">18.990.000₫</span>
-                    <span class="original-price">21.990.000₫</span>
+                    <span class="current-price">8.990.000₫</span>
+                    <span class="original-price">10.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="2">Xem Chi Tiết</button>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <!-- iPhone 12 -->
-              <div class="product-card" data-brand="apple">
+          <!-- Puma Products -->
+          <div class="brand-section" id="puma">
+            <h3 class="brand-title">Puma</h3>
+            <div class="product-grid">
+              <!-- Puma Jacket -->
+              <div class="product-card" data-brand="puma">
                 <div class="product-image">
                   <img
-                    src="https://vcdn1-sohoa.vnecdn.net/2024/11/28/iPhone-17-Pro-Dual-Tone-Rectan-5437-2950-1732807344.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=2tj8edHwbMmACQgUPFVExg"
-                    alt="iPhone 17 pro max"
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Puma Jacket"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">iPhone 17 Pro Max</h3>
+                  <h3 class="product-name">Puma Sport Jacket</h3>
                   <div class="product-price">
-                    <span class="current-price">61.990.000₫</span>
-                    <span class="original-price">63.990.000₫</span>
+                    <span class="current-price">2.990.000₫</span>
+                    <span class="original-price">3.990.000₫</span>
                   </div>
                   <button class="btn-details" data-id="3">Xem Chi Tiết</button>
                 </div>
@@ -219,109 +252,16 @@
             </div>
           </div>
 
-          <!-- Samsung Products -->
-          <div class="brand-section" id="samsung">
-            <h3 class="brand-title">Samsung</h3>
+          <!-- Handes Products -->
+          <div class="brand-section" id="handes">
+            <h3 class="brand-title">Handes</h3>
             <div class="product-grid">
-              <!-- Samsung Galaxy S23 Ultra -->
-              <div class="product-card" data-brand="samsung">
+              <!-- Handes Dress -->
+              <div class="product-card" data-brand="handes">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Samsung Galaxy S23 Ultra"
-                  />
-                  <div class="product-badge">Mới</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Samsung Galaxy S23 Ultra</h3>
-                  <div class="product-price">
-                    <span class="current-price">24.990.000₫</span>
-                    <span class="original-price">27.990.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="4">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Samsung Galaxy Z Flip -->
-              <div class="product-card" data-brand="samsung">
-                <div class="product-image">
-                  <img
-                    src="https://images.samsung.com/ph/smartphones/galaxy-z-flip6/images/galaxy-z-flip6-features-kv.jpg?imbypass=true"
-                    alt="SamSung Galaxy Z Flip"
-                  />
-                  <div class="product-badge">Độc quyền</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">SamSung Galaxy Z Flip</h3>
-                  <div class="product-price">
-                    <span class="current-price">35.990.000₫</span>
-                    <span class="original-price">39.990.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="5">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Samsung Galaxy A54 -->
-              <div class="product-card" data-brand="samsung">
-                <div class="product-image">
-                  <img
-                    src="https://tiki.vn/blog/wp-content/uploads/2023/03/OsybBeJVZxYYmDDp5lzGdafcqDY1jMGINw4M_CsiR42HJ4vRhXa37vF2tKZunf4T3tEg4E1Z4crtL6o-hruB9wwOXGvugjrkPoZVNyf3BaY9wonoZb1PW6poZosO5N0zt0rGppfmBne3mMWlSHSr3-o.png"
-                    alt="Samsung Galaxy S23"
-                  />
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Samsung Galaxy S23</h3>
-                  <div class="product-price">
-                    <span class="current-price">18.990.000₫</span>
-                    <span class="original-price">20.990.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="6">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Xiaomi Products -->
-          <div class="brand-section" id="xiaomi">
-            <h3 class="brand-title">Xiaomi</h3>
-            <div class="product-grid">
-              <!-- Xiaomi 13 Pro -->
-              <div class="product-card" data-brand="xiaomi">
-                <div class="product-image">
-                  <img
-                    src="https://mihome.vn/wp-content/uploads/2023/03/Xiaomi-13-Pro-1.jpg"
-                    alt="Xiaomi 13 Pro"
-                  />
-                  <div class="product-badge">Mới</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Xiaomi 13 Pro</h3>
-                  <div class="product-price">
-                    <span class="current-price">18.990.000₫</span>
-                    <span class="original-price">21.990.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Xiaomi Redmi Note 12 -->
-              <div class="product-card" data-brand="xiaomi">
-                <div class="product-image">
-                  <img
-                    src="https://cdn.hoanghamobile.vn/Uploads/2023/03/25/image-removebg-preview-1.png"
-                    alt="Xiaomi Redmi Note 12"
+                    src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Handes Dress"
                   />
                   <div class="product-badge">Bán chạy</div>
                   <button class="btn-wishlist">
@@ -329,33 +269,95 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Xiaomi Redmi Note 12</h3>
+                  <h3 class="product-name">Handes Evening Dress</h3>
                   <div class="product-price">
-                    <span class="current-price">6.490.000₫</span>
-                    <span class="original-price">7.490.000₫</span>
+                    <span class="current-price">5.990.000₫</span>
+                    <span class="original-price">7.990.000₫</span>
                   </div>
-                  <button class="btn-details" data-id="8">Xem Chi Tiết</button>
+                  <button class="btn-details" data-id="4">Xem Chi Tiết</button>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <!-- Xiaomi Poco X5 -->
-              <div class="product-card" data-brand="xiaomi">
+          <!-- Chanel Products -->
+          <div class="brand-section" id="chanel">
+            <h3 class="brand-title">Chanel</h3>
+            <div class="product-grid">
+              <!-- Chanel Bag -->
+              <div class="product-card" data-brand="chanel">
                 <div class="product-image">
                   <img
-                    src="https://mihome.vn/wp-content/uploads/2023/02/Xiaomi-Poco-X5-Pro-5G-1.jpg"
-                    alt="Xiaomi Poco X5"
+                    src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Chanel Bag"
+                  />
+                  <div class="product-badge">Limited</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Chanel Classic Flap Bag</h3>
+                  <div class="product-price">
+                    <span class="current-price">45.990.000₫</span>
+                    <span class="original-price">52.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="5">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nike Products -->
+          <div class="brand-section" id="nike">
+            <h3 class="brand-title">Nike</h3>
+            <div class="product-grid">
+              <!-- Nike Air Jordan -->
+              <div class="product-card" data-brand="nike">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Nike Air Jordan"
+                  />
+                  <div class="product-badge">Gaming</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Nike Air Jordan 1</h3>
+                  <div class="product-price">
+                    <span class="current-price">5.990.000₫</span>
+                    <span class="original-price">6.990.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="6">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adidas Products -->
+          <div class="brand-section" id="adidas">
+            <h3 class="brand-title">Adidas</h3>
+            <div class="product-grid">
+              <!-- Adidas Ultraboost -->
+              <div class="product-card" data-brand="adidas">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Adidas Ultraboost"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Xiaomi Poco X5</h3>
+                  <h3 class="product-name">Adidas Ultraboost 22</h3>
                   <div class="product-price">
-                    <span class="current-price">5.990.000₫</span>
-                    <span class="original-price">6.990.000₫</span>
+                    <span class="current-price">4.990.000₫</span>
+                    <span class="original-price">5.990.000₫</span>
                   </div>
-                  <button class="btn-details" data-id="9">Xem Chi Tiết</button>
+                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
                 </div>
               </div>
             </div>
@@ -385,7 +387,7 @@
                 ></span>
               </div>
               <div class="modal-specs">
-                <h3>Thông số kỹ thuật</h3>
+                <h3>Thông tin sản phẩm</h3>
                 <ul id="modalSpecs"></ul>
               </div>
               <div class="modal-actions">
@@ -409,7 +411,7 @@
           <div class="footer-column">
             <h3>Về Chúng Tôi</h3>
             <p>
-              ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm công nghệ chất
+              ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm thời trang chất
               lượng cao với giá cả hợp lý.
             </p>
             <div class="social-links">
@@ -429,8 +431,8 @@
             <ul class="footer-links">
               <li><a href="index.html">Trang Chủ</a></li>
               <li><a href="dienthoai.html">Điện Thoại</a></li>
-              <li><a href="products.html">Laptop</a></li>
-              <li><a href="products.html">Máy Tính Bảng</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="products.html">Thời Trang</a></li>
               <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
           </div>
@@ -475,6 +477,6 @@
       </div>
     </footer>
 
-    <script src="js/phone.js"></script>
+    <script src="js/quanao.js"></script>
   </body>
 </html>
