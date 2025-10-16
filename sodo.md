@@ -1,29 +1,32 @@
 # File Tree: web-st7
 
-Generated on: 10/11/2025, 8:15:34 AM
+Generated on: 10/16/2025, 10:14:46 PM
 Root path: `c:\Users\Home\Pictures\web-st7`
 
 ```
 ├── 📁 .git/ 🚫 (auto-hidden)
 ├── 📁 css/
 │   ├── 🎨 laptop.css
+│   ├── 🎨 lego.css
 │   ├── 🎨 phone.css
 │   ├── 🎨 quanao.css
 │   └── 🎨 styles.css
 ├── 📁 img/
-│   ├── 🖼️ ip12.webp
+│   ├── 🖼️ ip12.png
 │   ├── 🖼️ ip14-promax.png
 │   ├── 🖼️ iphone13.png
-│   ├── 🖼️ s25ultra.webp
-│   └── 🖼️ xiaomi.jpg
+│   ├── 🖼️ s25.png
+│   └── 🖼️ xiaomi.png
 ├── 📁 js/
 │   ├── 📄 laptop.js
+│   ├── 📄 lego.js
 │   ├── 📄 phone.js
 │   ├── 📄 quanao.js
 │   └── 📄 script.js
 ├── 🌐 dienthoai.html
 ├── 🌐 index.html
 ├── 🌐 laptop.html
+├── 🌐 lego.html
 └── 🌐 quanao.html
 ```
 
