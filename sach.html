@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đồ Chơi Lego - ĐBDK2T</title>
+    <title>Thư Viện Sách</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/lego.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/sach.css" />
   </head>
   <body>
     <!-- Họa tiết trang trí -->
@@ -23,8 +28,8 @@
         <div class="container">
           <div class="header-content">
             <a href="index.html" class="logo">
-              <i class="fas fa-cube"></i>
-              ĐBDK2T
+              <i class="fas fa-book"></i>
+              Thư Viện Sách
             </a>
 
             <nav>
@@ -35,19 +40,19 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="dienthoai.html" class="nav-link">Điện Thoại</a>
+                  <a href="sach.html" class="nav-link active">Sách Văn Học</a>
                 </li>
                 <li class="nav-item">
-                  <a href="laptop.html" class="nav-link">Laptop</a>
+                  <a href="sach.html" class="nav-link">Sách Kinh Tế</a>
                 </li>
                 <li class="nav-item">
-                  <a href="quanao.html" class="nav-link">Quần áo</a>
+                  <a href="sach.html" class="nav-link">Sách Khoa Học</a>
                 </li>
                 <li class="nav-item">
-                  <a href="lego.html" class="nav-link active">Lego</a>
+                  <a href="sach.html" class="nav-link">Sách Thiếu Nhi</a>
                 </li>
                 <li class="nav-item">
-                  <a href="products.html" class="nav-link">Hàng Nóng</a>
+                  <a href="sach.html" class="nav-link">Sách Mới</a>
                 </li>
                 <li class="nav-item">
                   <a href="contact.html" class="nav-link">Liên hệ</a>
@@ -88,7 +93,7 @@
               <input
                 type="text"
                 class="search-input"
-                placeholder="Tìm kiếm mô hình Lego, từ khóa..."
+                placeholder="Tìm kiếm sách, tác giả, thể loại..."
               />
             </div>
             <button class="search-btn">
@@ -100,32 +105,65 @@
     </header>
 
     <!-- Main Content -->
-    <main class="lego-page">
+    <main class="sach-page">
       <div class="container">
         <!-- Page Header -->
         <div class="page-header">
-          <h1>Đồ Chơi Lego</h1>
-          <p>Khám phá thế giới sáng tạo với các bộ Lego đa dạng</p>
+          <h1>Thư Viện Sách Đa Dạng</h1>
+          <p>Khám phá thế giới tri thức với hàng ngàn đầu sách phong phú</p>
         </div>
 
-        <!-- Lego Slider -->
-        <section class="lego-slider">
+        <!-- Book Slider -->
+        <section class="book-slider">
           <div class="slider-container">
             <div class="slider-track">
               <div class="slider-item">
-                <img src="./img/lego-starwars.png" alt="Lego Star Wars" />
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                  alt="Sách Văn Học"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/lego-city.png" alt="Lego City" />
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                  alt="Sách Kinh Tế"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/lego-technic.png" alt="Lego Technic" />
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
+                  alt="Sách Khoa Học"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/lego-creator.png" alt="Lego Creator" />
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
+                  alt="Sách Thiếu Nhi"
+                />
               </div>
               <div class="slider-item">
-                <img src="./img/lego-ninjago.png" alt="Lego Ninjago" />
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                  alt="Sách Văn Học"
+                />
+              </div>
+              <div class="slider-item">
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                  alt="Sách Kinh Tế"
+                />
+              </div>
+              <div class="slider-item">
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
+                  alt="Sách Khoa Học"
+                />
+              </div>
+              <div class="slider-item">
+                <img
+                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
+                  alt="Sách Thiếu Nhi"
+                />
               </div>
             </div>
           </div>
@@ -133,35 +171,60 @@
 
         <!-- Category Filter -->
         <section class="category-filter">
-          <h2 class="section-title">Lọc Theo Dòng Sản Phẩm</h2>
+          <h2 class="section-title">Lọc Theo Thể Loại</h2>
           <div class="filter-buttons">
             <button class="filter-btn active" data-category="all">
               Tất Cả
             </button>
-            <button class="filter-btn" data-category="starwars">
-              Star Wars
+            <button class="filter-btn" data-category="van-hoc">Văn Học</button>
+            <button class="filter-btn" data-category="kinh-te">Kinh Tế</button>
+            <button class="filter-btn" data-category="khoa-hoc">
+              Khoa Học
             </button>
-            <button class="filter-btn" data-category="city">City</button>
-            <button class="filter-btn" data-category="technic">Technic</button>
-            <button class="filter-btn" data-category="creator">Creator</button>
-            <button class="filter-btn" data-category="ninjago">Ninjago</button>
+            <button class="filter-btn" data-category="thieu-nhi">
+              Thiếu Nhi
+            </button>
+            <button class="filter-btn" data-category="tam-ly">Tâm Lý</button>
           </div>
         </section>
 
-        <!-- Lego Products -->
-        <section class="lego-products">
-          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+        <!-- Book Products -->
+        <section class="book-products">
+          <h2 class="section-title">Sách Nổi Bật</h2>
 
-          <!-- Star Wars Products -->
-          <div class="category-section" id="starwars">
-            <h3 class="category-title">Star Wars</h3>
+          <!-- Văn Học -->
+          <div class="category-section" id="van-hoc">
+            <h3 class="category-title">Văn Học</h3>
             <div class="product-grid">
-              <!-- Millennium Falcon -->
-              <div class="product-card" data-category="starwars">
+              <!-- Sách Văn Học 1 -->
+              <div class="product-card" data-category="van-hoc">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Millennium Falcon"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Nhà Giả Kim"
+                  />
+                  <div class="product-badge">Bán Chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Nhà Giả Kim</h3>
+                  <p class="product-author">Paulo Coelho</p>
+                  <div class="product-price">
+                    <span class="current-price">79.000₫</span>
+                    <span class="original-price">99.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="1">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách Văn Học 2 -->
+              <div class="product-card" data-category="van-hoc">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                    alt="Tư Duy Nhà Đầu Tư Thông Minh"
                   />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
@@ -169,147 +232,124 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Millennium Falcon</h3>
+                  <h3 class="product-name">Tư Duy Nhà Đầu Tư Thông Minh</h3>
+                  <p class="product-author">Benjamin Graham</p>
                   <div class="product-price">
-                    <span class="current-price">7.990.000₫</span>
-                    <span class="original-price">8.990.000₫</span>
+                    <span class="current-price">149.000₫</span>
+                    <span class="original-price">179.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 7541</div>
-                  <button class="btn-details" data-id="1">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Imperial Star Destroyer -->
-              <div class="product-card" data-category="starwars">
-                <div class="product-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1633617477271-d4f351ff7c7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Imperial Star Destroyer"
-                  />
-                  <div class="product-badge">Giảm giá</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Imperial Star Destroyer</h3>
-                  <div class="product-price">
-                    <span class="current-price">5.490.000₫</span>
-                    <span class="original-price">6.490.000₫</span>
-                  </div>
-                  <div class="product-pieces">Số mảnh: 4784</div>
                   <button class="btn-details" data-id="2">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- AT-AT Walker -->
-              <div class="product-card" data-category="starwars">
+              <!-- Sách Văn Học 3 -->
+              <div class="product-card" data-category="van-hoc">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1601643157091-ce5c665decab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="AT-AT Walker"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
+                    alt="Lược Sử Thời Gian"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">AT-AT Walker</h3>
+                  <h3 class="product-name">Lược Sử Thời Gian</h3>
+                  <p class="product-author">Stephen Hawking</p>
                   <div class="product-price">
-                    <span class="current-price">4.290.000₫</span>
-                    <span class="original-price">4.790.000₫</span>
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 1267</div>
                   <button class="btn-details" data-id="3">Xem Chi Tiết</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- City Products -->
-          <div class="category-section" id="city">
-            <h3 class="category-title">City</h3>
+          <!-- Kinh Tế -->
+          <div class="category-section" id="kinh-te">
+            <h3 class="category-title">Kinh Tế</h3>
             <div class="product-grid">
-              <!-- Police Station -->
-              <div class="product-card" data-category="city">
+              <!-- Sách Kinh Tế 1 -->
+              <div class="product-card" data-category="kinh-te">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Police Station"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
+                    alt="Harry Potter Và Hòn Đá Phù Thủy"
                   />
-                  <div class="product-badge">Mới</div>
+                  <div class="product-badge">Giảm Giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Police Station</h3>
+                  <h3 class="product-name">Harry Potter Và Hòn Đá Phù Thủy</h3>
+                  <p class="product-author">J.K. Rowling</p>
                   <div class="product-price">
-                    <span class="current-price">2.990.000₫</span>
-                    <span class="original-price">3.490.000₫</span>
+                    <span class="current-price">89.000₫</span>
+                    <span class="original-price">110.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 2923</div>
                   <button class="btn-details" data-id="4">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Fire Station -->
-              <div class="product-card" data-category="city">
+              <!-- Sách Kinh Tế 2 -->
+              <div class="product-card" data-category="kinh-te">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Fire Station"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Đắc Nhân Tâm"
                   />
-                  <div class="product-badge">Độc quyền</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Fire Station</h3>
+                  <h3 class="product-name">Đắc Nhân Tâm</h3>
+                  <p class="product-author">Dale Carnegie</p>
                   <div class="product-price">
-                    <span class="current-price">1.990.000₫</span>
-                    <span class="original-price">2.490.000₫</span>
+                    <span class="current-price">75.000₫</span>
+                    <span class="original-price">95.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 956</div>
                   <button class="btn-details" data-id="5">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Hospital -->
-              <div class="product-card" data-category="city">
+              <!-- Sách Kinh Tế 3 -->
+              <div class="product-card" data-category="kinh-te">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Hospital"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
+                    alt="Lược Sử Thời Gian"
                   />
+                  <div class="product-badge">Bán Chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Hospital</h3>
+                  <h3 class="product-name">Lược Sử Thời Gian</h3>
+                  <p class="product-author">Stephen Hawking</p>
                   <div class="product-price">
-                    <span class="current-price">3.290.000₫</span>
-                    <span class="original-price">3.790.000₫</span>
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 1246</div>
                   <button class="btn-details" data-id="6">Xem Chi Tiết</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Technic Products -->
-          <div class="category-section" id="technic">
-            <h3 class="category-title">Technic</h3>
+          <!-- Khoa Học -->
+          <div class="category-section" id="khoa-hoc">
+            <h3 class="category-title">Khoa Học</h3>
             <div class="product-grid">
-              <!-- Porsche 911 -->
-              <div class="product-card" data-category="technic">
+              <!-- Sách Khoa Học 1 -->
+              <div class="product-card" data-category="khoa-hoc">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Porsche 911"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Nhà Giả Kim"
                   />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
@@ -317,73 +357,118 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Porsche 911 RSR</h3>
+                  <h3 class="product-name">Nhà Giả Kim</h3>
+                  <p class="product-author">Paulo Coelho</p>
                   <div class="product-price">
-                    <span class="current-price">4.990.000₫</span>
-                    <span class="original-price">5.490.000₫</span>
+                    <span class="current-price">79.000₫</span>
+                    <span class="original-price">99.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 1580</div>
                   <button class="btn-details" data-id="7">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Liebherr Excavator -->
-              <div class="product-card" data-category="technic">
+              <!-- Sách Khoa Học 2 -->
+              <div class="product-card" data-category="khoa-hoc">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Liebherr Excavator"
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                    alt="Tư Duy Nhà Đầu Tư Thông Minh"
                   />
-                  <div class="product-badge">Bán chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Liebherr Excavator</h3>
+                  <h3 class="product-name">Tư Duy Nhà Đầu Tư Thông Minh</h3>
+                  <p class="product-author">Benjamin Graham</p>
                   <div class="product-price">
-                    <span class="current-price">6.490.000₫</span>
-                    <span class="original-price">7.490.000₫</span>
+                    <span class="current-price">149.000₫</span>
+                    <span class="original-price">179.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 4108</div>
                   <button class="btn-details" data-id="8">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Dom's Charger -->
-              <div class="product-card" data-category="technic">
+              <!-- Sách Khoa Học 3 -->
+              <div class="product-card" data-category="khoa-hoc">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Dom's Charger"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
+                    alt="Harry Potter Và Hòn Đá Phù Thủy"
                   />
+                  <div class="product-badge">Giảm Giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Dom's Charger</h3>
+                  <h3 class="product-name">Harry Potter Và Hòn Đá Phù Thủy</h3>
+                  <p class="product-author">J.K. Rowling</p>
                   <div class="product-price">
-                    <span class="current-price">2.990.000₫</span>
-                    <span class="original-price">3.490.000₫</span>
+                    <span class="current-price">89.000₫</span>
+                    <span class="original-price">110.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 1077</div>
                   <button class="btn-details" data-id="9">Xem Chi Tiết</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Creator Products -->
-          <div class="category-section" id="creator">
-            <h3 class="category-title">Creator</h3>
+          <!-- Thiếu Nhi -->
+          <div class="category-section" id="thieu-nhi">
+            <h3 class="category-title">Thiếu Nhi</h3>
             <div class="product-grid">
-              <!-- Medieval Castle -->
-              <div class="product-card" data-category="creator">
+              <!-- Sách Thiếu Nhi 1 -->
+              <div class="product-card" data-category="thieu-nhi">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Medieval Castle"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Đắc Nhân Tâm"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Đắc Nhân Tâm</h3>
+                  <p class="product-author">Dale Carnegie</p>
+                  <div class="product-price">
+                    <span class="current-price">75.000₫</span>
+                    <span class="original-price">95.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách Thiếu Nhi 2 -->
+              <div class="product-card" data-category="thieu-nhi">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
+                    alt="Lược Sử Thời Gian"
+                  />
+                  <div class="product-badge">Bán Chạy</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Lược Sử Thời Gian</h3>
+                  <p class="product-author">Stephen Hawking</p>
+                  <div class="product-price">
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách Thiếu Nhi 3 -->
+              <div class="product-card" data-category="thieu-nhi">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                    alt="Tư Duy Nhà Đầu Tư Thông Minh"
                   />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
@@ -391,131 +476,86 @@
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Medieval Castle</h3>
+                  <h3 class="product-name">Tư Duy Nhà Đầu Tư Thông Minh</h3>
+                  <p class="product-author">Benjamin Graham</p>
                   <div class="product-price">
-                    <span class="current-price">3.490.000₫</span>
-                    <span class="original-price">3.990.000₫</span>
+                    <span class="current-price">149.000₫</span>
+                    <span class="original-price">179.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 1426</div>
-                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Fiat 500 -->
-              <div class="product-card" data-category="creator">
-                <div class="product-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Fiat 500"
-                  />
-                  <div class="product-badge">Giảm giá</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Fiat 500</h3>
-                  <div class="product-price">
-                    <span class="current-price">1.290.000₫</span>
-                    <span class="original-price">1.590.000₫</span>
-                  </div>
-                  <div class="product-pieces">Số mảnh: 960</div>
-                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Tree House -->
-              <div class="product-card" data-category="creator">
-                <div class="product-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Tree House"
-                  />
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Tree House</h3>
-                  <div class="product-price">
-                    <span class="current-price">2.990.000₫</span>
-                    <span class="original-price">3.490.000₫</span>
-                  </div>
-                  <div class="product-pieces">Số mảnh: 3036</div>
                   <button class="btn-details" data-id="12">Xem Chi Tiết</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Ninjago Products -->
-          <div class="category-section" id="ninjago">
-            <h3 class="category-title">Ninjago</h3>
+          <!-- Tâm Lý -->
+          <div class="category-section" id="tam-ly">
+            <h3 class="category-title">Tâm Lý</h3>
             <div class="product-grid">
-              <!-- Ninjago City Gardens -->
-              <div class="product-card" data-category="ninjago">
+              <!-- Sách Tâm Lý 1 -->
+              <div class="product-card" data-category="tam-ly">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Ninjago City Gardens"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
+                    alt="Harry Potter Và Hòn Đá Phù Thủy"
                   />
-                  <div class="product-badge">Mới</div>
+                  <div class="product-badge">Giảm Giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Ninjago City Gardens</h3>
+                  <h3 class="product-name">Harry Potter Và Hòn Đá Phù Thủy</h3>
+                  <p class="product-author">J.K. Rowling</p>
                   <div class="product-price">
-                    <span class="current-price">5.990.000₫</span>
-                    <span class="original-price">6.490.000₫</span>
+                    <span class="current-price">89.000₫</span>
+                    <span class="original-price">110.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 5685</div>
                   <button class="btn-details" data-id="13">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Temple of the Endless Sea -->
-              <div class="product-card" data-category="ninjago">
+              <!-- Sách Tâm Lý 2 -->
+              <div class="product-card" data-category="tam-ly">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Temple of the Endless Sea"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Nhà Giả Kim"
                   />
-                  <div class="product-badge">Bán chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Temple of the Endless Sea</h3>
+                  <h3 class="product-name">Nhà Giả Kim</h3>
+                  <p class="product-author">Paulo Coelho</p>
                   <div class="product-price">
-                    <span class="current-price">3.290.000₫</span>
-                    <span class="original-price">3.790.000₫</span>
+                    <span class="current-price">79.000₫</span>
+                    <span class="original-price">99.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 1416</div>
                   <button class="btn-details" data-id="14">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Lloyd's Titan Mech -->
-              <div class="product-card" data-category="ninjago">
+              <!-- Sách Tâm Lý 3 -->
+              <div class="product-card" data-category="tam-ly">
                 <div class="product-image">
                   <img
-                    src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Lloyd's Titan Mech"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
+                    alt="Lược Sử Thời Gian"
                   />
+                  <div class="product-badge">Bán Chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Lloyd's Titan Mech</h3>
+                  <h3 class="product-name">Lược Sử Thời Gian</h3>
+                  <p class="product-author">Stephen Hawking</p>
                   <div class="product-price">
-                    <span class="current-price">1.490.000₫</span>
-                    <span class="original-price">1.790.000₫</span>
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
                   </div>
-                  <div class="product-pieces">Số mảnh: 878</div>
                   <button class="btn-details" data-id="15">Xem Chi Tiết</button>
                 </div>
               </div>
@@ -534,10 +574,11 @@
         <div class="modal-body">
           <div class="modal-product">
             <div class="modal-image">
-              <img id="modalImage" src="" alt="Product Image" />
+              <img id="modalImage" src="" alt="Book Image" />
             </div>
             <div class="modal-info">
               <h2 id="modalTitle"></h2>
+              <p class="modal-author" id="modalAuthor"></p>
               <div class="modal-price">
                 <span class="modal-current-price" id="modalCurrentPrice"></span>
                 <span
@@ -545,9 +586,8 @@
                   id="modalOriginalPrice"
                 ></span>
               </div>
-              <div class="modal-pieces" id="modalPieces"></div>
               <div class="modal-specs">
-                <h3>Thông tin sản phẩm</h3>
+                <h3>Thông tin sách</h3>
                 <ul id="modalSpecs"></ul>
               </div>
               <div class="modal-actions">
@@ -569,21 +609,21 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-column">
-            <h3>Về Chúng Tôi</h3>
+            <h3>Về Thư Viện Sách</h3>
             <p>
-              ĐBDK2T Đồ Chơi - Địa chỉ tin cậy cho các sản phẩm Lego chất lượng
-              cao với giá cả hợp lý.
+              Thư viện sách trực tuyến với hàng ngàn đầu sách phong phú, đa dạng
+              thể loại, mang đến cho bạn trải nghiệm đọc sách tuyệt vời nhất.
             </p>
           </div>
 
           <div class="footer-column">
-            <h3>Liên Kết Nhanh</h3>
+            <h3>Thể Loại Sách</h3>
             <ul class="footer-links">
-              <li><a href="index.html">Trang Chủ</a></li>
-              <li><a href="dienthoai.html">Điện Thoại</a></li>
-              <li><a href="laptop.html">Laptop</a></li>
-              <li><a href="quanao.html">Quần áo</a></li>
-              <li><a href="products.html">Hàng Nóng</a></li>
+              <li><a href="sach.html">Văn Học</a></li>
+              <li><a href="sach.html">Kinh Tế</a></li>
+              <li><a href="sach.html">Khoa Học</a></li>
+              <li><a href="sach.html">Thiếu Nhi</a></li>
+              <li><a href="sach.html">Tâm Lý</a></li>
             </ul>
           </div>
 
@@ -591,13 +631,13 @@
             <h3>Liên Hệ MXH</h3>
             <div class="social-links">
               <a href="#" class="social-link"
-                ><i class="fab fa-github"></i>Github</a
+                ><i class="fab fa-facebook"></i>Facebook</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i>Instagram</a
               >
               <a href="#" class="social-link"
                 ><i class="fab fa-youtube"></i>Youtube</a
-              >
-              <a href="#" class="social-link"
-                ><i class="fab fa-tiktok"></i>TikTok</a
               >
             </div>
           </div>
@@ -607,15 +647,15 @@
             <ul class="contact-info-footer">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-                <span>504 Đại lộ Bình Dương</span>
+                <span>123 Đường Sách, Quận 1, TP.HCM</span>
               </li>
               <li>
                 <i class="fas fa-phone"></i>
-                <span>01234567890</span>
+                <span>0123 456 789</span>
               </li>
               <li>
                 <i class="fas fa-envelope"></i>
-                <span>info@dbdk2tdochoi.vn</span>
+                <span>info@thuviensach.vn</span>
               </li>
               <li>
                 <i class="fas fa-clock"></i>
@@ -626,11 +666,11 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2025 ĐBDK2T Đồ Chơi. Tất cả các quyền được bảo lưu.</p>
+          <p>&copy; 2025 Thư Viện Sách. Tất cả các quyền được bảo lưu.</p>
         </div>
       </div>
     </footer>
 
-    <script src="js/lego.js"></script>
+    <script src="js/sach.js"></script>
   </body>
 </html>
