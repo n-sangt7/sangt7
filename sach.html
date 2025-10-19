@@ -3,16 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thư Viện Sách</title>
+    <title>ĐBDK2T - Sách</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
     <link rel="stylesheet" href="css/sach.css" />
   </head>
   <body>
@@ -29,7 +24,7 @@
           <div class="header-content">
             <a href="index.html" class="logo">
               <i class="fas fa-book"></i>
-              Thư Viện Sách
+              ĐBDK2T Sách
             </a>
 
             <nav>
@@ -40,19 +35,21 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="sach.html" class="nav-link active">Sách Văn Học</a>
+                  <a href="sachvanhoc.html" class="nav-link">Văn học</a>
                 </li>
                 <li class="nav-item">
-                  <a href="sach.html" class="nav-link">Sách Kinh Tế</a>
+                  <a href="sachkinhte.html" class="nav-link">Kinh tế</a>
                 </li>
                 <li class="nav-item">
-                  <a href="sach.html" class="nav-link">Sách Khoa Học</a>
+                  <a href="sachkynang.html" class="nav-link">Kỹ năng</a>
                 </li>
                 <li class="nav-item">
-                  <a href="sach.html" class="nav-link">Sách Thiếu Nhi</a>
+                  <a href="sachthieunhi.html" class="nav-link">Thiếu nhi</a>
                 </li>
                 <li class="nav-item">
-                  <a href="sach.html" class="nav-link">Sách Mới</a>
+                  <a href="sachnoibat.html" class="nav-link active"
+                    >Sách nổi bật</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a href="contact.html" class="nav-link">Liên hệ</a>
@@ -93,7 +90,7 @@
               <input
                 type="text"
                 class="search-input"
-                placeholder="Tìm kiếm sách, tác giả, thể loại..."
+                placeholder="Tìm kiếm sách, tác giả, từ khóa..."
               />
             </div>
             <button class="search-btn">
@@ -105,65 +102,58 @@
     </header>
 
     <!-- Main Content -->
-    <main class="sach-page">
+    <main class="book-page">
       <div class="container">
         <!-- Page Header -->
         <div class="page-header">
-          <h1>Thư Viện Sách Đa Dạng</h1>
-          <p>Khám phá thế giới tri thức với hàng ngàn đầu sách phong phú</p>
+          <h1>Gợi ý sách theo tâm trạng</h1>
+          <p>Khám phá những cuốn sách phù hợp với cảm xúc của bạn</p>
         </div>
 
-        <!-- Book Slider -->
-        <section class="book-slider">
-          <div class="slider-container">
-            <div class="slider-track">
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
-                  alt="Sách Văn Học"
-                />
+        <!-- Mood Books Section -->
+        <section class="mood-books">
+          <div class="mood-grid">
+            <!-- Vui -->
+            <div class="mood-card" data-mood="vui">
+              <div class="mood-icon">
+                <i class="fas fa-laugh-beam"></i>
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
-                  alt="Sách Kinh Tế"
-                />
+              <h3 class="mood-title">Vui vẻ</h3>
+              <div class="book-suggestions" id="vui-suggestions">
+                <!-- Sách sẽ được hiển thị ở đây khi click -->
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
-                  alt="Sách Khoa Học"
-                />
+            </div>
+
+            <!-- Buồn -->
+            <div class="mood-card" data-mood="buon">
+              <div class="mood-icon">
+                <i class="fas fa-sad-tear"></i>
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
-                  alt="Sách Thiếu Nhi"
-                />
+              <h3 class="mood-title">Buồn bã</h3>
+              <div class="book-suggestions" id="buon-suggestions">
+                <!-- Sách sẽ được hiển thị ở đây khi click -->
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
-                  alt="Sách Văn Học"
-                />
+            </div>
+
+            <!-- Lãng mạn -->
+            <div class="mood-card" data-mood="langman">
+              <div class="mood-icon">
+                <i class="fas fa-heart"></i>
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
-                  alt="Sách Kinh Tế"
-                />
+              <h3 class="mood-title">Lãng mạn</h3>
+              <div class="book-suggestions" id="langman-suggestions">
+                <!-- Sách sẽ được hiển thị ở đây khi click -->
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
-                  alt="Sách Khoa Học"
-                />
+            </div>
+
+            <!-- Kịch tính -->
+            <div class="mood-card" data-mood="kitich">
+              <div class="mood-icon">
+                <i class="fas fa-fire"></i>
               </div>
-              <div class="slider-item">
-                <img
-                  src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
-                  alt="Sách Thiếu Nhi"
-                />
+              <h3 class="mood-title">Kịch tính</h3>
+              <div class="book-suggestions" id="kitich-suggestions">
+                <!-- Sách sẽ được hiển thị ở đây khi click -->
               </div>
             </div>
           </div>
@@ -176,15 +166,15 @@
             <button class="filter-btn active" data-category="all">
               Tất Cả
             </button>
-            <button class="filter-btn" data-category="van-hoc">Văn Học</button>
-            <button class="filter-btn" data-category="kinh-te">Kinh Tế</button>
-            <button class="filter-btn" data-category="khoa-hoc">
-              Khoa Học
+            <button class="filter-btn" data-category="vanhoc">Văn học</button>
+            <button class="filter-btn" data-category="kinhte">Kinh tế</button>
+            <button class="filter-btn" data-category="kynang">Kỹ năng</button>
+            <button class="filter-btn" data-category="thieunhi">
+              Thiếu nhi
             </button>
-            <button class="filter-btn" data-category="thieu-nhi">
-              Thiếu Nhi
+            <button class="filter-btn" data-category="bestseller">
+              Bestseller
             </button>
-            <button class="filter-btn" data-category="tam-ly">Tâm Lý</button>
           </div>
         </section>
 
@@ -192,18 +182,18 @@
         <section class="book-products">
           <h2 class="section-title">Sách Nổi Bật</h2>
 
-          <!-- Văn Học -->
-          <div class="category-section" id="van-hoc">
-            <h3 class="category-title">Văn Học</h3>
+          <!-- Văn học Products -->
+          <div class="category-section" id="vanhoc">
+            <h3 class="category-title">Văn học</h3>
             <div class="product-grid">
-              <!-- Sách Văn Học 1 -->
-              <div class="product-card" data-category="van-hoc">
+              <!-- Sách 1 -->
+              <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
                   <img
                     src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
                     alt="Nhà Giả Kim"
                   />
-                  <div class="product-badge">Bán Chạy</div>
+                  <div class="product-badge">Bestseller</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
@@ -212,53 +202,53 @@
                   <h3 class="product-name">Nhà Giả Kim</h3>
                   <p class="product-author">Paulo Coelho</p>
                   <div class="product-price">
-                    <span class="current-price">79.000₫</span>
-                    <span class="original-price">99.000₫</span>
+                    <span class="current-price">89.000₫</span>
+                    <span class="original-price">120.000₫</span>
                   </div>
                   <button class="btn-details" data-id="1">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Sách Văn Học 2 -->
-              <div class="product-card" data-category="van-hoc">
+              <!-- Sách 2 -->
+              <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
                   <img
                     src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
-                    alt="Tư Duy Nhà Đầu Tư Thông Minh"
+                    alt="Tiếng Chim Hót Trong Bụi Mận Gai"
                   />
-                  <div class="product-badge">Mới</div>
+                  <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Tư Duy Nhà Đầu Tư Thông Minh</h3>
-                  <p class="product-author">Benjamin Graham</p>
+                  <h3 class="product-name">Tiếng Chim Hót Trong Bụi Mận Gai</h3>
+                  <p class="product-author">Colleen McCullough</p>
                   <div class="product-price">
-                    <span class="current-price">149.000₫</span>
-                    <span class="original-price">179.000₫</span>
+                    <span class="current-price">156.000₫</span>
+                    <span class="original-price">195.000₫</span>
                   </div>
                   <button class="btn-details" data-id="2">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Sách Văn Học 3 -->
-              <div class="product-card" data-category="van-hoc">
+              <!-- Sách 3 -->
+              <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
                   <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
-                    alt="Lược Sử Thời Gian"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Đắc Nhân Tâm"
                   />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Lược Sử Thời Gian</h3>
-                  <p class="product-author">Stephen Hawking</p>
+                  <h3 class="product-name">Đắc Nhân Tâm</h3>
+                  <p class="product-author">Dale Carnegie</p>
                   <div class="product-price">
-                    <span class="current-price">120.000₫</span>
-                    <span class="original-price">150.000₫</span>
+                    <span class="current-price">75.000₫</span>
+                    <span class="original-price">95.000₫</span>
                   </div>
                   <button class="btn-details" data-id="3">Xem Chi Tiết</button>
                 </div>
@@ -266,73 +256,73 @@
             </div>
           </div>
 
-          <!-- Kinh Tế -->
-          <div class="category-section" id="kinh-te">
-            <h3 class="category-title">Kinh Tế</h3>
+          <!-- Kinh tế Products -->
+          <div class="category-section" id="kinhte">
+            <h3 class="category-title">Kinh tế</h3>
             <div class="product-grid">
-              <!-- Sách Kinh Tế 1 -->
-              <div class="product-card" data-category="kinh-te">
+              <!-- Sách 4 -->
+              <div class="product-card" data-category="kinhte">
                 <div class="product-image">
                   <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
-                    alt="Harry Potter Và Hòn Đá Phù Thủy"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Tư Duy Nhanh và Chậm"
                   />
-                  <div class="product-badge">Giảm Giá</div>
+                  <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Harry Potter Và Hòn Đá Phù Thủy</h3>
-                  <p class="product-author">J.K. Rowling</p>
+                  <h3 class="product-name">Tư Duy Nhanh và Chậm</h3>
+                  <p class="product-author">Daniel Kahneman</p>
                   <div class="product-price">
-                    <span class="current-price">89.000₫</span>
-                    <span class="original-price">110.000₫</span>
+                    <span class="current-price">185.000₫</span>
+                    <span class="original-price">220.000₫</span>
                   </div>
                   <button class="btn-details" data-id="4">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Sách Kinh Tế 2 -->
-              <div class="product-card" data-category="kinh-te">
+              <!-- Sách 5 -->
+              <div class="product-card" data-category="kinhte">
                 <div class="product-image">
                   <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
-                    alt="Đắc Nhân Tâm"
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                    alt="Cha Giàu Cha Nghèo"
                   />
+                  <div class="product-badge">Bestseller</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Đắc Nhân Tâm</h3>
-                  <p class="product-author">Dale Carnegie</p>
+                  <h3 class="product-name">Cha Giàu Cha Nghèo</h3>
+                  <p class="product-author">Robert Kiyosaki</p>
                   <div class="product-price">
-                    <span class="current-price">75.000₫</span>
-                    <span class="original-price">95.000₫</span>
+                    <span class="current-price">95.000₫</span>
+                    <span class="original-price">120.000₫</span>
                   </div>
                   <button class="btn-details" data-id="5">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Sách Kinh Tế 3 -->
-              <div class="product-card" data-category="kinh-te">
+              <!-- Sách 6 -->
+              <div class="product-card" data-category="kinhte">
                 <div class="product-image">
                   <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
-                    alt="Lược Sử Thời Gian"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Nghĩ Giàu Làm Giàu"
                   />
-                  <div class="product-badge">Bán Chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Lược Sử Thời Gian</h3>
-                  <p class="product-author">Stephen Hawking</p>
+                  <h3 class="product-name">Nghĩ Giàu Làm Giàu</h3>
+                  <p class="product-author">Napoleon Hill</p>
                   <div class="product-price">
-                    <span class="current-price">120.000₫</span>
-                    <span class="original-price">150.000₫</span>
+                    <span class="current-price">78.000₫</span>
+                    <span class="original-price">99.000₫</span>
                   </div>
                   <button class="btn-details" data-id="6">Xem Chi Tiết</button>
                 </div>
@@ -340,18 +330,166 @@
             </div>
           </div>
 
-          <!-- Khoa Học -->
-          <div class="category-section" id="khoa-hoc">
-            <h3 class="category-title">Khoa Học</h3>
+          <!-- Kỹ năng Products -->
+          <div class="category-section" id="kynang">
+            <h3 class="category-title">Kỹ năng</h3>
             <div class="product-grid">
-              <!-- Sách Khoa Học 1 -->
-              <div class="product-card" data-category="khoa-hoc">
+              <!-- Sách 7 -->
+              <div class="product-card" data-category="kynang">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="7 Thói Quen Hiệu Quả"
+                  />
+                  <div class="product-badge">Bestseller</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">7 Thói Quen Hiệu Quả</h3>
+                  <p class="product-author">Stephen R. Covey</p>
+                  <div class="product-price">
+                    <span class="current-price">135.000₫</span>
+                    <span class="original-price">165.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 8 -->
+              <div class="product-card" data-category="kynang">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                    alt="Đọc Vị Bất Kỳ Ai"
+                  />
+                  <div class="product-badge">Mới</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Đọc Vị Bất Kỳ Ai</h3>
+                  <p class="product-author">David J. Lieberman</p>
+                  <div class="product-price">
+                    <span class="current-price">88.000₫</span>
+                    <span class="original-price">110.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="8">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 9 -->
+              <div class="product-card" data-category="kynang">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Nghệ Thuật Tinh Tế"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Nghệ Thuật Tinh Tế</h3>
+                  <p class="product-author">Mark Manson</p>
+                  <div class="product-price">
+                    <span class="current-price">115.000₫</span>
+                    <span class="original-price">145.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="9">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thiếu nhi Products -->
+          <div class="category-section" id="thieunhi">
+            <h3 class="category-title">Thiếu nhi</h3>
+            <div class="product-grid">
+              <!-- Sách 10 -->
+              <div class="product-card" data-category="thieunhi">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Harry Potter"
+                  />
+                  <div class="product-badge">Bestseller</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Harry Potter và Hòn Đá Phù Thủy</h3>
+                  <p class="product-author">J.K. Rowling</p>
+                  <div class="product-price">
+                    <span class="current-price">165.000₫</span>
+                    <span class="original-price">195.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 11 -->
+              <div class="product-card" data-category="thieunhi">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+                    alt="Hoàng Tử Bé"
+                  />
+                  <div class="product-badge">Kinh điển</div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Hoàng Tử Bé</h3>
+                  <p class="product-author">Antoine de Saint-Exupéry</p>
+                  <div class="product-price">
+                    <span class="current-price">65.000₫</span>
+                    <span class="original-price">85.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
+                </div>
+              </div>
+
+              <!-- Sách 12 -->
+              <div class="product-card" data-category="thieunhi">
+                <div class="product-image">
+                  <img
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Doraemon"
+                  />
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-name">Doraemon - Tập 1</h3>
+                  <p class="product-author">Fujiko F. Fujio</p>
+                  <div class="product-price">
+                    <span class="current-price">25.000₫</span>
+                    <span class="original-price">35.000₫</span>
+                  </div>
+                  <button class="btn-details" data-id="12">Xem Chi Tiết</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bestseller Products -->
+          <div class="category-section" id="bestseller">
+            <h3 class="category-title">Bestseller</h3>
+            <div class="product-grid">
+              <!-- Sách 13 -->
+              <div class="product-card" data-category="bestseller">
                 <div class="product-image">
                   <img
                     src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
                     alt="Nhà Giả Kim"
                   />
-                  <div class="product-badge">Mới</div>
+                  <div class="product-badge">#1 Bestseller</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
@@ -360,71 +498,21 @@
                   <h3 class="product-name">Nhà Giả Kim</h3>
                   <p class="product-author">Paulo Coelho</p>
                   <div class="product-price">
-                    <span class="current-price">79.000₫</span>
-                    <span class="original-price">99.000₫</span>
+                    <span class="current-price">89.000₫</span>
+                    <span class="original-price">120.000₫</span>
                   </div>
-                  <button class="btn-details" data-id="7">Xem Chi Tiết</button>
+                  <button class="btn-details" data-id="13">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Sách Khoa Học 2 -->
-              <div class="product-card" data-category="khoa-hoc">
+              <!-- Sách 14 -->
+              <div class="product-card" data-category="bestseller">
                 <div class="product-image">
                   <img
                     src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
-                    alt="Tư Duy Nhà Đầu Tư Thông Minh"
-                  />
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Tư Duy Nhà Đầu Tư Thông Minh</h3>
-                  <p class="product-author">Benjamin Graham</p>
-                  <div class="product-price">
-                    <span class="current-price">149.000₫</span>
-                    <span class="original-price">179.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="8">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Sách Khoa Học 3 -->
-              <div class="product-card" data-category="khoa-hoc">
-                <div class="product-image">
-                  <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
-                    alt="Harry Potter Và Hòn Đá Phù Thủy"
-                  />
-                  <div class="product-badge">Giảm Giá</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Harry Potter Và Hòn Đá Phù Thủy</h3>
-                  <p class="product-author">J.K. Rowling</p>
-                  <div class="product-price">
-                    <span class="current-price">89.000₫</span>
-                    <span class="original-price">110.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="9">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Thiếu Nhi -->
-          <div class="category-section" id="thieu-nhi">
-            <h3 class="category-title">Thiếu Nhi</h3>
-            <div class="product-grid">
-              <!-- Sách Thiếu Nhi 1 -->
-              <div class="product-card" data-category="thieu-nhi">
-                <div class="product-image">
-                  <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
                     alt="Đắc Nhân Tâm"
                   />
+                  <div class="product-badge">#2 Bestseller</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
@@ -436,125 +524,27 @@
                     <span class="current-price">75.000₫</span>
                     <span class="original-price">95.000₫</span>
                   </div>
-                  <button class="btn-details" data-id="10">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Sách Thiếu Nhi 2 -->
-              <div class="product-card" data-category="thieu-nhi">
-                <div class="product-image">
-                  <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
-                    alt="Lược Sử Thời Gian"
-                  />
-                  <div class="product-badge">Bán Chạy</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Lược Sử Thời Gian</h3>
-                  <p class="product-author">Stephen Hawking</p>
-                  <div class="product-price">
-                    <span class="current-price">120.000₫</span>
-                    <span class="original-price">150.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="11">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Sách Thiếu Nhi 3 -->
-              <div class="product-card" data-category="thieu-nhi">
-                <div class="product-image">
-                  <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
-                    alt="Tư Duy Nhà Đầu Tư Thông Minh"
-                  />
-                  <div class="product-badge">Mới</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Tư Duy Nhà Đầu Tư Thông Minh</h3>
-                  <p class="product-author">Benjamin Graham</p>
-                  <div class="product-price">
-                    <span class="current-price">149.000₫</span>
-                    <span class="original-price">179.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="12">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tâm Lý -->
-          <div class="category-section" id="tam-ly">
-            <h3 class="category-title">Tâm Lý</h3>
-            <div class="product-grid">
-              <!-- Sách Tâm Lý 1 -->
-              <div class="product-card" data-category="tam-ly">
-                <div class="product-image">
-                  <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212355578.jpg"
-                    alt="Harry Potter Và Hòn Đá Phù Thủy"
-                  />
-                  <div class="product-badge">Giảm Giá</div>
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Harry Potter Và Hòn Đá Phù Thủy</h3>
-                  <p class="product-author">J.K. Rowling</p>
-                  <div class="product-price">
-                    <span class="current-price">89.000₫</span>
-                    <span class="original-price">110.000₫</span>
-                  </div>
-                  <button class="btn-details" data-id="13">Xem Chi Tiết</button>
-                </div>
-              </div>
-
-              <!-- Sách Tâm Lý 2 -->
-              <div class="product-card" data-category="tam-ly">
-                <div class="product-image">
-                  <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
-                    alt="Nhà Giả Kim"
-                  />
-                  <button class="btn-wishlist">
-                    <i class="far fa-heart"></i>
-                  </button>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">Nhà Giả Kim</h3>
-                  <p class="product-author">Paulo Coelho</p>
-                  <div class="product-price">
-                    <span class="current-price">79.000₫</span>
-                    <span class="original-price">99.000₫</span>
-                  </div>
                   <button class="btn-details" data-id="14">Xem Chi Tiết</button>
                 </div>
               </div>
 
-              <!-- Sách Tâm Lý 3 -->
-              <div class="product-card" data-category="tam-ly">
+              <!-- Sách 15 -->
+              <div class="product-card" data-category="bestseller">
                 <div class="product-image">
                   <img
-                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936066694416.jpg"
-                    alt="Lược Sử Thời Gian"
+                    src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg"
+                    alt="Tư Duy Nhanh và Chậm"
                   />
-                  <div class="product-badge">Bán Chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Lược Sử Thời Gian</h3>
-                  <p class="product-author">Stephen Hawking</p>
+                  <h3 class="product-name">Tư Duy Nhanh và Chậm</h3>
+                  <p class="product-author">Daniel Kahneman</p>
                   <div class="product-price">
-                    <span class="current-price">120.000₫</span>
-                    <span class="original-price">150.000₫</span>
+                    <span class="current-price">185.000₫</span>
+                    <span class="original-price">220.000₫</span>
                   </div>
                   <button class="btn-details" data-id="15">Xem Chi Tiết</button>
                 </div>
@@ -574,7 +564,7 @@
         <div class="modal-body">
           <div class="modal-product">
             <div class="modal-image">
-              <img id="modalImage" src="" alt="Book Image" />
+              <img id="modalImage" src="" alt="Product Image" />
             </div>
             <div class="modal-info">
               <h2 id="modalTitle"></h2>
@@ -609,21 +599,21 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-column">
-            <h3>Về Thư Viện Sách</h3>
+            <h3>Về Chúng Tôi</h3>
             <p>
-              Thư viện sách trực tuyến với hàng ngàn đầu sách phong phú, đa dạng
-              thể loại, mang đến cho bạn trải nghiệm đọc sách tuyệt vời nhất.
+              ĐBDK2T Sách - Địa chỉ tin cậy cho những cuốn sách hay với giá cả
+              hợp lý.
             </p>
           </div>
 
           <div class="footer-column">
-            <h3>Thể Loại Sách</h3>
+            <h3>Liên Kết Nhanh</h3>
             <ul class="footer-links">
-              <li><a href="sach.html">Văn Học</a></li>
-              <li><a href="sach.html">Kinh Tế</a></li>
-              <li><a href="sach.html">Khoa Học</a></li>
-              <li><a href="sach.html">Thiếu Nhi</a></li>
-              <li><a href="sach.html">Tâm Lý</a></li>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="sachvanhoc.html">Văn học</a></li>
+              <li><a href="sachkinhte.html">Kinh tế</a></li>
+              <li><a href="sachkynang.html">Kỹ năng</a></li>
+              <li><a href="sachthieunhi.html">Thiếu nhi</a></li>
             </ul>
           </div>
 
@@ -631,13 +621,13 @@
             <h3>Liên Hệ MXH</h3>
             <div class="social-links">
               <a href="#" class="social-link"
-                ><i class="fab fa-facebook"></i>Facebook</a
-              >
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i>Instagram</a
+                ><i class="fab fa-github"></i>Github</a
               >
               <a href="#" class="social-link"
                 ><i class="fab fa-youtube"></i>Youtube</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-tiktok"></i>TikTok</a
               >
             </div>
           </div>
@@ -647,15 +637,15 @@
             <ul class="contact-info-footer">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-                <span>123 Đường Sách, Quận 1, TP.HCM</span>
+                <span>504 Đại lộ Bình Dương</span>
               </li>
               <li>
                 <i class="fas fa-phone"></i>
-                <span>0123 456 789</span>
+                <span>01234567890</span>
               </li>
               <li>
                 <i class="fas fa-envelope"></i>
-                <span>info@thuviensach.vn</span>
+                <span>info@dbdk2tsach.vn</span>
               </li>
               <li>
                 <i class="fas fa-clock"></i>
@@ -666,7 +656,7 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2025 Thư Viện Sách. Tất cả các quyền được bảo lưu.</p>
+          <p>&copy; 2025 ĐBDK2T Sách. Tất cả các quyền được bảo lưu.</p>
         </div>
       </div>
     </footer>

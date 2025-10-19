@@ -10,11 +10,11 @@ const wishlistButtons = document.querySelectorAll(".btn-wishlist");
 
 // Product Data
 const products = {
-  1: {
+  balenciaga1: {
     title: "Balenciaga Logo Hoodie",
     image:
-      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    currentPrice: "12.990.000₫",
+      "https://sneakerdaily.vn/wp-content/uploads/2023/11/Ao-Balenciaga-X-Rated-Small-Fit-Hoodie-in-BlackRed-3AC40AABE1A6C0GS.jpg.webp",
+    currentPrice: "11.000.000₫",
     originalPrice: "15.990.000₫",
     specs: [
       "Chất liệu: Cotton cao cấp 100%",
@@ -25,10 +25,11 @@ const products = {
       "Phù hợp: Mọi lứa tuổi",
     ],
   },
-  2: {
+
+  balenciaga2: {
     title: "Gucci GG T-Shirt",
     image:
-      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/duyetfashion-balenciaga-triple-s-sneaker-clear-sole-triple-grey-541624-w09o1-1705-duyet-fashion-4-jpeg.jpg?v=1637029094527",
     currentPrice: "8.990.000₫",
     originalPrice: "10.990.000₫",
     specs: [
@@ -40,7 +41,7 @@ const products = {
       "Phù hợp: Nam, Nữ",
     ],
   },
-  3: {
+  balenciaga3: {
     title: "Puma Sport Jacket",
     image:
       "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -55,7 +56,7 @@ const products = {
       "Tính năng: Chống nước, thoáng khí",
     ],
   },
-  4: {
+  balenciaga4: {
     title: "Handes Evening Dress",
     image:
       "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -70,10 +71,11 @@ const products = {
       "Phù hợp: Dự tiệc, sự kiện",
     ],
   },
-  5: {
+
+  gucci1: {
     title: "Chanel Classic Flap Bag",
     image:
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/duyetfashion-balenciaga-triple-s-sneaker-clear-sole-triple-grey-541624-w09o1-1705-duyet-fashion-4-jpeg.jpg?v=1637029094527",
     currentPrice: "45.990.000₫",
     originalPrice: "52.990.000₫",
     specs: [
@@ -85,7 +87,7 @@ const products = {
       "Phụ kiện: Hộp, túi bụi, chứng từ",
     ],
   },
-  6: {
+  gucci2: {
     title: "Nike Air Jordan 1",
     image:
       "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -100,7 +102,22 @@ const products = {
       "Phù hợp: Thể thao, thời trang",
     ],
   },
-  7: {
+  gucci3: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+  gucci4: {
     title: "Adidas Ultraboost 22",
     image:
       "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
