@@ -1,124 +1,32 @@
 // Dữ liệu sách theo tâm trạng
 const moodBooks = {
   vui: [
-    {
-      id: 1,
-      title: "Nhà Giả Kim",
-      author: "Paulo Coelho",
-      description:
-        "Câu chuyện về hành trình theo đuổi giấc mơ và khám phá bản thân, mang đến cảm giác lạc quan và hy vọng.",
-    },
-    {
-      id: 2,
-      title: "Hoàng Tử Bé",
-      author: "Antoine de Saint-Exupéry",
-      description:
-        "Tác phẩm kinh điển với thông điệp về tình yêu, sự trong sáng và ý nghĩa thực sự của cuộc sống.",
-    },
-    {
-      id: 3,
-      title: "Một Lít Nước Mắt",
-      author: "Kito Aya",
-      description:
-        "Nhật ký cảm động về cuộc chiến với bệnh tật, truyền cảm hứng sống tích cực và trân trọng từng khoảnh khắc.",
-    },
-    {
-      id: 4,
-      title: "Đời Ngắn Đừng Ngủ Dài",
-      author: "Robin Sharma",
-      description:
-        "Những bài học quý giá về sống có ý nghĩa, tận hưởng cuộc sống và theo đuổi đam mê.",
-    },
+    "Nhà Giả Kim - Paulo Coelho",
+    "Hoàng Tử Bé - Antoine de Saint-Exupéry",
+    "Doraemon - Fujiko F. Fujio",
+    "Chạng Vạng - Stephenie Meyer",
+    "Bố Già - Mario Puzo",
   ],
   buon: [
-    {
-      id: 5,
-      title: "Tiếng Chim Hót Trong Bụi Mận Gai",
-      author: "Colleen McCullough",
-      description:
-        "Câu chuyện tình yêu đầy bi kịch và cảm xúc sâu lắng, phù hợp khi bạn cần đồng cảm.",
-    },
-    {
-      id: 6,
-      title: "Bắt Trẻ Đồng Xanh",
-      author: "J.D. Salinger",
-      description:
-        "Hành trình nội tâm của một thiếu niên chán nản, giúp bạn cảm thấy được thấu hiểu.",
-    },
-    {
-      id: 7,
-      title: "Mùa Thu Trong Mưa",
-      author: "Nguyễn Nhật Ánh",
-      description:
-        "Truyện ngắn về tình yêu và nỗi buồn tuổi trẻ, nhẹ nhàng và sâu lắng.",
-    },
-    {
-      id: 8,
-      title: "Những Người Khốn Khổ",
-      author: "Victor Hugo",
-      description:
-        "Kiệt tác văn học về cuộc đấu tranh cho công lý và tình yêu thương giữa nghịch cảnh.",
-    },
+    "Tiếng Chim Hót Trong Bụi Mận Gai - Colleen McCullough",
+    "Cho Tôi Xin Một Vé Đi Tuổi Thơ - Nguyễn Nhật Ánh",
+    "Mắt Biếc - Nguyễn Nhật Ánh",
+    "Người Tình - Marguerite Duras",
+    "Nỗi Buồn Chiến Tranh - Bảo Ninh",
   ],
   langman: [
-    {
-      id: 9,
-      title: "Người Tình",
-      author: "Marguerite Duras",
-      description:
-        "Câu chuyện tình yêu đầy đam mê và day dứt trong bối cảnh thuộc địa Đông Dương.",
-    },
-    {
-      id: 10,
-      title: "Chuyện Tình Paris",
-      author: "Nicolas Barreau",
-      description:
-        "Lãng mạn kiểu Pháp với những tình huống bất ngờ và kết thúc ngọt ngào.",
-    },
-    {
-      id: 11,
-      title: "Mắt Biếc",
-      author: "Nguyễn Nhật Ánh",
-      description:
-        "Tình yêu tuổi học trò trong sáng nhưng đầy tiếc nuối và day dứt.",
-    },
-    {
-      id: 12,
-      title: "Chuyện Tình New York",
-      author: "Jojo Moyes",
-      description:
-        "Hành trình tìm lại tình yêu và bản thân giữa lòng thành phố không ngủ.",
-    },
+    "Đồi Gió Hú - Emily Brontë",
+    "Chuyện Tình Paris - Guillaume Musso",
+    "Một Lít Nước Mắt - Kito Aya",
+    "Cô Gái Năm Ấy Chúng Ta Cùng Theo Đuổi - Cửu Bả Đao",
+    "Pride and Prejudice - Jane Austen",
   ],
   kitich: [
-    {
-      id: 13,
-      title: "Mật Mã Da Vinci",
-      author: "Dan Brown",
-      description:
-        "Cuộc truy tìm bí ẩn ly kỳ với những tình tiết hồi hộp đến nghẹt thở.",
-    },
-    {
-      id: 14,
-      title: "Đồi Gió Hú",
-      author: "Emily Brontë",
-      description:
-        "Bi kịch tình yêu đầy ám ảnh và kịch tính trong bối cảnh hoang vu.",
-    },
-    {
-      id: 15,
-      title: "Bí Mật Của Naoko",
-      author: "Keigo Higashino",
-      description:
-        "Trinh thám tâm lý với những bí ẩn đan xen và tình tiết bất ngờ.",
-    },
-    {
-      id: 16,
-      title: "Trò Chơi Vương Quyền",
-      author: "George R.R. Martin",
-      description:
-        "Sử thi fantasy đầy kịch tính, âm mưu và những cuộc chiến tranh giành quyền lực.",
-    },
+    "Sherlock Holmes - Arthur Conan Doyle",
+    "Mật Mã Da Vinci - Dan Brown",
+    "Đảo Giấu Vàng - Robert Louis Stevenson",
+    "Bí Mật Của Naoko - Keigo Higashino",
+    "Trò Chơi Vương Quyền - George R.R. Martin",
   ],
 };
 
@@ -132,10 +40,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Tiểu thuyết, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Nhã Nam" },
+      { label: "Thể loại", value: "Văn học, Triết lý sống" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Văn Học" },
       { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "220" },
+      { label: "Số trang", value: "208" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -147,10 +56,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
     specs: [
-      { label: "Thể loại", value: "Tiểu thuyết, Lãng mạn" },
-      { label: "Nhà xuất bản", value: "Văn học" },
+      { label: "Thể loại", value: "Văn học, Tiểu thuyết" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Văn Học" },
       { label: "Năm xuất bản", value: "2022" },
-      { label: "Số trang", value: "780" },
+      { label: "Số trang", value: "752" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -162,10 +72,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Trẻ" },
+      { label: "Thể loại", value: "Kỹ năng sống, Tâm lý" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
       { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "320" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -177,10 +88,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Kinh tế, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Thế giới" },
-      { label: "Năm xuất bản", value: "2022" },
+      { label: "Thể loại", value: "Kinh tế, Tâm lý học" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Thế Giới" },
+      { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "612" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -193,9 +105,10 @@ const productDetails = {
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
     specs: [
       { label: "Thể loại", value: "Kinh tế, Đầu tư" },
-      { label: "Nhà xuất bản", value: "Lao động" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Trẻ" },
       { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "336" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -208,9 +121,10 @@ const productDetails = {
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
       { label: "Thể loại", value: "Kinh tế, Phát triển bản thân" },
-      { label: "Nhà xuất bản", value: "Trẻ" },
-      { label: "Năm xuất bản", value: "2022" },
-      { label: "Số trang", value: "480" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
+      { label: "Năm xuất bản", value: "2023" },
+      { label: "Số trang", value: "400" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -222,10 +136,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng, Phát triển bản thân" },
-      { label: "Nhà xuất bản", value: "Tổng hợp TPHCM" },
+      { label: "Thể loại", value: "Kỹ năng sống, Phát triển bản thân" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
       { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "428" },
+      { label: "Số trang", value: "448" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -237,10 +152,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Lao động" },
-      { label: "Năm xuất bản", value: "2022" },
-      { label: "Số trang", value: "256" },
+      { label: "Thể loại", value: "Kỹ năng sống, Tâm lý" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Lao Động" },
+      { label: "Năm xuất bản", value: "2023" },
+      { label: "Số trang", value: "224" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -252,10 +168,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng, Phát triển bản thân" },
-      { label: "Nhà xuất bản", value: "Trẻ" },
+      { label: "Thể loại", value: "Kỹ năng sống, Phát triển bản thân" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Trẻ" },
       { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "224" },
+      { label: "Số trang", value: "272" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -267,10 +184,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Thiếu nhi, Fantasy" },
-      { label: "Nhà xuất bản", value: "Trẻ" },
+      { label: "Thể loại", value: "Thiếu nhi, Giả tưởng" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Trẻ" },
       { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "336" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -283,9 +201,10 @@ const productDetails = {
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
     specs: [
       { label: "Thể loại", value: "Thiếu nhi, Văn học" },
-      { label: "Nhà xuất bản", value: "Kim Đồng" },
-      { label: "Năm xuất bản", value: "2022" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Kim Đồng" },
+      { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "96" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -297,10 +216,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Thiếu nhi, Manga" },
-      { label: "Nhà xuất bản", value: "Kim Đồng" },
+      { label: "Thể loại", value: "Thiếu nhi, Truyện tranh" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Kim Đồng" },
       { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "192" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -312,10 +232,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Tiểu thuyết, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Nhã Nam" },
+      { label: "Thể loại", value: "Văn học, Triết lý sống" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Văn Học" },
       { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "220" },
+      { label: "Số trang", value: "208" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -327,10 +248,11 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Trẻ" },
+      { label: "Thể loại", value: "Kỹ năng sống, Tâm lý" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
       { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "320" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
@@ -342,169 +264,108 @@ const productDetails = {
     image:
       "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Kinh tế, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Thế giới" },
-      { label: "Năm xuất bản", value: "2022" },
+      { label: "Thể loại", value: "Kinh tế, Tâm lý học" },
+      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Thế Giới" },
+      { label: "Năm xuất bản", value: "2023" },
       { label: "Số trang", value: "612" },
+      { label: "Ngôn ngữ", value: "Tiếng Việt" },
       { label: "Tình trạng", value: "Còn hàng" },
     ],
   },
 };
 
-// Khởi tạo khi trang được tải
-document.addEventListener("DOMContentLoaded", function () {
-  initMoodBooks();
-  initFilterButtons();
-  initProductDetails();
-  initWishlistButtons();
-});
-
-// Khởi tạo sách theo tâm trạng
-function initMoodBooks() {
-  const moodCards = document.querySelectorAll(".mood-card");
-
-  moodCards.forEach((card) => {
-    card.addEventListener("click", function () {
-      const mood = this.dataset.mood;
-      const suggestionsContainer = document.getElementById(
-        `${mood}-suggestions`
-      );
-
-      // Đóng tất cả các container khác
-      document.querySelectorAll(".book-suggestions").forEach((container) => {
-        if (container !== suggestionsContainer) {
-          container.classList.remove("active");
-        }
-      });
-
-      // Toggle container hiện tại
-      suggestionsContainer.classList.toggle("active");
-
-      // Nếu container đang được mở, hiển thị sách
-      if (suggestionsContainer.classList.contains("active")) {
-        if (suggestionsContainer.children.length === 0) {
-          displayMoodBooks(mood, suggestionsContainer);
-        }
-      }
-    });
-  });
-}
+// DOM Elements
+const moodCards = document.querySelectorAll(".mood-card");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const productCards = document.querySelectorAll(".product-card");
+const detailButtons = document.querySelectorAll(".btn-details");
+const modal = document.getElementById("productModal");
+const modalClose = document.getElementById("modalClose");
+const wishlistButtons = document.querySelectorAll(".btn-wishlist");
 
 // Hiển thị sách theo tâm trạng
-function displayMoodBooks(mood, container) {
-  const books = moodBooks[mood];
+function showMoodBooks(mood) {
+  // Ẩn tất cả các gợi ý trước
+  document.querySelectorAll(".book-suggestions").forEach((el) => {
+    el.classList.remove("active");
+    el.innerHTML = "";
+  });
 
-  if (books && books.length > 0) {
-    books.forEach((book) => {
-      const bookElement = document.createElement("div");
-      bookElement.className = "suggestion-book";
-      bookElement.innerHTML = `
-        <h4>${book.title}</h4>
-        <p>Tác giả: ${book.author}</p>
-        <p class="book-description">${book.description}</p>
-      `;
-      container.appendChild(bookElement);
-    });
-  }
-}
+  // Hiển thị gợi ý cho tâm trạng được chọn
+  const suggestions = document.getElementById(`${mood}-suggestions`);
+  suggestions.classList.add("active");
 
-// Khởi tạo nút lọc thể loại
-function initFilterButtons() {
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const categorySections = document.querySelectorAll(".category-section");
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      // Cập nhật trạng thái active
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      const category = this.dataset.category;
-
-      // Hiển thị/ẩn các phần theo thể loại
-      categorySections.forEach((section) => {
-        if (category === "all" || section.id === category) {
-          section.style.display = "block";
-        } else {
-          section.style.display = "none";
-        }
-      });
-    });
+  moodBooks[mood].forEach((book) => {
+    const bookElement = document.createElement("div");
+    bookElement.className = "suggestion-item";
+    bookElement.textContent = book;
+    suggestions.appendChild(bookElement);
   });
 }
 
-// Khởi tạo chi tiết sản phẩm
-function initProductDetails() {
-  const detailButtons = document.querySelectorAll(".btn-details");
-  const modal = document.getElementById("productModal");
-  const modalClose = document.getElementById("modalClose");
-
-  detailButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const productId = this.dataset.id;
-      showProductDetails(productId);
-    });
+// Lọc sản phẩm theo danh mục
+function filterProducts(category) {
+  productCards.forEach((card) => {
+    if (category === "all" || card.dataset.category === category) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
   });
 
-  modalClose.addEventListener("click", function () {
-    modal.classList.remove("active");
-  });
-
-  // Đóng modal khi click bên ngoài
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      modal.classList.remove("active");
+  // Hiển thị/ẩn các section danh mục
+  document.querySelectorAll(".category-section").forEach((section) => {
+    if (category === "all" || section.id === category) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
     }
   });
 }
 
-// Hiển thị chi tiết sản phẩm
+// Hiển thị modal chi tiết sản phẩm
 function showProductDetails(productId) {
   const product = productDetails[productId];
-  const modal = document.getElementById("productModal");
+  if (!product) return;
 
-  if (product) {
-    document.getElementById("modalImage").src = product.image;
-    document.getElementById("modalImage").alt = product.title;
-    document.getElementById("modalTitle").textContent = product.title;
-    document.getElementById("modalAuthor").textContent = product.author;
-    document.getElementById("modalCurrentPrice").textContent =
-      product.currentPrice;
-    document.getElementById("modalOriginalPrice").textContent =
-      product.originalPrice;
+  document.getElementById("modalTitle").textContent = product.title;
+  document.getElementById("modalAuthor").textContent = product.author;
+  document.getElementById("modalCurrentPrice").textContent =
+    product.currentPrice;
+  document.getElementById("modalOriginalPrice").textContent =
+    product.originalPrice;
+  document.getElementById("modalImage").src = product.image;
 
-    const specsList = document.getElementById("modalSpecs");
-    specsList.innerHTML = "";
+  const specsList = document.getElementById("modalSpecs");
+  specsList.innerHTML = "";
 
-    product.specs.forEach((spec) => {
-      const li = document.createElement("li");
-      li.innerHTML = `<span class="spec-label">${spec.label}:</span> <span>${spec.value}</span>`;
-      specsList.appendChild(li);
-    });
+  product.specs.forEach((spec) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="spec-label">${spec.label}:</span> ${spec.value}`;
+    specsList.appendChild(li);
+  });
 
-    modal.classList.add("active");
-  }
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
 }
 
-// Khởi tạo nút yêu thích
-function initWishlistButtons() {
-  const wishlistButtons = document.querySelectorAll(".btn-wishlist");
+// Đóng modal
+function closeModal() {
+  modal.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
 
-  wishlistButtons.forEach((button) => {
-    button.addEventListener("click", function (e) {
-      e.stopPropagation(); // Ngăn sự kiện click lan ra ngoài
-      this.classList.toggle("active");
-      this.querySelector("i").classList.toggle("far");
-      this.querySelector("i").classList.toggle("fas");
+// Toggle wishlist
+function toggleWishlist(button) {
+  button.classList.toggle("active");
+  button.innerHTML = button.classList.contains("active")
+    ? '<i class="fas fa-heart"></i>'
+    : '<i class="far fa-heart"></i>';
 
-      // Hiệu ứng thông báo
-      if (this.classList.contains("active")) {
-        showNotification("Đã thêm vào danh sách yêu thích!");
-      } else {
-        showNotification("Đã xóa khỏi danh sách yêu thích!");
-      }
-    });
-  });
+  // Hiệu ứng thông báo
+  if (button.classList.contains("active")) {
+    showNotification("Đã thêm vào danh sách yêu thích");
+  }
 }
 
 // Hiển thị thông báo
@@ -516,55 +377,133 @@ function showNotification(message) {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: var(--success);
+    background: var(--accent);
     color: white;
     padding: 15px 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 3000;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: slideIn 0.3s ease;
   `;
 
   document.body.appendChild(notification);
 
-  // Tự động xóa sau 3 giây
   setTimeout(() => {
-    notification.style.opacity = "0";
-    notification.style.transform = "translateX(100%)";
+    notification.style.animation = "slideOut 0.3s ease";
     setTimeout(() => {
       document.body.removeChild(notification);
     }, 300);
   }, 3000);
 }
 
-// Xử lý tìm kiếm
-const searchInput = document.querySelector(".search-input");
-const searchBtn = document.querySelector(".search-btn");
+// Event Listeners
+document.addEventListener("DOMContentLoaded", function () {
+  // Mood cards
+  moodCards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const mood = this.dataset.mood;
+      showMoodBooks(mood);
+    });
+  });
 
-searchBtn.addEventListener("click", performSearch);
-searchInput.addEventListener("keypress", function (e) {
-  if (e.key === "Enter") {
-    performSearch();
-  }
-});
+  // Filter buttons
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Xóa active class từ tất cả các nút
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      // Thêm active class cho nút được click
+      this.classList.add("active");
+      // Lọc sản phẩm
+      filterProducts(this.dataset.category);
+    });
+  });
 
-function performSearch() {
-  const query = searchInput.value.trim();
-  if (query) {
-    alert(`Đang tìm kiếm: "${query}"`);
-    // Thực tế sẽ có logic tìm kiếm ở đây
-  }
-}
+  // Detail buttons
+  detailButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const productId = this.dataset.id;
+      showProductDetails(productId);
+    });
+  });
 
-// Xử lý giỏ hàng
-let cartCount = 0;
-const cartButtons = document.querySelectorAll(".btn-buy");
-const cartCountElement = document.querySelector(".cart-count");
+  // Modal close
+  modalClose.addEventListener("click", closeModal);
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
 
-cartButtons.forEach((button) => {
-  button.addEventListener("click", function () {
-    cartCount++;
-    cartCountElement.textContent = cartCount;
-    showNotification("Đã thêm vào giỏ hàng!");
+  // Wishlist buttons
+  wishlistButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      toggleWishlist(this);
+    });
+  });
+
+  // Search functionality
+  const searchInput = document.querySelector(".search-input");
+  const searchBtn = document.querySelector(".search-btn");
+
+  searchBtn.addEventListener("click", function () {
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm) {
+      showNotification(`Đang tìm kiếm: "${searchTerm}"`);
+      // Thực hiện tìm kiếm thực tế ở đây
+    }
+  });
+
+  searchInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      searchBtn.click();
+    }
+  });
+
+  // Cart count update (giả lập)
+  const cartCount = document.querySelector(".cart-count");
+  const addToCartButtons = document.querySelectorAll(".btn-buy");
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      let count = parseInt(cartCount.textContent);
+      count++;
+      cartCount.textContent = count;
+      showNotification("Đã thêm vào giỏ hàng");
+    });
+  });
+
+  // Authentication simulation
+  const loginLink = document.getElementById("login-link");
+  const registerLink = document.getElementById("register-link");
+  const logoutLink = document.getElementById("logout-link");
+
+  loginLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    showNotification("Chuyển hướng đến trang đăng nhập");
+  });
+
+  registerLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    showNotification("Chuyển hướng đến trang đăng ký");
+  });
+
+  logoutLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    showNotification("Đã đăng xuất");
   });
 });
+
+// CSS Animation cho thông báo
+const style = document.createElement("style");
+style.textContent = `
+  @keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+  }
+`;
+document.head.appendChild(style);
