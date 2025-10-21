@@ -1,395 +1,375 @@
-// Dữ liệu sách theo tâm trạng
-const moodBooks = {
-  vui: [
-    "Nhà Giả Kim - Paulo Coelho",
-    "Hoàng Tử Bé - Antoine de Saint-Exupéry",
-    "Doraemon - Fujiko F. Fujio",
-    "Chạng Vạng - Stephenie Meyer",
-    "Bố Già - Mario Puzo",
-  ],
-  buon: [
-    "Tiếng Chim Hót Trong Bụi Mận Gai - Colleen McCullough",
-    "Cho Tôi Xin Một Vé Đi Tuổi Thơ - Nguyễn Nhật Ánh",
-    "Mắt Biếc - Nguyễn Nhật Ánh",
-    "Người Tình - Marguerite Duras",
-    "Nỗi Buồn Chiến Tranh - Bảo Ninh",
-  ],
-  langman: [
-    "Đồi Gió Hú - Emily Brontë",
-    "Chuyện Tình Paris - Guillaume Musso",
-    "Một Lít Nước Mắt - Kito Aya",
-    "Cô Gái Năm Ấy Chúng Ta Cùng Theo Đuổi - Cửu Bả Đao",
-    "Pride and Prejudice - Jane Austen",
-  ],
-  kitich: [
-    "Sherlock Holmes - Arthur Conan Doyle",
-    "Mật Mã Da Vinci - Dan Brown",
-    "Đảo Giấu Vàng - Robert Louis Stevenson",
-    "Bí Mật Của Naoko - Keigo Higashino",
-    "Trò Chơi Vương Quyền - George R.R. Martin",
-  ],
-};
-
-// Dữ liệu chi tiết sản phẩm
-const productDetails = {
+// Product data
+const sachProducts = {
   1: {
-    title: "Nhà Giả Kim",
-    author: "Paulo Coelho",
-    currentPrice: "89.000₫",
-    originalPrice: "120.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Tác Phẩm Văn Học Kinh Điển",
+    image: "#",
+    currentPrice: "120.000₫",
+    originalPrice: "150.000₫",
     specs: [
-      { label: "Thể loại", value: "Văn học, Triết lý sống" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Văn Học" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "208" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Nhiều tác giả",
+      "Nhà xuất bản: Văn Học",
+      "Năm xuất bản: 2024",
+      "Số trang: 320",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   2: {
-    title: "Tiếng Chim Hót Trong Bụi Mận Gai",
-    author: "Colleen McCullough",
-    currentPrice: "156.000₫",
-    originalPrice: "195.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
+    title: "Tiểu Thuyết Đương Đại",
+    image: "#",
+    currentPrice: "95.000₫",
+    originalPrice: "120.000₫",
     specs: [
-      { label: "Thể loại", value: "Văn học, Tiểu thuyết" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Văn Học" },
-      { label: "Năm xuất bản", value: "2022" },
-      { label: "Số trang", value: "752" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Nguyễn Văn A",
+      "Nhà xuất bản: Trẻ",
+      "Năm xuất bản: 2024",
+      "Số trang: 280",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   3: {
-    title: "Đắc Nhân Tâm",
-    author: "Dale Carnegie",
-    currentPrice: "75.000₫",
-    originalPrice: "95.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Tuyển Tập Truyện Ngắn",
+    image: "#",
+    currentPrice: "85.000₫",
+    originalPrice: "100.000₫",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng sống, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "320" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Trần Thị B",
+      "Nhà xuất bản: Phụ Nữ",
+      "Năm xuất bản: 2024",
+      "Số trang: 240",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   4: {
-    title: "Tư Duy Nhanh và Chậm",
-    author: "Daniel Kahneman",
-    currentPrice: "185.000₫",
-    originalPrice: "220.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Kinh Tế Học Cơ Bản",
+    image: "#",
+    currentPrice: "135.000₫",
+    originalPrice: "160.000₫",
     specs: [
-      { label: "Thể loại", value: "Kinh tế, Tâm lý học" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Thế Giới" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "612" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: GS. Lê Văn C",
+      "Nhà xuất bản: Kinh Tế",
+      "Năm xuất bản: 2024",
+      "Số trang: 380",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   5: {
-    title: "Cha Giàu Cha Nghèo",
-    author: "Robert Kiyosaki",
-    currentPrice: "95.000₫",
-    originalPrice: "120.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
+    title: "Đầu Tư Thông Minh",
+    image: "#",
+    currentPrice: "110.000₫",
+    originalPrice: "130.000₫",
     specs: [
-      { label: "Thể loại", value: "Kinh tế, Đầu tư" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Trẻ" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "336" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: David Johnson",
+      "Nhà xuất bản: Tài Chính",
+      "Năm xuất bản: 2024",
+      "Số trang: 320",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   6: {
-    title: "Nghĩ Giàu Làm Giàu",
-    author: "Napoleon Hill",
-    currentPrice: "78.000₫",
-    originalPrice: "99.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Quản Trị Doanh Nghiệp",
+    image: "#",
+    currentPrice: "125.000₫",
+    originalPrice: "145.000₫",
     specs: [
-      { label: "Thể loại", value: "Kinh tế, Phát triển bản thân" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "400" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Michael Chen",
+      "Nhà xuất bản: Kinh Doanh",
+      "Năm xuất bản: 2024",
+      "Số trang: 350",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   7: {
-    title: "7 Thói Quen Hiệu Quả",
-    author: "Stephen R. Covey",
-    currentPrice: "135.000₫",
+    title: "Vũ Trụ Quanh Ta",
+    image: "#",
+    currentPrice: "140.000₫",
     originalPrice: "165.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng sống, Phát triển bản thân" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "448" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Neil deGrasse Tyson",
+      "Nhà xuất bản: Khoa Học",
+      "Năm xuất bản: 2024",
+      "Số trang: 400",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   8: {
-    title: "Đọc Vị Bất Kỳ Ai",
-    author: "David J. Lieberman",
-    currentPrice: "88.000₫",
-    originalPrice: "110.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
+    title: "Công Nghệ Tương Lai",
+    image: "#",
+    currentPrice: "115.000₫",
+    originalPrice: "140.000₫",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng sống, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Lao Động" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "224" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Elon Musk",
+      "Nhà xuất bản: Công Nghệ",
+      "Năm xuất bản: 2024",
+      "Số trang: 300",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   9: {
-    title: "Nghệ Thuật Tinh Tế",
-    author: "Mark Manson",
-    currentPrice: "115.000₫",
-    originalPrice: "145.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Khám Phá Thiên Nhiên",
+    image: "#",
+    currentPrice: "95.000₫",
+    originalPrice: "115.000₫",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng sống, Phát triển bản thân" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Trẻ" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "272" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: David Attenborough",
+      "Nhà xuất bản: Thiên Nhiên",
+      "Năm xuất bản: 2024",
+      "Số trang: 280",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   10: {
-    title: "Harry Potter và Hòn Đá Phù Thủy",
-    author: "J.K. Rowling",
-    currentPrice: "165.000₫",
-    originalPrice: "195.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Lịch Sử Việt Nam",
+    image: "#",
+    currentPrice: "155.000₫",
+    originalPrice: "180.000₫",
     specs: [
-      { label: "Thể loại", value: "Thiếu nhi, Giả tưởng" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Trẻ" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "336" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: GS. Phan Huy Lê",
+      "Nhà xuất bản: Lịch Sử",
+      "Năm xuất bản: 2024",
+      "Số trang: 450",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   11: {
-    title: "Hoàng Tử Bé",
-    author: "Antoine de Saint-Exupéry",
-    currentPrice: "65.000₫",
-    originalPrice: "85.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
+    title: "Thế Giới Cổ Đại",
+    image: "#",
+    currentPrice: "130.000₫",
+    originalPrice: "155.000₫",
     specs: [
-      { label: "Thể loại", value: "Thiếu nhi, Văn học" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Kim Đồng" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "96" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Herodotus",
+      "Nhà xuất bản: Lịch Sử",
+      "Năm xuất bản: 2024",
+      "Số trang: 380",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   12: {
-    title: "Doraemon - Tập 1",
-    author: "Fujiko F. Fujio",
-    currentPrice: "25.000₫",
-    originalPrice: "35.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Nhân Vật Lịch Sử",
+    image: "#",
+    currentPrice: "105.000₫",
+    originalPrice: "125.000₫",
     specs: [
-      { label: "Thể loại", value: "Thiếu nhi, Truyện tranh" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Kim Đồng" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "192" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Nhiều tác giả",
+      "Nhà xuất bản: Lịch Sử",
+      "Năm xuất bản: 2024",
+      "Số trang: 320",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   13: {
-    title: "Nhà Giả Kim",
-    author: "Paulo Coelho",
-    currentPrice: "89.000₫",
-    originalPrice: "120.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Truyện Cổ Tích",
+    image: "#",
+    currentPrice: "75.000₫",
+    originalPrice: "90.000₫",
     specs: [
-      { label: "Thể loại", value: "Văn học, Triết lý sống" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Văn Học" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "208" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Anh em Grimm",
+      "Nhà xuất bản: Thiếu Nhi",
+      "Năm xuất bản: 2024",
+      "Số trang: 200",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   14: {
-    title: "Đắc Nhân Tâm",
-    author: "Dale Carnegie",
-    currentPrice: "75.000₫",
-    originalPrice: "95.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg",
+    title: "Khám Phá Khoa Học",
+    image: "#",
+    currentPrice: "85.000₫",
+    originalPrice: "100.000₫",
     specs: [
-      { label: "Thể loại", value: "Kỹ năng sống, Tâm lý" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Tổng Hợp" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "320" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Bill Nye",
+      "Nhà xuất bản: Thiếu Nhi",
+      "Năm xuất bản: 2024",
+      "Số trang: 240",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
   15: {
-    title: "Tư Duy Nhanh và Chậm",
-    author: "Daniel Kahneman",
-    currentPrice: "185.000₫",
-    originalPrice: "220.000₫",
-    image:
-      "https://cdn0.fahasa.com/media/catalog/product/8/9/8935235235245.jpg",
+    title: "Truyện Tranh",
+    image: "#",
+    currentPrice: "65.000₫",
+    originalPrice: "80.000₫",
     specs: [
-      { label: "Thể loại", value: "Kinh tế, Tâm lý học" },
-      { label: "Nhà xuất bản", value: "Nhà Xuất Bản Thế Giới" },
-      { label: "Năm xuất bản", value: "2023" },
-      { label: "Số trang", value: "612" },
-      { label: "Ngôn ngữ", value: "Tiếng Việt" },
-      { label: "Tình trạng", value: "Còn hàng" },
+      "Tác giả: Nhiều tác giả",
+      "Nhà xuất bản: Thiếu Nhi",
+      "Năm xuất bản: 2024",
+      "Số trang: 160",
+      "Ngôn ngữ: Tiếng Việt",
+      "Tình trạng: Mới 100%",
+      "Bảo hành: 12 tháng",
     ],
   },
 };
 
 // DOM Elements
-const moodCards = document.querySelectorAll(".mood-card");
-const filterButtons = document.querySelectorAll(".filter-btn");
-const productCards = document.querySelectorAll(".product-card");
-const detailButtons = document.querySelectorAll(".btn-details");
 const modal = document.getElementById("productModal");
 const modalClose = document.getElementById("modalClose");
+const modalImage = document.getElementById("modalImage");
+const modalTitle = document.getElementById("modalTitle");
+const modalCurrentPrice = document.getElementById("modalCurrentPrice");
+const modalOriginalPrice = document.getElementById("modalOriginalPrice");
+const modalSpecs = document.getElementById("modalSpecs");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const categorySections = document.querySelectorAll(".category-section");
+const productCards = document.querySelectorAll(".product-card");
+const btnDetails = document.querySelectorAll(".btn-details");
 const wishlistButtons = document.querySelectorAll(".btn-wishlist");
+const cartCount = document.querySelector(".cart-count");
 
-// Hiển thị sách theo tâm trạng
-function showMoodBooks(mood) {
-  // Ẩn tất cả các gợi ý trước
-  document.querySelectorAll(".book-suggestions").forEach((el) => {
-    el.classList.remove("active");
-    el.innerHTML = "";
-  });
+// Modal functionality
+function openModal(productId) {
+  const product = sachProducts[productId];
+  if (product) {
+    modalImage.src = product.image;
+    modalImage.alt = product.title;
+    modalTitle.textContent = product.title;
+    modalCurrentPrice.textContent = product.currentPrice;
+    modalOriginalPrice.textContent = product.originalPrice;
 
-  // Hiển thị gợi ý cho tâm trạng được chọn
-  const suggestions = document.getElementById(`${mood}-suggestions`);
-  suggestions.classList.add("active");
+    // Clear previous specs
+    modalSpecs.innerHTML = "";
 
-  moodBooks[mood].forEach((book) => {
-    const bookElement = document.createElement("div");
-    bookElement.className = "suggestion-item";
-    bookElement.textContent = book;
-    suggestions.appendChild(bookElement);
-  });
+    // Add new specs
+    product.specs.forEach((spec) => {
+      const li = document.createElement("li");
+      li.textContent = spec;
+      modalSpecs.appendChild(li);
+    });
+
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
 }
 
-// Lọc sản phẩm theo danh mục
-function filterProducts(category) {
-  productCards.forEach((card) => {
-    if (category === "all" || card.dataset.category === category) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
-
-  // Hiển thị/ẩn các section danh mục
-  document.querySelectorAll(".category-section").forEach((section) => {
-    if (category === "all" || section.id === category) {
-      section.style.display = "block";
-    } else {
-      section.style.display = "none";
-    }
-  });
-}
-
-// Hiển thị modal chi tiết sản phẩm
-function showProductDetails(productId) {
-  const product = productDetails[productId];
-  if (!product) return;
-
-  document.getElementById("modalTitle").textContent = product.title;
-  document.getElementById("modalAuthor").textContent = product.author;
-  document.getElementById("modalCurrentPrice").textContent =
-    product.currentPrice;
-  document.getElementById("modalOriginalPrice").textContent =
-    product.originalPrice;
-  document.getElementById("modalImage").src = product.image;
-
-  const specsList = document.getElementById("modalSpecs");
-  specsList.innerHTML = "";
-
-  product.specs.forEach((spec) => {
-    const li = document.createElement("li");
-    li.innerHTML = `<span class="spec-label">${spec.label}:</span> ${spec.value}`;
-    specsList.appendChild(li);
-  });
-
-  modal.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-
-// Đóng modal
 function closeModal() {
   modal.classList.remove("active");
   document.body.style.overflow = "auto";
 }
 
-// Toggle wishlist
-function toggleWishlist(button) {
-  button.classList.toggle("active");
-  button.innerHTML = button.classList.contains("active")
-    ? '<i class="fas fa-heart"></i>'
-    : '<i class="far fa-heart"></i>';
+// Filter functionality
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove active class from all buttons
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
 
-  // Hiệu ứng thông báo
-  if (button.classList.contains("active")) {
-    showNotification("Đã thêm vào danh sách yêu thích");
-  }
+    // Add active class to clicked button
+    button.classList.add("active");
+
+    const category = button.getAttribute("data-category");
+
+    // Show/hide category sections
+    categorySections.forEach((section) => {
+      if (category === "all" || section.id === category) {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+
+    // Smooth scroll to top of products
+    document.querySelector(".sach-products").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+// Wishlist functionality
+wishlistButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const icon = button.querySelector("i");
+
+    if (icon.classList.contains("far")) {
+      icon.classList.remove("far");
+      icon.classList.add("fas");
+      icon.style.color = "#e74c3c";
+
+      // Show notification
+      showNotification("Đã thêm vào danh sách yêu thích!");
+    } else {
+      icon.classList.remove("fas");
+      icon.classList.add("far");
+      icon.style.color = "";
+
+      // Show notification
+      showNotification("Đã xóa khỏi danh sách yêu thích!");
+    }
+  });
+});
+
+// Add to cart functionality
+function addToCart() {
+  let count = parseInt(cartCount.textContent);
+  count++;
+  cartCount.textContent = count;
+
+  // Show notification
+  showNotification("Đã thêm vào giỏ hàng!");
+
+  // Add animation to cart icon
+  const cartIcon = document.querySelector(".fa-shopping-cart").parentElement;
+  cartIcon.style.transform = "scale(1.2)";
+  setTimeout(() => {
+    cartIcon.style.transform = "scale(1)";
+  }, 300);
 }
 
-// Hiển thị thông báo
+// Notification system
 function showNotification(message) {
   const notification = document.createElement("div");
   notification.className = "notification";
   notification.textContent = message;
   notification.style.cssText = `
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: var(--accent);
-    color: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    z-index: 3000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    animation: slideIn 0.3s ease;
-  `;
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: var(--gradient);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3);
+        z-index: 3000;
+        transform: translateX(400px);
+        transition: transform 0.3s ease;
+        font-weight: 600;
+    `;
 
   document.body.appendChild(notification);
 
+  // Animate in
   setTimeout(() => {
-    notification.style.animation = "slideOut 0.3s ease";
+    notification.style.transform = "translateX(0)";
+  }, 100);
+
+  // Animate out and remove
+  setTimeout(() => {
+    notification.style.transform = "translateX(400px)";
     setTimeout(() => {
       document.body.removeChild(notification);
     }, 300);
@@ -397,113 +377,205 @@ function showNotification(message) {
 }
 
 // Event Listeners
-document.addEventListener("DOMContentLoaded", function () {
-  // Mood cards
-  moodCards.forEach((card) => {
-    card.addEventListener("click", function () {
-      const mood = this.dataset.mood;
-      showMoodBooks(mood);
-    });
-  });
+modalClose.addEventListener("click", closeModal);
 
-  // Filter buttons
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      // Xóa active class từ tất cả các nút
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      // Thêm active class cho nút được click
-      this.classList.add("active");
-      // Lọc sản phẩm
-      filterProducts(this.dataset.category);
-    });
-  });
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
 
-  // Detail buttons
-  detailButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const productId = this.dataset.id;
-      showProductDetails(productId);
-    });
+btnDetails.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const productId = button.getAttribute("data-id");
+    openModal(productId);
   });
+});
 
-  // Modal close
-  modalClose.addEventListener("click", closeModal);
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      closeModal();
+// Add click event to product cards for modal
+productCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const button = card.querySelector(".btn-details");
+    const productId = button.getAttribute("data-id");
+    openModal(productId);
+  });
+});
+
+// Buy buttons in modal
+document.querySelectorAll(".modal-actions .btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    addToCart();
+    closeModal();
+  });
+});
+
+// Search functionality
+const searchInput = document.querySelector(".search-input");
+const searchBtn = document.querySelector(".search-btn");
+
+function performSearch() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+
+  if (searchTerm) {
+    let found = false;
+
+    productCards.forEach((card) => {
+      const productName = card
+        .querySelector(".product-name")
+        .textContent.toLowerCase();
+
+      if (productName.includes(searchTerm)) {
+        card.style.display = "block";
+        found = true;
+
+        // Highlight matching text
+        const nameElement = card.querySelector(".product-name");
+        const originalText = nameElement.textContent;
+        const regex = new RegExp(`(${searchTerm})`, "gi");
+        nameElement.innerHTML = originalText.replace(regex, "<mark>$1</mark>");
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    if (!found) {
+      showNotification("Không tìm thấy sách phù hợp!");
+    } else {
+      // Scroll to first matching product
+      const firstVisible = document.querySelector(
+        '.product-card[style="display: block"]'
+      );
+      if (firstVisible) {
+        firstVisible.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
     }
-  });
-
-  // Wishlist buttons
-  wishlistButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      toggleWishlist(this);
+  } else {
+    // Show all products if search is empty
+    productCards.forEach((card) => {
+      card.style.display = "block";
+      // Remove highlighting
+      const nameElement = card.querySelector(".product-name");
+      nameElement.innerHTML = nameElement.textContent;
     });
-  });
+  }
+}
 
-  // Search functionality
-  const searchInput = document.querySelector(".search-input");
-  const searchBtn = document.querySelector(".search-btn");
+searchBtn.addEventListener("click", performSearch);
 
-  searchBtn.addEventListener("click", function () {
-    const searchTerm = searchInput.value.trim();
-    if (searchTerm) {
-      showNotification(`Đang tìm kiếm: "${searchTerm}"`);
-      // Thực hiện tìm kiếm thực tế ở đây
-    }
-  });
+searchInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    performSearch();
+  }
+});
 
-  searchInput.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
-      searchBtn.click();
-    }
-  });
-
-  // Cart count update (giả lập)
-  const cartCount = document.querySelector(".cart-count");
-  const addToCartButtons = document.querySelectorAll(".btn-buy");
-
-  addToCartButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      let count = parseInt(cartCount.textContent);
-      count++;
-      cartCount.textContent = count;
-      showNotification("Đã thêm vào giỏ hàng");
-    });
-  });
-
-  // Authentication simulation
+// User authentication state
+function checkAuthState() {
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
   const loginLink = document.getElementById("login-link");
   const registerLink = document.getElementById("register-link");
   const logoutLink = document.getElementById("logout-link");
 
-  loginLink.addEventListener("click", function (e) {
+  if (isLoggedIn) {
+    loginLink.style.display = "none";
+    registerLink.style.display = "none";
+    logoutLink.style.display = "block";
+  } else {
+    loginLink.style.display = "block";
+    registerLink.style.display = "block";
+    logoutLink.style.display = "none";
+  }
+}
+
+// Logout functionality
+const logoutLink = document.getElementById("logout-link");
+if (logoutLink) {
+  logoutLink.addEventListener("click", (e) => {
     e.preventDefault();
-    showNotification("Chuyển hướng đến trang đăng nhập");
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("userEmail");
+    checkAuthState();
+    showNotification("Đã đăng xuất thành công!");
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1000);
+  });
+}
+
+// Initialize page
+document.addEventListener("DOMContentLoaded", () => {
+  checkAuthState();
+
+  // Add loading animation
+  const productGrids = document.querySelectorAll(".product-grid");
+  productGrids.forEach((grid) => {
+    grid.style.opacity = "0";
+    grid.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      grid.style.transition = "all 0.5s ease";
+      grid.style.opacity = "1";
+      grid.style.transform = "translateY(0)";
+    }, 200);
   });
 
-  registerLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    showNotification("Chuyển hướng đến trang đăng ký");
-  });
+  // Initialize cart count
+  const savedCartCount = localStorage.getItem("cartCount");
+  if (savedCartCount) {
+    cartCount.textContent = savedCartCount;
+  }
+});
 
-  logoutLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    showNotification("Đã đăng xuất");
+// Save cart count when changed
+const observer = new MutationObserver(() => {
+  localStorage.setItem("cartCount", cartCount.textContent);
+});
+
+observer.observe(cartCount, {
+  childList: true,
+  characterData: true,
+  subtree: true,
+});
+
+// Add some interactive effects
+document.addEventListener("mousemove", (e) => {
+  const cards = document.querySelectorAll(".product-card");
+  cards.forEach((card) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    if (x > 0 && x < rect.width && y > 0 && y < rect.height) {
+      card.style.transform = `perspective(1000px) rotateX(${
+        (y - rect.height / 2) / 20
+      }deg) rotateY(${(x - rect.width / 2) / 20}deg) translateY(-10px)`;
+    } else {
+      card.style.transform =
+        "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
+    }
   });
 });
 
-// CSS Animation cho thông báo
-const style = document.createElement("style");
-style.textContent = `
-  @keyframes slideIn {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+// Add keyboard navigation
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
   }
-  
-  @keyframes slideOut {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(100%); opacity: 0; }
-  }
-`;
-document.head.appendChild(style);
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});

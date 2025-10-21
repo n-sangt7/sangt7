@@ -28,7 +28,7 @@
         <div class="container">
           <div class="header-content">
             <a href="index.html" class="logo">
-              <i class="fas fa-book"></i>
+              <i class="fas fa-microchip"></i>
               ĐBDK2T
             </a>
 
@@ -55,7 +55,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="lego.html" class="nav-link active"
+                  <a href="sach.html" class="nav-link active"
                     ><i class="fa-solid fa-book"></i>Sách</a
                   >
                 </li>
@@ -105,7 +105,7 @@
               <input
                 type="text"
                 class="search-input"
-                placeholder="Tìm kiếm sách, tác giả, từ khóa..."
+                placeholder="Tìm kiếm sách, từ khóa..."
               />
             </div>
             <button class="search-btn">
@@ -117,85 +117,32 @@
     </header>
 
     <!-- Main Content -->
-    <main class="book-page">
+    <main class="sach-page">
       <div class="container">
         <!-- Page Header -->
         <div class="page-header">
-          <h1>Sách & Văn Học</h1>
-          <p>Khám phá những cuốn sách hay nhất với nội dung phong phú</p>
+          <h1>Sách & Tài Liệu</h1>
+          <p>Khám phá những cuốn sách hay với nội dung phong phú và đa dạng</p>
         </div>
 
-        <!-- Book Slider -->
-        <section class="book-slider">
+        <!-- Sach Slider -->
+        <section class="sach-slider">
           <div class="slider-container">
             <div class="slider-track">
               <div class="slider-item">
-                <img src="" alt="Nhà Giả Kim" />
+                <img src="#" alt="Sách Văn Học" />
               </div>
               <div class="slider-item">
-                <img src="" alt="Tiếng Chim Hót Trong Bụi Mận Gai" />
+                <img src="#" alt="Sách Kinh Tế" />
               </div>
               <div class="slider-item">
-                <img src="" alt="Đắc Nhân Tâm" />
+                <img src="#" alt="Sách Khoa Học" />
               </div>
               <div class="slider-item">
-                <img src="" alt="Tư Duy Nhanh và Chậm" />
+                <img src="#" alt="Sách Lịch Sử" />
               </div>
               <div class="slider-item">
-                <img src="" alt="Harry Potter" />
-              </div>
-              <div class="slider-item">
-                <img src="" alt="Hoàng Tử Bé" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Mood Books Section -->
-        <section class="mood-books">
-          <h2 class="section-title">Gợi Ý Sách Theo Tâm Trạng</h2>
-          <div class="mood-grid">
-            <!-- Vui -->
-            <div class="mood-card" data-mood="vui">
-              <div class="mood-icon">
-                <i class="fas fa-laugh-beam"></i>
-              </div>
-              <h3 class="mood-title">Vui vẻ</h3>
-              <div class="book-suggestions" id="vui-suggestions">
-                <!-- Sách sẽ được hiển thị ở đây khi click -->
-              </div>
-            </div>
-
-            <!-- Buồn -->
-            <div class="mood-card" data-mood="buon">
-              <div class="mood-icon">
-                <i class="fas fa-sad-tear"></i>
-              </div>
-              <h3 class="mood-title">Buồn bã</h3>
-              <div class="book-suggestions" id="buon-suggestions">
-                <!-- Sách sẽ được hiển thị ở đây khi click -->
-              </div>
-            </div>
-
-            <!-- Lãng mạn -->
-            <div class="mood-card" data-mood="langman">
-              <div class="mood-icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              <h3 class="mood-title">Lãng mạn</h3>
-              <div class="book-suggestions" id="langman-suggestions">
-                <!-- Sách sẽ được hiển thị ở đây khi click -->
-              </div>
-            </div>
-
-            <!-- Kịch tính -->
-            <div class="mood-card" data-mood="kitich">
-              <div class="mood-icon">
-                <i class="fas fa-fire"></i>
-              </div>
-              <h3 class="mood-title">Kịch tính</h3>
-              <div class="book-suggestions" id="kitich-suggestions">
-                <!-- Sách sẽ được hiển thị ở đây khi click -->
+                <img src="#" alt="Sách Thiếu Nhi" />
               </div>
             </div>
           </div>
@@ -208,41 +155,38 @@
             <button class="filter-btn active" data-category="all">
               Tất Cả
             </button>
-            <button class="filter-btn" data-category="vanhoc">Văn học</button>
-            <button class="filter-btn" data-category="kinhte">Kinh tế</button>
-            <button class="filter-btn" data-category="kynang">Kỹ năng</button>
+            <button class="filter-btn" data-category="vanhoc">Văn Học</button>
+            <button class="filter-btn" data-category="kinhte">Kinh Tế</button>
+            <button class="filter-btn" data-category="khoahoc">Khoa Học</button>
+            <button class="filter-btn" data-category="lichsu">Lịch Sử</button>
             <button class="filter-btn" data-category="thieunhi">
-              Thiếu nhi
-            </button>
-            <button class="filter-btn" data-category="bestseller">
-              Bestseller
+              Thiếu Nhi
             </button>
           </div>
         </section>
 
-        <!-- Book Products -->
-        <section class="book-products">
-          <h2 class="section-title">Sách Nổi Bật</h2>
+        <!-- Sach Products -->
+        <section class="sach-products">
+          <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
 
-          <!-- Văn học Products -->
+          <!-- Van Hoc Products -->
           <div class="category-section" id="vanhoc">
-            <h3 class="category-title">Văn học</h3>
+            <h3 class="category-title">Văn Học</h3>
             <div class="product-grid">
               <!-- Sách 1 -->
               <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
-                  <img src="" alt="Nhà Giả Kim" />
-                  <div class="product-badge">Bestseller</div>
+                  <img src="#" alt="Sách Văn Học 1" />
+                  <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Nhà Giả Kim</h3>
-                  <p class="product-author">Paulo Coelho</p>
+                  <h3 class="product-name">Tác Phẩm Văn Học Kinh Điển</h3>
                   <div class="product-price">
-                    <span class="current-price">89.000₫</span>
-                    <span class="original-price">120.000₫</span>
+                    <span class="current-price">120.000₫</span>
+                    <span class="original-price">150.000₫</span>
                   </div>
                   <button class="btn-details" data-id="1">Xem Chi Tiết</button>
                 </div>
@@ -251,18 +195,17 @@
               <!-- Sách 2 -->
               <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
-                  <img src="" alt="Tiếng Chim Hót Trong Bụi Mận Gai" />
+                  <img src="#" alt="Sách Văn Học 2" />
                   <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Tiếng Chim Hót Trong Bụi Mận Gai</h3>
-                  <p class="product-author">Colleen McCullough</p>
+                  <h3 class="product-name">Tiểu Thuyết Đương Đại</h3>
                   <div class="product-price">
-                    <span class="current-price">156.000₫</span>
-                    <span class="original-price">195.000₫</span>
+                    <span class="current-price">95.000₫</span>
+                    <span class="original-price">120.000₫</span>
                   </div>
                   <button class="btn-details" data-id="2">Xem Chi Tiết</button>
                 </div>
@@ -271,17 +214,16 @@
               <!-- Sách 3 -->
               <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
-                  <img src="" alt="Đắc Nhân Tâm" />
+                  <img src="#" alt="Sách Văn Học 3" />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Đắc Nhân Tâm</h3>
-                  <p class="product-author">Dale Carnegie</p>
+                  <h3 class="product-name">Tuyển Tập Truyện Ngắn</h3>
                   <div class="product-price">
-                    <span class="current-price">75.000₫</span>
-                    <span class="original-price">95.000₫</span>
+                    <span class="current-price">85.000₫</span>
+                    <span class="original-price">100.000₫</span>
                   </div>
                   <button class="btn-details" data-id="3">Xem Chi Tiết</button>
                 </div>
@@ -289,25 +231,24 @@
             </div>
           </div>
 
-          <!-- Kinh tế Products -->
+          <!-- Kinh Te Products -->
           <div class="category-section" id="kinhte">
-            <h3 class="category-title">Kinh tế</h3>
+            <h3 class="category-title">Kinh Tế</h3>
             <div class="product-grid">
               <!-- Sách 4 -->
               <div class="product-card" data-category="kinhte">
                 <div class="product-image">
-                  <img src="" alt="Tư Duy Nhanh và Chậm" />
+                  <img src="#" alt="Sách Kinh Tế 1" />
                   <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Tư Duy Nhanh và Chậm</h3>
-                  <p class="product-author">Daniel Kahneman</p>
+                  <h3 class="product-name">Kinh Tế Học Cơ Bản</h3>
                   <div class="product-price">
-                    <span class="current-price">185.000₫</span>
-                    <span class="original-price">220.000₫</span>
+                    <span class="current-price">135.000₫</span>
+                    <span class="original-price">160.000₫</span>
                   </div>
                   <button class="btn-details" data-id="4">Xem Chi Tiết</button>
                 </div>
@@ -316,18 +257,17 @@
               <!-- Sách 5 -->
               <div class="product-card" data-category="kinhte">
                 <div class="product-image">
-                  <img src="" alt="Cha Giàu Cha Nghèo" />
-                  <div class="product-badge">Bestseller</div>
+                  <img src="#" alt="Sách Kinh Tế 2" />
+                  <div class="product-badge">Bán chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Cha Giàu Cha Nghèo</h3>
-                  <p class="product-author">Robert Kiyosaki</p>
+                  <h3 class="product-name">Đầu Tư Thông Minh</h3>
                   <div class="product-price">
-                    <span class="current-price">95.000₫</span>
-                    <span class="original-price">120.000₫</span>
+                    <span class="current-price">110.000₫</span>
+                    <span class="original-price">130.000₫</span>
                   </div>
                   <button class="btn-details" data-id="5">Xem Chi Tiết</button>
                 </div>
@@ -336,17 +276,16 @@
               <!-- Sách 6 -->
               <div class="product-card" data-category="kinhte">
                 <div class="product-image">
-                  <img src="" alt="Nghĩ Giàu Làm Giàu" />
+                  <img src="#" alt="Sách Kinh Tế 3" />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Nghĩ Giàu Làm Giàu</h3>
-                  <p class="product-author">Napoleon Hill</p>
+                  <h3 class="product-name">Quản Trị Doanh Nghiệp</h3>
                   <div class="product-price">
-                    <span class="current-price">78.000₫</span>
-                    <span class="original-price">99.000₫</span>
+                    <span class="current-price">125.000₫</span>
+                    <span class="original-price">145.000₫</span>
                   </div>
                   <button class="btn-details" data-id="6">Xem Chi Tiết</button>
                 </div>
@@ -354,24 +293,23 @@
             </div>
           </div>
 
-          <!-- Kỹ năng Products -->
-          <div class="category-section" id="kynang">
-            <h3 class="category-title">Kỹ năng</h3>
+          <!-- Khoa Hoc Products -->
+          <div class="category-section" id="khoahoc">
+            <h3 class="category-title">Khoa Học</h3>
             <div class="product-grid">
               <!-- Sách 7 -->
-              <div class="product-card" data-category="kynang">
+              <div class="product-card" data-category="khoahoc">
                 <div class="product-image">
-                  <img src="" alt="7 Thói Quen Hiệu Quả" />
-                  <div class="product-badge">Bestseller</div>
+                  <img src="#" alt="Sách Khoa Học 1" />
+                  <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">7 Thói Quen Hiệu Quả</h3>
-                  <p class="product-author">Stephen R. Covey</p>
+                  <h3 class="product-name">Vũ Trụ Quanh Ta</h3>
                   <div class="product-price">
-                    <span class="current-price">135.000₫</span>
+                    <span class="current-price">140.000₫</span>
                     <span class="original-price">165.000₫</span>
                   </div>
                   <button class="btn-details" data-id="7">Xem Chi Tiết</button>
@@ -379,39 +317,37 @@
               </div>
 
               <!-- Sách 8 -->
-              <div class="product-card" data-category="kynang">
+              <div class="product-card" data-category="khoahoc">
                 <div class="product-image">
-                  <img src="" alt="Đọc Vị Bất Kỳ Ai" />
-                  <div class="product-badge">Mới</div>
+                  <img src="#" alt="Sách Khoa Học 2" />
+                  <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Đọc Vị Bất Kỳ Ai</h3>
-                  <p class="product-author">David J. Lieberman</p>
+                  <h3 class="product-name">Công Nghệ Tương Lai</h3>
                   <div class="product-price">
-                    <span class="current-price">88.000₫</span>
-                    <span class="original-price">110.000₫</span>
+                    <span class="current-price">115.000₫</span>
+                    <span class="original-price">140.000₫</span>
                   </div>
                   <button class="btn-details" data-id="8">Xem Chi Tiết</button>
                 </div>
               </div>
 
               <!-- Sách 9 -->
-              <div class="product-card" data-category="kynang">
+              <div class="product-card" data-category="khoahoc">
                 <div class="product-image">
-                  <img src="" alt="Nghệ Thuật Tinh Tế" />
+                  <img src="#" alt="Sách Khoa Học 3" />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Nghệ Thuật Tinh Tế</h3>
-                  <p class="product-author">Mark Manson</p>
+                  <h3 class="product-name">Khám Phá Thiên Nhiên</h3>
                   <div class="product-price">
-                    <span class="current-price">115.000₫</span>
-                    <span class="original-price">145.000₫</span>
+                    <span class="current-price">95.000₫</span>
+                    <span class="original-price">115.000₫</span>
                   </div>
                   <button class="btn-details" data-id="9">Xem Chi Tiết</button>
                 </div>
@@ -419,64 +355,61 @@
             </div>
           </div>
 
-          <!-- Thiếu nhi Products -->
-          <div class="category-section" id="thieunhi">
-            <h3 class="category-title">Thiếu nhi</h3>
+          <!-- Lich Su Products -->
+          <div class="category-section" id="lichsu">
+            <h3 class="category-title">Lịch Sử</h3>
             <div class="product-grid">
               <!-- Sách 10 -->
-              <div class="product-card" data-category="thieunhi">
+              <div class="product-card" data-category="lichsu">
                 <div class="product-image">
-                  <img src="" alt="Harry Potter" />
-                  <div class="product-badge">Bestseller</div>
+                  <img src="#" alt="Sách Lịch Sử 1" />
+                  <div class="product-badge">Bán chạy</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Harry Potter và Hòn Đá Phù Thủy</h3>
-                  <p class="product-author">J.K. Rowling</p>
+                  <h3 class="product-name">Lịch Sử Việt Nam</h3>
                   <div class="product-price">
-                    <span class="current-price">165.000₫</span>
-                    <span class="original-price">195.000₫</span>
+                    <span class="current-price">155.000₫</span>
+                    <span class="original-price">180.000₫</span>
                   </div>
                   <button class="btn-details" data-id="10">Xem Chi Tiết</button>
                 </div>
               </div>
 
               <!-- Sách 11 -->
-              <div class="product-card" data-category="thieunhi">
+              <div class="product-card" data-category="lichsu">
                 <div class="product-image">
-                  <img src="" alt="Hoàng Tử Bé" />
-                  <div class="product-badge">Kinh điển</div>
+                  <img src="#" alt="Sách Lịch Sử 2" />
+                  <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Hoàng Tử Bé</h3>
-                  <p class="product-author">Antoine de Saint-Exupéry</p>
+                  <h3 class="product-name">Thế Giới Cổ Đại</h3>
                   <div class="product-price">
-                    <span class="current-price">65.000₫</span>
-                    <span class="original-price">85.000₫</span>
+                    <span class="current-price">130.000₫</span>
+                    <span class="original-price">155.000₫</span>
                   </div>
                   <button class="btn-details" data-id="11">Xem Chi Tiết</button>
                 </div>
               </div>
 
               <!-- Sách 12 -->
-              <div class="product-card" data-category="thieunhi">
+              <div class="product-card" data-category="lichsu">
                 <div class="product-image">
-                  <img src="" alt="Doraemon" />
+                  <img src="#" alt="Sách Lịch Sử 3" />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Doraemon - Tập 1</h3>
-                  <p class="product-author">Fujiko F. Fujio</p>
+                  <h3 class="product-name">Nhân Vật Lịch Sử</h3>
                   <div class="product-price">
-                    <span class="current-price">25.000₫</span>
-                    <span class="original-price">35.000₫</span>
+                    <span class="current-price">105.000₫</span>
+                    <span class="original-price">125.000₫</span>
                   </div>
                   <button class="btn-details" data-id="12">Xem Chi Tiết</button>
                 </div>
@@ -484,64 +417,61 @@
             </div>
           </div>
 
-          <!-- Bestseller Products -->
-          <div class="category-section" id="bestseller">
-            <h3 class="category-title">Bestseller</h3>
+          <!-- Thieu Nhi Products -->
+          <div class="category-section" id="thieunhi">
+            <h3 class="category-title">Thiếu Nhi</h3>
             <div class="product-grid">
               <!-- Sách 13 -->
-              <div class="product-card" data-category="bestseller">
+              <div class="product-card" data-category="thieunhi">
                 <div class="product-image">
-                  <img src="" alt="Nhà Giả Kim" />
-                  <div class="product-badge">#1 Bestseller</div>
+                  <img src="#" alt="Sách Thiếu Nhi 1" />
+                  <div class="product-badge">Mới</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Nhà Giả Kim</h3>
-                  <p class="product-author">Paulo Coelho</p>
+                  <h3 class="product-name">Truyện Cổ Tích</h3>
                   <div class="product-price">
-                    <span class="current-price">89.000₫</span>
-                    <span class="original-price">120.000₫</span>
+                    <span class="current-price">75.000₫</span>
+                    <span class="original-price">90.000₫</span>
                   </div>
                   <button class="btn-details" data-id="13">Xem Chi Tiết</button>
                 </div>
               </div>
 
               <!-- Sách 14 -->
-              <div class="product-card" data-category="bestseller">
+              <div class="product-card" data-category="thieunhi">
                 <div class="product-image">
-                  <img src="" alt="Đắc Nhân Tâm" />
-                  <div class="product-badge">#2 Bestseller</div>
+                  <img src="#" alt="Sách Thiếu Nhi 2" />
+                  <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Đắc Nhân Tâm</h3>
-                  <p class="product-author">Dale Carnegie</p>
+                  <h3 class="product-name">Khám Phá Khoa Học</h3>
                   <div class="product-price">
-                    <span class="current-price">75.000₫</span>
-                    <span class="original-price">95.000₫</span>
+                    <span class="current-price">85.000₫</span>
+                    <span class="original-price">100.000₫</span>
                   </div>
                   <button class="btn-details" data-id="14">Xem Chi Tiết</button>
                 </div>
               </div>
 
               <!-- Sách 15 -->
-              <div class="product-card" data-category="bestseller">
+              <div class="product-card" data-category="thieunhi">
                 <div class="product-image">
-                  <img src="" alt="Tư Duy Nhanh và Chậm" />
+                  <img src="#" alt="Sách Thiếu Nhi 3" />
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
                   </button>
                 </div>
                 <div class="product-info">
-                  <h3 class="product-name">Tư Duy Nhanh và Chậm</h3>
-                  <p class="product-author">Daniel Kahneman</p>
+                  <h3 class="product-name">Truyện Tranh</h3>
                   <div class="product-price">
-                    <span class="current-price">185.000₫</span>
-                    <span class="original-price">220.000₫</span>
+                    <span class="current-price">65.000₫</span>
+                    <span class="original-price">80.000₫</span>
                   </div>
                   <button class="btn-details" data-id="15">Xem Chi Tiết</button>
                 </div>
@@ -565,7 +495,6 @@
             </div>
             <div class="modal-info">
               <h2 id="modalTitle"></h2>
-              <p class="modal-author" id="modalAuthor"></p>
               <div class="modal-price">
                 <span class="modal-current-price" id="modalCurrentPrice"></span>
                 <span
@@ -574,7 +503,7 @@
                 ></span>
               </div>
               <div class="modal-specs">
-                <h3>Thông tin sách</h3>
+                <h3>Thông tin chi tiết</h3>
                 <ul id="modalSpecs"></ul>
               </div>
               <div class="modal-actions">
@@ -598,8 +527,8 @@
           <div class="footer-column">
             <h3>Về Chúng Tôi</h3>
             <p>
-              ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm công nghệ chất
-              lượng cao với giá cả hợp lý.
+              ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm sách chất lượng
+              cao với giá cả hợp lý.
             </p>
           </div>
 
@@ -609,7 +538,7 @@
               <li><a href="index.html">Trang Chủ</a></li>
               <li><a href="dienthoai.html">Điện Thoại</a></li>
               <li><a href="quanao.html">Quần áo</a></li>
-              <li><a href="products.html">Lego</a></li>
+              <li><a href="sach.html">Sách</a></li>
               <li><a href="products.html">Hàng Nóng</a></li>
             </ul>
           </div>
