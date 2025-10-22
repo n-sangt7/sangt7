@@ -125,25 +125,37 @@
           <p>Khám phá những cuốn sách hay với nội dung phong phú và đa dạng</p>
         </div>
 
-        <!-- Sach Slider -->
-        <section class="sach-slider">
-          <div class="slider-container">
-            <div class="slider-track">
-              <div class="slider-item">
-                <img src="#" alt="Sách Văn Học" />
+        <!-- Sach Emotions -->
+        <section class="sach-emotions">
+          <h2 class="section-title">Sách Theo Cảm Xúc</h2>
+          <div class="emotions-container">
+            <div class="emotion-item" data-emotion="vui">
+              <div class="emotion-icon">
+                <i class="fas fa-laugh-beam"></i>
               </div>
-              <div class="slider-item">
-                <img src="#" alt="Sách Kinh Tế" />
+              <h3>Vui Vẻ</h3>
+              <p>Sách mang lại tiếng cười và niềm vui</p>
+            </div>
+            <div class="emotion-item" data-emotion="buon">
+              <div class="emotion-icon">
+                <i class="fas fa-sad-tear"></i>
               </div>
-              <div class="slider-item">
-                <img src="#" alt="Sách Khoa Học" />
+              <h3>Buồn Bã</h3>
+              <p>Sách chạm đến trái tim và cảm xúc</p>
+            </div>
+            <div class="emotion-item" data-emotion="yeu">
+              <div class="emotion-icon">
+                <i class="fas fa-heart"></i>
               </div>
-              <div class="slider-item">
-                <img src="#" alt="Sách Lịch Sử" />
+              <h3>Tình Yêu</h3>
+              <p>Sách về tình yêu và lãng mạn</p>
+            </div>
+            <div class="emotion-item" data-emotion="kinhdi">
+              <div class="emotion-icon">
+                <i class="fas fa-ghost"></i>
               </div>
-              <div class="slider-item">
-                <img src="#" alt="Sách Thiếu Nhi" />
-              </div>
+              <h3>Kinh Dị</h3>
+              <p>Sách gây căng thẳng và hồi hộp</p>
             </div>
           </div>
         </section>
@@ -195,7 +207,10 @@
               <!-- Sách 2 -->
               <div class="product-card" data-category="vanhoc">
                 <div class="product-image">
-                  <img src="#" alt="Sách Văn Học 2" />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNlqPi8OybLk85ydA-ezAmLI9lzF7m4idrfQ&s"
+                    alt="Sách Văn Học 2"
+                  />
                   <div class="product-badge">Giảm giá</div>
                   <button class="btn-wishlist">
                     <i class="far fa-heart"></i>
@@ -520,6 +535,46 @@
       </div>
     </div>
 
+    <!-- Modal Sách Theo Cảm Xúc -->
+    <div class="modal-overlay" id="emotionModal">
+      <div class="modal-content">
+        <button class="modal-close" id="emotionModalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-emotion">
+            <div class="modal-emotion-header">
+              <div class="emotion-icon-large" id="modalEmotionIcon"></div>
+              <h2 id="modalEmotionTitle"></h2>
+            </div>
+            <div class="modal-emotion-content">
+              <div class="emotion-book">
+                <div class="emotion-book-image">
+                  <img id="modalEmotionImage" src="" alt="Book Image" />
+                </div>
+                <div class="emotion-book-info">
+                  <h3 id="modalEmotionBookTitle"></h3>
+                  <p id="modalEmotionBookDesc"></p>
+                  <div class="emotion-book-price">
+                    <span id="modalEmotionCurrentPrice"></span>
+                    <span id="modalEmotionOriginalPrice"></span>
+                  </div>
+                  <div class="emotion-book-actions">
+                    <button class="btn btn-buy">
+                      <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                    </button>
+                    <button class="btn btn-buy btn-accent">
+                      <i class="fas fa-bolt"></i> Mua ngay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -543,18 +598,22 @@
             </ul>
           </div>
 
+          <!-- Trong phần footer, cập nhật phần social links -->
           <div class="footer-column">
             <h3>Liên Hệ MXH</h3>
             <div class="social-links">
-              <a href="#" class="social-link"
-                ><i class="fab fa-github"></i>Github</a
-              >
-              <a href="#" class="social-link"
-                ><i class="fab fa-youtube"></i>Youtube</a
-              >
-              <a href="#" class="social-link"
-                ><i class="fab fa-tiktok"></i>TikTok</a
-              >
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+                <span>Youtube</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+              </a>
             </div>
           </div>
 
