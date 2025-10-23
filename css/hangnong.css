@@ -274,111 +274,92 @@ nav {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header-action:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
 .header-action i {
+  font-size: 18px;
   color: white;
-  font-size: 16px;
 }
 
 .cart-count {
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: 0;
+  right: 0;
   background-color: var(--accent);
   color: white;
   border-radius: 50%;
   width: 18px;
   height: 18px;
+  font-size: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
+/* Auth Links */
 .auth-links {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  padding: 6px 12px;
-  border-radius: 8px;
+  gap: 8px;
 }
 
 .auth-links a {
   color: white;
   font-weight: 500;
   transition: var(--transition);
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
   font-size: 14px;
-  white-space: nowrap;
 }
 
 .auth-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
-}
-
-.auth-links a i {
-  margin-right: 4px;
-  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 /* Search Section */
 .search-section {
-  background: linear-gradient(
-    135deg,
-    rgba(139, 69, 19, 0.1),
-    rgba(160, 82, 45, 0.1)
-  );
-  padding: 20px 0;
+  background-color: var(--light);
+  padding: 15px 0;
+  border-top: 1px solid rgba(139, 69, 19, 0.2);
   border-bottom: 1px solid rgba(139, 69, 19, 0.2);
 }
 
 .search-container {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .search-box {
   position: relative;
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .search-input {
   width: 100%;
   padding: 12px 20px 12px 45px;
-  border: 2px solid rgba(139, 69, 19, 0.3);
-  border-radius: 25px;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
   font-size: 16px;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-input:focus {
   outline: none;
   border-color: var(--primary);
-  background: white;
-  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+  box-shadow: 0 6px 15px rgba(139, 69, 19, 0.2);
 }
 
 .search-icon {
@@ -387,25 +368,28 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   color: var(--gray);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .search-btn {
   padding: 12px 24px;
-  background: var(--gradient);
+  background-color: var(--primary);
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: 600;
   transition: var(--transition);
-  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
-  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .search-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+  background-color: var(--dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(139, 69, 19, 0.4);
 }
 
 /* Main Content */
@@ -415,26 +399,18 @@ nav {
 
 .page-header {
   text-align: center;
-  margin-bottom: 40px;
-  padding: 20px;
-  background: linear-gradient(
-    135deg,
-    rgba(139, 69, 19, 0.1),
-    rgba(160, 82, 45, 0.1)
-  );
-  border-radius: 15px;
-  border: 1px solid rgba(139, 69, 19, 0.2);
+  margin-bottom: 50px;
 }
 
 .page-header h1 {
   font-size: 36px;
   color: var(--dark);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .page-header p {
   font-size: 18px;
-  color: var(--secondary);
+  color: var(--gray);
   max-width: 600px;
   margin: 0 auto;
 }
