@@ -276,6 +276,182 @@ const products = {
       "Phù hợp: Chạy bộ, tập luyện",
     ],
   },
+
+  chanel2: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  chanel3: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  chanel4: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  nike1: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  nike2: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  nike3: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  nike4: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  adidas1: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  adidas2: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  adidas3: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
+
+  adidas4: {
+    title: "Adidas Ultraboost 22",
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    currentPrice: "4.990.000₫",
+    originalPrice: "5.990.000₫",
+    specs: [
+      "Chất liệu: Primeknit+",
+      "Công nghệ: Boost™",
+      "Màu sắc: Trắng/Đen",
+      "Xuất xứ: Indonesia",
+      "Bảo hành: 6 tháng",
+      "Phù hợp: Chạy bộ, tập luyện",
+    ],
+  },
 };
 
 // Initialize Fashion Page
