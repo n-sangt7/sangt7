@@ -1053,27 +1053,34 @@ footer {
   padding-left: 5px;
 }
 
+/* Trong file hangnong.css - phần Social Links */
 .social-links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .social-link {
   display: flex;
   align-items: center;
-  color: white;
-  transition: var(--transition);
-  opacity: 0.9;
+  gap: 10px;
   padding: 8px 12px;
-  border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  width: fit-content; /* Quan trọng: chỉ rộng vừa với nội dung */
+  transition: all 0.3s ease;
+}
+
+.social-link i {
+  font-size: 20px;
 }
 
 .social-link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  opacity: 1;
-  transform: translateX(5px);
+  background: var(--accent);
+  transform: translateY(-3px);
 }
 
 .social-link i {
