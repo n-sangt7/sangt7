@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ - ĐBDK2T</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/lienhe.css" />
+  </head>
+  <body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="main-header">
+        <div class="container">
+          <div class="header-content">
+            <a href="index.html" class="logo">
+              <i class="fas fa-microchip"></i>
+              KDB
+            </a>
+
+            <nav>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link"
+                    ><i class="fas fa-home"></i> Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="dienthoai.html" class="nav-link"
+                    ><i class="fa-solid fa-phone"></i>Điện Thoại</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="laptop.html" class="nav-link"
+                    ><i class="fa-solid fa-laptop"></i>Laptop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="quanao.html" class="nav-link"
+                    ><i class="fa-solid fa-shirt"></i>Quần áo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="sach.html" class="nav-link"
+                    ><i class="fa-solid fa-book"></i>Sách</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="products.html" class="nav-link"
+                    ><i class="fa-solid fa-gun"></i>Hàng Nóng</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link active"
+                    ><i class="fa-solid fa-comment-dots"></i> Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-actions">
+              <div class="auth-links">
+                <a href="login.html" id="login-link"
+                  ><i class="fas fa-user"></i> Đăng nhập</a
+                >
+                <a href="register.html" id="register-link"
+                  ><i class="fas fa-user-plus"></i> Đăng ký</a
+                >
+                <a href="#" id="logout-link" style="display: none"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </div>
+              <div class="header-action">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="header-action">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm sản phẩm, từ khóa..."
+              />
+            </div>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contact-page">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1>Liên Hệ Với Chúng Tôi</h1>
+          <p>Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn</p>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="contact-content">
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <h2 class="section-title">Gửi Tin Nhắn</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Họ và tên *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Chủ đề *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Chọn chủ đề</option>
+                  <option value="support">Hỗ trợ kỹ thuật</option>
+                  <option value="order">Thắc mắc đơn hàng</option>
+                  <option value="product">Thông tin sản phẩm</option>
+                  <option value="feedback">Góp ý</option>
+                  <option value="other">Khác</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nội dung tin nhắn *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                <i class="fas fa-paper-plane"></i> Gửi Tin Nhắn
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info-section">
+            <h2 class="section-title">Thông Tin Liên Hệ</h2>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Địa chỉ</h3>
+                  <p>
+                    504 Đại lộ Bình Dương, Phường Phú Lợi, Thành phố Thủ Dầu
+                    Một, Tỉnh Bình Dương
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Điện thoại</h3>
+                  <p>0123 456 7890</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <p>info@dbdk2tdientu.vn</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Giờ làm việc</h3>
+                  <p>Thứ 2 - Chủ nhật: 8:00 - 20:00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+              <h3>Bản đồ</h3>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.485583788483!2d106.76928847599915!3d10.8506338892993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752763f23816ab%3A0x282f711441b6916f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6BpbmggRMawxqFuZw!5e0!3m2!1svi!2s!4v1710000000000!5m2!1svi!2s"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-section">
+              <h3>Theo dõi chúng tôi</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              ĐBDK2T - Địa chỉ tin cậy cho các sản phẩm công nghệ chất lượng cao
+              với giá cả hợp lý.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Kết Nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="dienthoai.html">Điện Thoại</a></li>
+              <li><a href="laptop.html">Laptop</a></li>
+              <li><a href="quanao.html">Quần áo</a></li>
+              <li><a href="sach.html">Sách</a></li>
+              <li><a href="products.html">Hàng Nóng</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liên Hệ MXH</h3>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-github"></i>Github</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-youtube"></i>Youtube</a
+              >
+              <a href="#" class="social-link"
+                ><i class="fab fa-tiktok"></i>TikTok</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Thông Tin Liên Hệ</h3>
+            <ul class="contact-info-footer">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>504 Đại lộ Bình Dương</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>01234567890</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@dbdk2tdientu.vn</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Khánh - Bình - Dũng. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/lienhe.js"></script>
+  </body>
+</html>
