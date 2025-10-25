@@ -581,6 +581,7 @@ nav {
 }
 
 /* Footer */
+/* Footer */
 footer {
   background: var(--nav-gradient);
   color: white;
@@ -616,6 +617,36 @@ footer {
   line-height: 1.8;
 }
 
+/* Sửa phần social links giống laptop */
+.social-links {
+  display: flex;
+  flex-direction: column; /* các dòng xếp dọc */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: flex; /* icon + chữ nằm ngang */
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa icon và chữ */
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.social-link i {
+  font-size: 20px;
+}
+
+.social-link:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+
 .footer-links li {
   margin-bottom: 12px;
 }
@@ -649,19 +680,9 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 992px) {
-  .nav-menu {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-
-  .nav-item {
-    flex: 1 0 calc(33.333% - 10px);
-  }
-
-  .contact-content {
+@media (max-width: 768px) {
+  .footer-content {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 }
 
