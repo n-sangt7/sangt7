@@ -4,6 +4,7 @@ const productData = {
     title: "Súng Đồ Chơi Mô Hình AK-47",
     currentPrice: "250.000₫",
     originalPrice: "300.000₫",
+    image: "./img/ak.png",
     accessories: [
       { icon: "fas fa-box", name: "Hộp đựng" },
       { icon: "fas fa-bullseye", name: "Băng đạn" },

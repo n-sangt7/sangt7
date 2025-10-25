@@ -29,7 +29,7 @@ const products = {
   balenciaga2: {
     title: "Gucci GG T-Shirt",
     image:
-      "https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/duyetfashion-balenciaga-triple-s-sneaker-clear-sole-triple-grey-541624-w09o1-1705-duyet-fashion-4-jpeg.jpg?v=1637029094527",
+      "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2024/02/tui-xach-nu-balenciaga-ville-top-handel-xxs-bag-mau-den1-jpg-1706861397-02022024150957.jpg",
     currentPrice: "8.990.000₫",
     originalPrice: "10.990.000₫",
     specs: [
@@ -44,7 +44,7 @@ const products = {
   balenciaga3: {
     title: "Puma Sport Jacket",
     image:
-      "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://dashjk.vn/wp-content/uploads/2023/12/Giay-Balenciaga-Track-mix-cung-quan-jogger.jpg",
     currentPrice: "2.990.000₫",
     originalPrice: "3.990.000₫",
     specs: [
@@ -59,7 +59,7 @@ const products = {
   balenciaga4: {
     title: "Handes Evening Dress",
     image:
-      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/duyetfashion-balenciaga-triple-s-sneaker-clear-sole-triple-grey-541624-w09o1-1705-duyet-fashion-4-jpeg.jpg?v=1637029094527",
     currentPrice: "5.990.000₫",
     originalPrice: "7.990.000₫",
     specs: [
@@ -75,7 +75,7 @@ const products = {
   gucci1: {
     title: "Chanel Classic Flap Bag",
     image:
-      "https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/duyetfashion-balenciaga-triple-s-sneaker-clear-sole-triple-grey-541624-w09o1-1705-duyet-fashion-4-jpeg.jpg?v=1637029094527",
+      "https://bizweb.dktcdn.net/100/461/714/products/ao-thun-gucci-white-logo-gg-firenze-1921-logo-trang-den-1721559846589.png?v=1725115156313",
     currentPrice: "45.990.000₫",
     originalPrice: "52.990.000₫",
     specs: [
@@ -90,7 +90,7 @@ const products = {
   gucci2: {
     title: "Nike Air Jordan 1",
     image:
-      "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://hystore.vn/wp-content/uploads/2024/12/23090C21-955A-4E5B-A31C-EF4BFAEA8668-scaled.jpeg",
     currentPrice: "5.990.000₫",
     originalPrice: "6.990.000₫",
     specs: [
@@ -105,7 +105,7 @@ const products = {
   gucci3: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2025/09/tui-deo-cheo-nu-gucci-soho-small-leather-disco-bag-black-308364-a7m0g-1000-mau-den2-jpg-1757497753-10092025164913.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -120,7 +120,7 @@ const products = {
   gucci4: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://vuagiayhieu.com/wp-content/uploads/2024/09/giay-gucci-ace-leather-sneaker-with-green-crocodile-4.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -136,7 +136,7 @@ const products = {
   puma1: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/530076/01/fnd/VNM/fmt/png/%C3%81o-thun-n%E1%BB%AF-Classics-Logo",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -151,8 +151,7 @@ const products = {
 
   puma2: {
     title: "Adidas Ultraboost 22",
-    image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://cf.shopee.vn/file/vn-11134201-7r98o-m02upq4kqopbcc",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -168,7 +167,7 @@ const products = {
   puma3: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/319/386/products/d339fe0b-275a-4e42-89b1-48fc73de3999-jpeg.jpg?v=1648743445670",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -184,7 +183,7 @@ const products = {
   puma4: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/09/giay-sneaker-unisex-puma-rsx-suede-vitruta-39117602-mau-xanh-xam02-jpg-1694595086-13092023155126.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -200,7 +199,7 @@ const products = {
   handes1: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://sithimy.s3.ap-southeast-1.amazonaws.com/sithimy/media/ENv2E3XdMxFWNYovE5iAMRIZ9HnylDVYo6ZdtgyI.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -216,7 +215,7 @@ const products = {
   handes2: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://i5.walmartimages.com/asr/a3276500-5111-4a04-9030-d60f38a09ed0.df00e78b97a39236f496d0d8ced6443f.jpeg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -232,7 +231,7 @@ const products = {
   handes3: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://media.karousell.com/media/photos/products/2024/2/11/hanes_totebag_preloved_1707659771_b177e59e_progressive.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -248,7 +247,7 @@ const products = {
   handes4: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://cdn.yousport.vn/Media/Products/130720012932210/gbd-pan-hades-ic-den-dq-2.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -264,7 +263,7 @@ const products = {
   chanel1: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://kenh14cdn.com/2019/11/14/photo-1-15737033215041166855880.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -280,7 +279,7 @@ const products = {
   chanel2: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://hotgirlshop.vn/uploads/picture/31052022/News/20531124619-quan-suon-jean-chanel-fashion.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -296,7 +295,7 @@ const products = {
   chanel3: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://hongnhungluxury.com/wp-content/uploads/2024/08/giay-espadrille-chanel.jpg.webp",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -312,7 +311,7 @@ const products = {
   chanel4: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://hongnhungluxury.com/wp-content/uploads/2024/06/tui-chanel-classic-small-da-caviar-1.jpg  .webp",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -328,7 +327,7 @@ const products = {
   nike1: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/100/413/756/products/image-1730952701419.png?v=1731120849307",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -344,7 +343,7 @@ const products = {
   nike2: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/100/425/004/products/886932-431-a-prem.jpg?v=1678189303573",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -360,7 +359,7 @@ const products = {
   nike3: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/04/ao-thun-nam-nike-dri-fit-challenge-iii-t-shirt-bv6703-010-mau-den-jpg-1680753495-06042023105815.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -376,7 +375,7 @@ const products = {
   nike4: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://cdn.storims.com/api/v2/image/resize?path=https://storage.googleapis.com/storims_cdn/storims/uploads/a57ede542c7eef38f804859080109d1d.jpeg&format=jpeg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -392,7 +391,7 @@ const products = {
   adidas1: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/06/ao-thun-nu-adidas-always-original-ic8806-mau-trang-jpg-1687311898-21062023084458.jpg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -408,7 +407,7 @@ const products = {
   adidas2: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://trungsneaker.com/wp-content/uploads/2024/08/giay-adidas-nmd-r1-slip-on-white-gw5699-40-2.jpeg",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -424,7 +423,7 @@ const products = {
   adidas3: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/thumb/1024x1024/100/425/351/products/z5371353476397-f8503854910484dee4265e5a484b31d2-1714115618266.jpg?v=1714121545450",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
@@ -440,7 +439,7 @@ const products = {
   adidas4: {
     title: "Adidas Ultraboost 22",
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://bizweb.dktcdn.net/thumb/grande/100/340/361/products/aogiodet3socessentialstrangib0-666c4c84-882b-481c-8243-c33e466bf5da.jpg?v=1742786267353",
     currentPrice: "4.990.000₫",
     originalPrice: "5.990.000₫",
     specs: [
