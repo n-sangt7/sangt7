@@ -180,7 +180,7 @@ header {
   transform: rotate(-10deg);
 }
 
-/* Navigation - ĐÃ CẬP NHẬT */
+/* Navigation */
 nav {
   flex: 1;
   display: flex;
@@ -259,7 +259,7 @@ nav {
   font-size: 14px;
 }
 
-/* Header Actions - ĐÃ CẬP NHẬT */
+/* Header Actions */
 .header-actions {
   display: flex;
   align-items: center;
@@ -302,7 +302,7 @@ nav {
   font-weight: bold;
 }
 
-/* Auth Links - ĐÃ CẬP NHẬT */
+/* Auth Links */
 .auth-links {
   display: flex;
   gap: 8px;
@@ -324,7 +324,7 @@ nav {
   transform: translateY(-2px);
 }
 
-/* Search Section - ĐÃ CẬP NHẬT */
+/* Search Section */
 .search-section {
   background-color: var(--light);
   padding: 15px 0;
@@ -566,22 +566,31 @@ nav {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* FIXED: Product Image - Cải thiện hiển thị hình ảnh */
 .product-image {
   position: relative;
-  height: 250px;
-  background: linear-gradient(135deg, #f5deb3, #d2b48c);
+  height: 350px;
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 20px;
 }
 
 .product-image img {
-  width: 60%;
-  height: 80%;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: var(--transition);
   border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
 }
 
 .product-badge {
@@ -746,21 +755,26 @@ nav {
   gap: 30px;
 }
 
+/* FIXED: Modal Image - Cải thiện hiển thị hình ảnh */
 .modal-image {
-  background: linear-gradient(135deg, #f5deb3, #d2b48c);
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
   border-radius: 10px;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  overflow: hidden;
+  padding: 30px;
 }
 
 .modal-image img {
-  max-width: 80%;
-  max-height: 80%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .modal-info h2 {
@@ -854,21 +868,26 @@ nav {
   align-items: center;
 }
 
+/* FIXED: Emotion Book Image - Cải thiện hiển thị hình ảnh */
 .emotion-book-image {
-  background: linear-gradient(135deg, #f5deb3, #d2b48c);
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
   border-radius: 10px;
-  height: 300px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  overflow: hidden;
+  padding: 25px;
 }
 
 .emotion-book-image img {
-  max-width: 80%;
-  max-height: 80%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .emotion-book-info h3 {
@@ -913,6 +932,31 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+
+/* Book Placeholder - Improved */
+.book-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #8b4513;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-placeholder::before {
+  content: "📚";
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: block;
 }
 
 /* Footer */
@@ -961,7 +1005,7 @@ footer {
   transform: translateX(5px);
 }
 
-/* Social Links - ĐÃ CẬP NHẬT */
+/* Social Links */
 .social-links {
   display: flex;
   flex-direction: column;
@@ -1011,7 +1055,7 @@ footer {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Responsive Design - ĐÃ CẬP NHẬT */
+/* Responsive Design */
 @media (max-width: 992px) {
   .nav-menu {
     flex-wrap: wrap;
@@ -1033,7 +1077,7 @@ footer {
 
   .modal-image,
   .emotion-book-image {
-    height: 300px;
+    height: 350px;
   }
 }
 
@@ -1077,6 +1121,20 @@ footer {
   .emotion-book-actions {
     flex-direction: column;
   }
+
+  .product-image {
+    height: 300px;
+  }
+
+  .modal-image {
+    height: 300px;
+    padding: 20px;
+  }
+
+  .emotion-book-image {
+    height: 300px;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1113,5 +1171,19 @@ footer {
 
   .modal-body {
     padding: 20px;
+  }
+
+  .product-image {
+    height: 250px;
+  }
+
+  .modal-image {
+    height: 250px;
+    padding: 15px;
+  }
+
+  .emotion-book-image {
+    height: 250px;
+    padding: 15px;
   }
 }

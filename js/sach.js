@@ -56,7 +56,8 @@ const productDetails = {
     title: "Tác Phẩm Văn Học Kinh Điển",
     currentPrice: "120.000₫",
     originalPrice: "150.000₫",
-    image: "#",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGcW_foCO-ydlGWcjgXBB_ez2-UQiR09zoRw&s",
     specs: [
       "Tác giả: Nguyễn Văn A",
       "Nhà xuất bản: Văn Học",
@@ -513,5 +514,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const colors = ["#8B4513", "#A0522D", "#CD853F", "#D2691E", "#B8860B"];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     image.style.background = `linear-gradient(135deg, ${randomColor}40, ${randomColor}80)`;
+
+    // Thêm placeholder text nếu không có hình ảnh
+    const img = image.querySelector("img");
+    if (img && (img.src === "#" || !img.src)) {
+      // Tạo placeholder đẹp hơn
+      const placeholderText = image
+        .closest(".product-card")
+        .querySelector(".product-name").textContent;
+      image.innerHTML += `
+        <div class="book-placeholder" style="
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+          width: 100%; 
+          height: 100%;
+          color: ${randomColor};
+          font-weight: bold;
+          text-align: center;
+          padding: 20px;
+          font-size: 14px;
+        ">
+          ${placeholderText}
+        </div>
+      `;
+    }
   });
 });
