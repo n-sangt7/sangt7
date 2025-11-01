@@ -137,7 +137,7 @@ const typeData = {
     icon: "fas fa-gun",
     product: {
       title: "Súng Đồ Chơi Cao Cấp",
-      desc: "Bộ sưu tập súng đồ chơi mô hình đa dạng, chất liệu nhựa an toàn, thiết kế chân thực. Phù hợp cho trẻ em từ 8 tuổi trở lên.",
+      desc: "Bộ sưu tập súng.",
       currentPrice: "250.000₫ - 450.000₫",
       originalPrice: "300.000₫ - 550.000₫",
     },

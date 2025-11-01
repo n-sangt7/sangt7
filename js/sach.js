@@ -9,7 +9,8 @@ const emotionBooks = {
         "Tuyển tập những câu chuyện cười và tình huống hài hước trong cuộc sống, giúp bạn giải tỏa căng thẳng và mang lại những phút giây thư giãn tuyệt vời.",
       price: "85.000₫",
       originalPrice: "100.000₫",
-      image: "#",
+      image:
+        "https://photo.znews.vn/w660/Uploaded/orhwao_hfobudl/2022_04_29/2.jpg",
     },
   },
   buon: {
@@ -21,7 +22,7 @@ const emotionBooks = {
         "Câu chuyện về những số phận, những mảnh đời bất hạnh và những nỗi buồn sâu thẳm trong tâm hồn con người. Một tác phẩm chạm đến trái tim người đọc.",
       price: "95.000₫",
       originalPrice: "120.000₫",
-      image: "#",
+      image: "https://cf.shopee.vn/file/766f99c2e0651a3b24e813511cf8bbe2_tn",
     },
   },
   yeu: {
@@ -33,7 +34,8 @@ const emotionBooks = {
         "Hành trình của một tình yêu đẹp, trong sáng và lãng mạn. Cuốn sách sẽ đưa bạn đến với thế giới của những rung động đầu đời, những lời tỏ tình ngọt ngào.",
       price: "110.000₫",
       originalPrice: "135.000₫",
-      image: "#",
+      image:
+        "https://cdn1.fahasa.com/media/catalog/product/8/9/8936066694964.jpg",
     },
   },
   kinhdi: {
@@ -45,7 +47,8 @@ const emotionBooks = {
         "Những câu chuyện ma quái, những bí ẩn đáng sợ và những sự kiện siêu nhiên khó giải thích. Chuẩn bị tinh thần cho những giây phút hồi hộp đến nghẹt thở.",
       price: "90.000₫",
       originalPrice: "115.000₫",
-      image: "#",
+      image:
+        "https://cdn1.fahasa.com/media/catalog/product/l/i/linh_h_n_b_o_th_b_a_1.png?_gl=1*1omg5c9*_gcl_au*MTA3NzY4MDg3MS4xNzQ5NTIwNTU0LjE1NDUwNzg3MzMuMTc1MzE1NDU1MS4xNzUzMTU3NDY0*_ga*MTMxNDQ2MjI1NC4xNzQ5NTIwNTU0*_ga_D3YYPWQ9LN*czE3NTMxNTQwNjQkbzYzJGcxJHQxNzUzMTU3NjAxJGo2MCRsMCRoMA..*_ga_460L9JMC2G*czE3NTMxNTQwNjQkbzY0JGcxJHQxNzUzMTU3NjE2JGo0NSRsMCRoMTE4MDM5OTgw",
     },
   },
 };
