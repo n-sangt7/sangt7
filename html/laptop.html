@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop - ĐBDK2T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/laptop.css" />
+</head>
+<body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-microchip"></i>
+                        KDB
+                    </a>
+
+                    <nav>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">
+                                    <i class="fas fa-home"></i> Trang chủ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="dienthoai.html" class="nav-link">Điện Thoại</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="laptop.html" class="nav-link active">Laptop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="thoitrang.html" class="nav-link">Thời Trang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lego.html" class="nav-link">Lego</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="products.html" class="nav-link">Hàng Nóng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header Actions -->
+                    <div class="header-actions">
+                        <div class="auth-links">
+                            <!-- User Dropdown (hiển thị khi đã đăng nhập) -->
+                            <div class="user-dropdown" id="user-dropdown" style="display: none">
+                                <div class="user-trigger" id="user-trigger">
+                                    <div class="user-avatar-wrapper">
+                                        <img src="" alt="Avatar" id="user-avatar" class="user-avatar" style="display: none">
+                                        <div class="avatar-placeholder" id="avatar-placeholder">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <span id="user-display-name" class="username">Tài khoản</span>
+                                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu">
+                                    <a href="profile.html" class="dropdown-item">
+                                        <i class="fas fa-user-circle"></i>
+                                        <span>Hồ sơ cá nhân</span>
+                                    </a>
+                                    <a href="order_history.html" class="dropdown-item">
+                                        <i class="fas fa-history"></i>
+                                        <span>Lịch sử đặt hàng</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item" id="dropdown-logout">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Login Link (hiển thị khi chưa đăng nhập) -->
+                            <a href="login.html" id="login-link" class="login-btn">
+                                <i class="fas fa-user"></i>
+                                <span>Đăng nhập</span>
+                            </a>
+                        </div>
+                        
+                        <button class="header-action" aria-label="Danh sách yêu thích">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="header-action" aria-label="Giỏ hàng" onclick="window.location.href='cart.html'">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input
+                            type="text"
+                            class="search-input"
+                            placeholder="Tìm kiếm laptop, từ khóa..."
+                        />
+                    </div>
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i> Tìm kiếm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="laptop-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>Laptop & Máy Tính Xách Tay</h1>
+                <p>Khám phá những mẫu laptop mới nhất với hiệu năng vượt trội</p>
+            </div>
+
+            <!-- Laptop Slider -->
+            <section class="laptop-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slider-item">
+                            <img src="./img/macbook-pro.png" alt="MacBook Pro" />
+                        </div>
+                        <div class="slider-item">
+                            <img src="./img/dell-xps.png" alt="Dell XPS" />
+                        </div>
+                        <div class="slider-item">
+                            <img src="./img/asus-rog.png" alt="ASUS ROG" />
+                        </div>
+                        <div class="slider-item">
+                            <img src="./img/hp-spectre.png" alt="HP Spectre" />
+                        </div>
+                        <div class="slider-item">
+                            <img src="./img/lenovo-thinkpad.png" alt="Lenovo ThinkPad" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brand Filter -->
+            <section class="brand-filter">
+                <h2 class="section-title">Danh Mục Laptop</h2>
+                <div class="filter-buttons" id="categoryFilter">
+                    <!-- Categories will be loaded dynamically -->
+                </div>
+            </section>
+
+            <!-- Laptop Products -->
+            <section class="laptop-products">
+                <h2 class="section-title">Sản Phẩm Laptop</h2>
+                <div id="productsContainer">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal Chi Tiết Sản Phẩm Compact -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-product-compact">
+                    <!-- Hình ảnh sản phẩm -->
+                    <div class="modal-image-compact">
+                        <img id="modalImage" src="" alt="Product Image" />
+                        <div class="image-actions">
+                            <button class="image-action-btn" id="zoomImage">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="image-action-btn" id="shareProduct">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Thông tin sản phẩm -->
+                    <div class="modal-info-compact">
+                        <div class="product-header">
+                            <h2 id="modalTitle" class="product-title"></h2>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(42 đánh giá)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-pricing">
+                            <span class="current-price" id="modalCurrentPrice"></span>
+                            <span class="discount-badge">-15%</span>
+                        </div>
+                        
+                        <!-- Thông tin kho hàng và danh mục -->
+                        <div class="product-status">
+                            <div class="status-item">
+                                <i class="fas fa-box"></i>
+                                <span class="status-text">Số lượng: <strong id="modalStock"></strong></span>
+                            </div>
+                            <div class="status-item">
+                                <i class="fas fa-tag"></i>
+                                <span class="status-text">Danh mục: <strong id="modalCategory"></strong></span>
+                            </div>
+                            <div class="status-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span class="status-text">Giao hàng miễn phí</span>
+                            </div>
+                            <div class="status-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span class="status-text">Bảo hành 24 tháng</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-specs-compact">
+                            <h3 class="specs-title">Thông số kỹ thuật</h3>
+                            <div class="specs-list" id="modalSpecs">
+                                <!-- Chỉ hiển thị mô tả ở đây -->
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions-compact">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1" max="10">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-add-cart">
+                                    <i class="fas fa-shopping-cart"></i> Thêm giỏ hàng
+                                </button>
+                                <button class="btn btn-buy-now">
+                                    <i class="fas fa-bolt"></i> Mua ngay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Về Chúng Tôi</h3>
+                    <p>
+                        ĐBDK2T Điện Tử - Địa chỉ tin cậy cho các sản phẩm công nghệ chất
+                        lượng cao với giá cả hợp lý.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="dienthoai.html">Điện Thoại</a></li>
+                        <li><a href="quanao.html">Quần áo</a></li>
+                        <li><a href="lego.html">Lego</a></li>
+                        <li><a href="products.html">Hàng Nóng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Liên Hệ MXH</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>Github
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>Youtube
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-tiktok"></i>TikTok
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>504 Đại lộ Bình Dương</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>01234567890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@dbdk2tdientu.vn</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Thứ 2 - Chủ nhật: 8:00 - 20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ĐBDK2T Điện Tử. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/category_page.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

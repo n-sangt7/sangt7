@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xác Nhận Đơn Hàng - ĐBDK2T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/confirmation.css" />
+</head>
+<body>
+    <!-- Họa tiết trang trí -->
+    <div class="decoration-top-left"></div>
+    <div class="decoration-top-right"></div>
+    <div class="decoration-bottom-left"></div>
+    <div class="decoration-bottom-right"></div>
+
+    <!-- Header (giống các trang khác) -->
+    <header>
+        <!-- Copy header từ index.html -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="confirmation-page">
+        <div class="container">
+            <div class="confirmation-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                
+                <h1>Đặt Hàng Thành Công!</h1>
+                <p class="success-message">Cảm ơn bạn đã đặt hàng. Đơn hàng của bạn đang được xử lý và sẽ được giao đến bạn trong thời gian sớm nhất.</p>
+                
+                <div class="order-details">
+                    <h2>Thông Tin Đơn Hàng</h2>
+                    <div id="orderDetails">
+                        <div class="loading">Đang tải thông tin đơn hàng...</div>
+                    </div>
+                </div>
+                
+                <div class="confirmation-actions">
+                    <button class="btn btn-primary" onclick="window.location.href='index.html'">
+                        <i class="fas fa-home"></i>
+                        Về Trang Chủ
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.location.href='order_history.html'">
+                        <i class="fas fa-history"></i>
+                        Xem Lịch Sử Đơn Hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (giống các trang khác) -->
+    <footer>
+        <!-- Copy footer từ index.html -->
+    </footer>
+
+    <script src="../js/confirmation.js"></script>
+</body>
+</html>
